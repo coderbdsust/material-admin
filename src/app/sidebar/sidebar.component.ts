@@ -10,6 +10,7 @@ import {SideNavService} from '../service/side-nav.service';
 export class SidebarComponent implements OnInit {
   showFiller = false;
   @ViewChild('sideNav') public sideNav: MatDrawer;
+  
 
   constructor(private sidenavService: SideNavService) {
     console.log(sidenavService);

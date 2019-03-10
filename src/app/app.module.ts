@@ -11,6 +11,11 @@ import { MatSidenavModule } from "@angular/material/sidenav";
 import { SidebarComponent } from "./sidebar/sidebar.component";
 import { ToolbarComponent } from "./toolbar/toolbar.component";
 import {SideNavService} from './service/side-nav.service';
+import {MatListModule, MatList} from '@angular/material/list';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [AppComponent, SidebarComponent, ToolbarComponent],
@@ -22,7 +27,11 @@ import {SideNavService} from './service/side-nav.service';
     MaterialModule,
     MatIconModule,
     MatMenuModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatListModule,
+    MatGridListModule,
+    MatExpansionModule,
+    MatFormFieldModule
   ],
   providers: [SideNavService],
   bootstrap: [AppComponent]
