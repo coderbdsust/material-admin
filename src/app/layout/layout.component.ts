@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SideNavService } from '../service/side-nav.service';
+import { ROUTE_NAME } from '../routes/Routes';
 
 @Component({
   selector: 'app-layout',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
-  constructor(){}
+  public currentPathName = ROUTE_NAME.SOCIAL;
+
+  constructor(private sidenavService: SideNavService) { }
 
   ngOnInit() {
   }

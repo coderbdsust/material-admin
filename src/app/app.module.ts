@@ -17,9 +17,19 @@ import { MatExpansionModule } from "@angular/material/expansion";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { LayoutComponent } from "./layout/layout.component";
 import { MatCardModule, MatCard } from "@angular/material/card";
-import { CardComponent } from './layout/feature/card/card.component';
-import { CardLayoutComponent } from './layout/feature/card-layout/card-layout.component';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { CardComponent } from "./layout/feature/card-layout/card/card.component";
+import { CardLayoutComponent } from "./layout/feature/card-layout/card-layout.component";
+import { MatProgressBarModule } from "@angular/material/progress-bar";
+import { MatInputModule } from "@angular/material/input";
+import { MatDatepickerModule } from "@angular/material/datepicker";
+import { MatCheckboxModule } from "@angular/material/checkbox";
+import { MatAutocompleteModule } from "@angular/material/autocomplete";
+import { MatRadioModule } from "@angular/material/radio";
+import { MatSelectModule } from "@angular/material/select";
+import { MatSliderModule } from "@angular/material/slider";
+import { MatSlideToggleModule } from "@angular/material/slide-toggle";
+import { FormLayoutComponent } from './layout/feature/form-layout/form-layout.component';
+import { TableLayoutComponent } from './layout/feature/table-layout/table-layout.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +38,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     ToolbarComponent,
     LayoutComponent,
     CardComponent,
-    CardLayoutComponent
+    CardLayoutComponent,
+    FormLayoutComponent,
+    TableLayoutComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +56,15 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatExpansionModule,
     MatFormFieldModule,
     MatCardModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatCheckboxModule,
+    MatAutocompleteModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatSliderModule,
+    MatSlideToggleModule
   ],
   providers: [SideNavService],
   bootstrap: [AppComponent]
