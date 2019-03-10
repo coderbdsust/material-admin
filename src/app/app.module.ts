@@ -19,6 +19,7 @@ import { LayoutComponent } from "./layout/layout.component";
 import { MatCardModule, MatCard } from "@angular/material/card";
 import { CardComponent } from './layout/feature/card/card.component';
 import { CardLayoutComponent } from './layout/feature/card-layout/card-layout.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { CardLayoutComponent } from './layout/feature/card-layout/card-layout.co
     MatGridListModule,
     MatExpansionModule,
     MatFormFieldModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressBarModule
   ],
   providers: [SideNavService],
   bootstrap: [AppComponent]
