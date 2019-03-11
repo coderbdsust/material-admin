@@ -30,6 +30,7 @@ import { MatSliderModule } from "@angular/material/slider";
 import { MatSlideToggleModule } from "@angular/material/slide-toggle";
 import { FormLayoutComponent } from './layout/feature/form-layout/form-layout.component';
 import { TableLayoutComponent } from './layout/feature/table-layout/table-layout.component';
+import {MatTreeModule} from '@angular/material/tree';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { TableLayoutComponent } from './layout/feature/table-layout/table-layout
     MatRadioModule,
     MatSelectModule,
     MatSliderModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatTreeModule
   ],
   providers: [SideNavService],
   bootstrap: [AppComponent]

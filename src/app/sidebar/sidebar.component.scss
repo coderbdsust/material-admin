@@ -12,13 +12,13 @@
 }
 
 .example-sidenav {
-  padding: 20px;
-  width:300px;
+  padding: 4px;
+  width: 300px;
   background: rgba(80, 38, 171, 0.9);
 }
 
-.sidenav-list{
-  display:flex;
+.sidenav-list {
+  display: flex;
   flex-wrap: nowrap;
   flex-flow: column;
 }
@@ -27,8 +27,24 @@
   color: rgba(0, 0, 0, 0.54);
 }
 
-.grid-list-item{
+.btn-full-width {
+  width: 100%;
 }
 
+.mat-expansion-panel{
+  background: rgba(80, 38, 171, 0.7);
+  color:rgba(255, 255, 255, 0.90);
+  font-weight: 400;
+}
 
+.mat-expansion-panel-header-title{
+  color:rgba(255, 255, 255, 0.90);
+  font-weight: 400;
+}
+
+.mat-expansion-panel-header.mat-expanded {
+  background: rgba(80, 38, 171, 0.4);
+  color:rgba(255, 255, 255, 0.90);
+  font-weight: 400;
+}
 
