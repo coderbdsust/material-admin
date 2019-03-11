@@ -29,8 +29,17 @@ import { MatSelectModule } from "@angular/material/select";
 import { MatSliderModule } from "@angular/material/slider";
 import { MatSlideToggleModule } from "@angular/material/slide-toggle";
 import { FormLayoutComponent } from './layout/feature/form-layout/form-layout.component';
-import { TableLayoutComponent } from './layout/feature/table-layout/table-layout.component';
 import {MatTreeModule} from '@angular/material/tree';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { TablePaginationComponent } from './layout/feature/table-layout/table-pagination/table-pagination.component';
+import { PaginatedTableComponent } from './layout/feature/table-layout/paginated-table/paginated-table.component';
+import { SortedTableComponent } from './layout/feature/table-layout/sorted-table/sorted-table.component';
+import { FilteredTableComponent } from './layout/feature/table-layout/filtered-table/filtered-table.component';
+import { SelectionTableComponent } from './layout/feature/table-layout/selection-table/selection-table.component';
+import { StickyTableComponent } from './layout/feature/table-layout/sticky-table/sticky-table.component';
+import { ButtonLayoutComponent } from './layout/feature/button-layout/button-layout.component';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +50,13 @@ import {MatTreeModule} from '@angular/material/tree';
     CardComponent,
     CardLayoutComponent,
     FormLayoutComponent,
-    TableLayoutComponent
+    TablePaginationComponent,
+    PaginatedTableComponent,
+    SortedTableComponent,
+    FilteredTableComponent,
+    SelectionTableComponent,
+    StickyTableComponent,
+    ButtonLayoutComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +81,9 @@ import {MatTreeModule} from '@angular/material/tree';
     MatSelectModule,
     MatSliderModule,
     MatSlideToggleModule,
-    MatTreeModule
+    MatTreeModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [SideNavService],
   bootstrap: [AppComponent]
