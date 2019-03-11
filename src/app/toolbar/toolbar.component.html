@@ -1,8 +1,11 @@
 <mat-toolbar class='toolbar'>
-  <mat-toolbar-row>
-    <span>Next 2 Solve</span>
-    <span class="example-spacer"></span>
-    <mat-icon class="example-icon" mat-button (click)="toggleRightSidenav()">menu</mat-icon>
+  <mat-toolbar-row class='row-container'>
+      <mat-icon class="toggle-menu" mat-button (click)="toggleRightSidenav()">menu</mat-icon>
+    <span class='col1'>Next 2 Solve</span>
+    <mat-form-field class='col5'>
+      <mat-icon class="search-icon" mat-button>search</mat-icon>
+      <input matInput />
+    </mat-form-field>
   </mat-toolbar-row>
 </mat-toolbar>
 <mat-progress-bar mode="query"></mat-progress-bar>
