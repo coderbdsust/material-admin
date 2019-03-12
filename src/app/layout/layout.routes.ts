@@ -8,12 +8,12 @@ import { StickyTableComponent } from "./feature/table-layout/sticky-table/sticky
 import { FormLayoutComponent } from "./feature/form-layout/form-layout.component";
 
 export const LayoutRoutes: Routes = [
-  // { path: "", component: CardLayoutComponent },
-  // { path: "social", component: CardLayoutComponent },
-  // { path: "table/selection", component: SelectionTableComponent },
-  // { path: "table/filter", component: FilteredTableComponent },
-  // { path: "table/paginated", component: PaginatedTableComponent },
-  // { path: "table/sorted", component: SortedTableComponent },
-  // { path: "table/sticky", component: StickyTableComponent },
-  // { path: "form", component: FormLayoutComponent }
+  { path: "", component: CardLayoutComponent },
+  { path: "social", component: CardLayoutComponent },
+  { path: "table/selection", component: SelectionTableComponent },
+  { path: "table/filter", component: FilteredTableComponent },
+  { path: "table/paginated", component: PaginatedTableComponent },
+  { path: "table/sorted", component: SortedTableComponent },
+  { path: "table/sticky", component: StickyTableComponent },
+  { path: "form", component: FormLayoutComponent }
 ];

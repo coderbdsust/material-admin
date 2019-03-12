@@ -5,21 +5,21 @@ import { Routes, RouterModule } from "@angular/router";
 import { LayoutComponent } from "./layout/layout.component";
 
 const routes: Routes = [
-  // {
-  //   path: "",
-  //   redirectTo: "social",
-  //   pathMatch: "full"
-  // },
-  // {
-  //   path: "",
-  //   component: LayoutComponent,
-  //   children: [
-  //     {
-  //       path: "",
-  //       loadChildren: "./layout/layout.module#LayoutModule"
-  //     }
-  //   ]
-  // }
+  {
+    path: "",
+    redirectTo: "social",
+    pathMatch: "full"
+  },
+  {
+    path: "",
+    component: LayoutComponent,
+    children: [
+      {
+        path: "",
+        loadChildren: "./layout/layout.module#LayoutModule"
+      }
+    ]
+  }
 ];
 
 @NgModule({
