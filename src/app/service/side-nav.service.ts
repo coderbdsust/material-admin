@@ -1,10 +1,8 @@
 import { Injectable } from "@angular/core";
 import { MatDrawer } from "@angular/material";
-import { ROUTE_NAME } from "../routes/Routes";
 
 @Injectable()
 export class SideNavService {
-  public currentPathName = ROUTE_NAME.HOME;
   constructor() {}
 
   private sidenav: MatDrawer;
@@ -24,8 +22,5 @@ export class SideNavService {
   public toggle(): void {
     this.sidenav.toggle();
   }
-
-  public getCurrentItem() {
-    return this.currentPathName;
-  }
+  
 }

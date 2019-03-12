@@ -1,16 +1,29 @@
 import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { BrowserModule } from "@angular/platform-browser";
 import { Routes, RouterModule } from "@angular/router";
-import { CardLayoutComponent } from "./layout/feature/card-layout/card-layout.component";
-import { FormLayoutComponent } from "./layout/feature/form-layout/form-layout.component";
-import { ROUTE_NAME } from "./routes/Routes";
+import { LayoutComponent } from "./layout/layout.component";
 
 const routes: Routes = [
-  { path: ROUTE_NAME.SOCIAL, component: CardLayoutComponent },
-  { path: ROUTE_NAME.TABLE, component: FormLayoutComponent }
+  // {
+  //   path: "",
+  //   redirectTo: "social",
+  //   pathMatch: "full"
+  // },
+  // {
+  //   path: "",
+  //   component: LayoutComponent,
+  //   children: [
+  //     {
+  //       path: "",
+  //       loadChildren: "./layout/layout.module#LayoutModule"
+  //     }
+  //   ]
+  // }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [CommonModule, BrowserModule, RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

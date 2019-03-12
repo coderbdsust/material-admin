@@ -1,49 +1,9 @@
-<!-- <div class='row-container'>
-  <div class='col1'>
-    <app-card-layout>
-    </app-card-layout>
-  </div>
-</div> -->
-
-<!-- <div class='row-container'>
-  <div class='col1'>
-    <app-form-layout>
-    </app-form-layout>
-  </div>
-</div> -->
-
-<!-- <div class='row-container'>
-  <div class='col1'>
-    <app-paginated-table></app-paginated-table>
-  </div>
-</div> -->
-
-<!-- <div class='row-container'>
-  <div class='col1'>
-    <app-sorted-table></app-sorted-table>
-  </div>
-</div> -->
-
-<!-- <div class='row-container'>
+<div class='wrapper'>
+  <app-toolbar></app-toolbar>
+  <app-sidebar></app-sidebar>
+  <div class='row-container'>
     <div class='col1'>
-      <app-filtered-table></app-filtered-table>
+      <router-outlet></router-outlet>
     </div>
-  </div> -->
-
-<!-- <div class='row-container'>
-      <div class='col1'>
-        <app-selection-table></app-selection-table>
-      </div>
-    </div> -->
-
-<!-- <div class='row-container'>
-        <div class='col1'>
-          <app-sticky-table></app-sticky-table>
-        </div>
-      </div> -->
-
-      <div class='row-container'>
-        <div class='col1'>
-            <app-button-layout></app-button-layout>
-        </div>
-      </div>
+  </div>
+</div>

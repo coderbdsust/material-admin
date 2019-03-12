@@ -7,7 +7,7 @@
             <mat-icon class="example-icon" mat-button>home</mat-icon> Home
           </mat-panel-title>
         </mat-expansion-panel-header>
-        <button mat-button mat-button class='btn-full-width'>Social</button>
+        <button mat-button mat-button class='btn-full-width' [routerLink]='social'>Social</button>
       </mat-expansion-panel>
     </mat-accordion>
     <mat-accordion>
@@ -17,11 +17,11 @@
             <mat-icon class="example-icon" mat-button>table</mat-icon> Table
           </mat-panel-title>
         </mat-expansion-panel-header>
-        <button mat-button class='btn-full-width'>Filtered Table</button>
-        <button mat-button class='btn-full-width'>Paginated Table</button>
-        <button mat-button class='btn-full-width'>Selection Table</button>
-        <button mat-button class='btn-full-width'>Sorted Table</button>
-        <button mat-button class='btn-full-width'>Sticky Table</button>
+        <button mat-button class='btn-full-width' [routerLink]='table/filter'>Filtered Table</button>
+        <button mat-button class='btn-full-width' [routerLink]='table/paginated'>Paginated Table</button>
+        <button mat-button class='btn-full-width' [routerLink]='table/selection'>Selection Table</button>
+        <button mat-button class='btn-full-width' [routerLink]='table/sorted'>Sorted Table</button>
+        <button mat-button class='btn-full-width' [routerLink]='table/sticky'>Sticky Table</button>
       </mat-expansion-panel>
     </mat-accordion>
 
@@ -32,9 +32,9 @@
             <mat-icon class="example-icon" mat-button>format_shapes</mat-icon>Form
           </mat-panel-title>
         </mat-expansion-panel-header>
-        <button mat-button class='btn-full-width'>Form 1</button>
-        <button mat-button class='btn-full-width'>Form 2</button>
-        <button mat-button class='btn-full-width'>Form 3</button>
+        <!-- <button mat-button class='btn-full-width' [routerLink]=''>Form 1</button> -->
+        <!-- <button mat-button class='btn-full-width' [routerLink]=''>Form 2</button> -->
+        <!-- <button mat-button class='btn-full-width' [routerLink]=''>Form 3</button> -->
       </mat-expansion-panel>
     </mat-accordion>
     <mat-accordion>
@@ -44,9 +44,9 @@
               <mat-icon class="example-icon" mat-button>add_to_queue</mat-icon>Extras
             </mat-panel-title>
           </mat-expansion-panel-header>
-          <button mat-button class='btn-full-width'>Extras 1</button>
-          <button mat-button class='btn-full-width'>Extras 2</button>
-          <button mat-button class='btn-full-width'>Extras 3</button>
+          <!-- <button mat-button class='btn-full-width' [routerLink]=''>Extras 1</button> -->
+          <!-- <button mat-button class='btn-full-width' [routerLink]=''>Extras 2</button> -->
+          <!-- <button mat-button class='btn-full-width' [routerLink]=''>Extras 3</button> -->
         </mat-expansion-panel>
       </mat-accordion>
 
