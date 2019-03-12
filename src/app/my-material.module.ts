@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from "@angular/material/icon";
@@ -72,6 +72,7 @@ import { MatPaginatorModule } from "@angular/material/paginator";
     MatTreeModule,
     MatTableModule,
     MatPaginatorModule
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class MyMaterialModule {}
