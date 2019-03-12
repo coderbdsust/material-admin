@@ -1,10 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 
 export interface Food {
   value: string;
   viewValue: string;
 }
-
 @Component({
   selector: 'app-form-layout',
   templateUrl: './form-layout.component.html',

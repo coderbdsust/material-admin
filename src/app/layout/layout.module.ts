@@ -1,6 +1,5 @@
 import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from "@angular/core";
 import {RouterModule} from "@angular/router";
-import {MyMaterialModule} from "../my-material.module";
 import {LayoutRoutes} from "./layout.routes";
 import {SidebarComponent} from "../sidebar/sidebar.component";
 import {ToolbarComponent} from "../toolbar/toolbar.component";

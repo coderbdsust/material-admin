@@ -1,7 +1,6 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, OnInit, ViewChild, NgModule} from '@angular/core';
 import {MatSort, MatTableDataSource} from '@angular/material';
 import { ELEMENT_DATA } from '../table-data';
-
 
 @Component({
   selector: 'app-sorted-table',

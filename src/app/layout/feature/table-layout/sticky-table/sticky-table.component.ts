@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 import { ELEMENT_DATA } from '../table-data';
-
-
 @Component({
   selector: 'app-sticky-table',
   templateUrl: './sticky-table.component.html',
