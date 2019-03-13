@@ -19,6 +19,10 @@ export class SideNavService {
     return this.sidenav.close();
   }
 
+  public isOpen(): boolean {
+    return this.sidenav.opened;
+  }
+
   public toggle(): void {
     this.sidenav.toggle();
   }

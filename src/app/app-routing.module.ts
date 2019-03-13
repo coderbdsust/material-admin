@@ -3,6 +3,7 @@ import { CommonModule } from "@angular/common";
 import { BrowserModule } from "@angular/platform-browser";
 import { Routes, RouterModule } from "@angular/router";
 import { LayoutComponent } from "./layout/layout.component";
+import { LayoutModule } from './layout/layout.module';
 
 const routes: Routes = [
   {
@@ -16,7 +17,7 @@ const routes: Routes = [
     children: [
       {
         path: "",
-        loadChildren: "./layout/layout.module#LayoutModule"
+        loadChildren: () => LayoutModule
       }
     ]
   }

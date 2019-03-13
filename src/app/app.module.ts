@@ -7,19 +7,26 @@ import {AppComponent} from "./app.component";
 import {MyMaterialModule} from "./my-material.module";
 import {CommonModule} from '@angular/common';
 import {LayoutModule} from "./layout/layout.module";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SidebarComponent } from "./sidebar/sidebar.component";
+import { ToolbarComponent } from "./toolbar/toolbar.component";
+import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent
+    LayoutComponent,
+    SidebarComponent,
+    ToolbarComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     CommonModule,
     AppRoutingModule,
     MyMaterialModule,
     LayoutModule
-
   ],
   providers: [SideNavService],
   bootstrap: [AppComponent],

@@ -26,8 +26,17 @@
         <h4>Basic mat-select</h4>
         <mat-form-field>
           <mat-select placeholder="Favorite food">
-            <mat-option *ngFor="let food of foods" [value]="food.value">
-              {{food.viewValue}}
+            <mat-option>
+              Sushi
+            </mat-option>
+            <mat-option>
+              Mango
+            </mat-option>
+            <mat-option>
+              Apple
+            </mat-option>
+            <mat-option>
+              Orange
             </mat-option>
           </mat-select>
         </mat-form-field>
@@ -37,7 +46,7 @@
           <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
           <mat-datepicker #picker></mat-datepicker>
         </mat-form-field> -->
-<!--         
+        <!--         
         <mat-form-field>
           <input matInput [matDatepicker]="picker1" placeholder="Angular forms" [formControl]="date">
           <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
@@ -83,9 +92,18 @@
         <h4>Basic mat-select</h4>
         <mat-form-field>
           <mat-select placeholder="Favorite food">
-            <mat-option *ngFor="let food of foods" [value]="food.value">
-              {{food.viewValue}}
-            </mat-option>
+              <mat-option>
+                  Sushi
+                </mat-option>
+                <mat-option>
+                  Mango
+                </mat-option>
+                <mat-option>
+                  Apple
+                </mat-option>
+                <mat-option>
+                  Orange
+                </mat-option>
           </mat-select>
         </mat-form-field>
       </form>
