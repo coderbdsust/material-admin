@@ -6,6 +6,7 @@ import { PaginatedTableComponent } from "./feature/table-layout/paginated-table/
 import { SortedTableComponent } from "./feature/table-layout/sorted-table/sorted-table.component";
 import { StickyTableComponent } from "./feature/table-layout/sticky-table/sticky-table.component";
 import { FormLayoutComponent } from "./feature/form-layout/form-layout.component";
+import { DataTableComponent } from './feature/table-layout/data-table/data-table.component';
 
 export const LayoutRoutes: Routes = [
   { path: "", component: CardLayoutComponent },
@@ -15,5 +16,6 @@ export const LayoutRoutes: Routes = [
   { path: "table/paginated", component: PaginatedTableComponent },
   { path: "table/sorted", component: SortedTableComponent },
   { path: "table/sticky", component: StickyTableComponent },
+  { path: "table/data-table", component: DataTableComponent },
   { path: "form", component: FormLayoutComponent }
 ];

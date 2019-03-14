@@ -36,6 +36,7 @@ import { MatSlideToggleModule } from "@angular/material/slide-toggle";
 import { MatTreeModule } from "@angular/material/tree";
 import { MatTableModule } from "@angular/material/table";
 import { MatPaginatorModule } from "@angular/material/paginator";
+import { DataTableComponent } from './feature/table-layout/data-table/data-table.component';
 
 @NgModule({
   declarations: [
@@ -48,22 +49,9 @@ import { MatPaginatorModule } from "@angular/material/paginator";
     SelectionTableComponent,
     StickyTableComponent,
     ButtonLayoutComponent,
-    FormLayoutComponent
+    FormLayoutComponent,
+    DataTableComponent
   ],
-  // exports: [
-  //   CardComponent,
-  //   CardLayoutComponent,
-  //   SidebarComponent,
-  //   ToolbarComponent,
-  //   TablePaginationComponent,
-  //   PaginatedTableComponent,
-  //   SortedTableComponent,
-  //   FilteredTableComponent,
-  //   SelectionTableComponent,
-  //   StickyTableComponent,
-  //   ButtonLayoutComponent,
-  //   FormLayoutComponent
-  // ],
   imports: [
     MatButtonModule,
     MatToolbarModule,
