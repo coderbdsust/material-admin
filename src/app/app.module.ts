@@ -18,8 +18,7 @@ import { RouterModule } from '@angular/router';
     AppComponent,
     LayoutComponent,
     SidebarComponent,
-    ToolbarComponent,
-  ],
+    ToolbarComponent  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

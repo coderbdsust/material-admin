@@ -1,31 +1,37 @@
 .wrapper-body{
-  margin-left:4px;
+  margin: 4px;
 }
 .row-container{
   display: flex;
   flex-wrap: nowrap;
   flex-direction:row;
-  margin: 0px;
+}
+
+.row-container-fluid{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
 }
 
 .col-container{
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  margin: 0px;
+}
+
+.col-container-fluid{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 
 .col-container>div {
-  background-color: #f1f1f1;
-  text-align: center;
-  margin:4px;
+  // text-align: center;
 }
 
 .row-container>div {
-  background-color: #f1f1f1;
-  text-align: center;
-  margin:4px;
+  // text-align: center;
 }
 
 .col1 {
