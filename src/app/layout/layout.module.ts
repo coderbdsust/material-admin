@@ -48,6 +48,7 @@ import { FileUploadComponent } from './feature/file-upload/file-upload.component
 import { MatFileUploadModule } from 'angular-material-fileupload';
 import { ImageCropperComponent } from './feature/image-cropper/image-cropper.component';
 import { ImageCropperModule } from 'ngx-image-cropper';
+import { FileDropModule } from 'ngx-file-drop';
 
  
 
@@ -103,6 +104,7 @@ import { ImageCropperModule } from 'ngx-image-cropper';
     ImageCropperModule,
     RouterModule,
     FormsModule,
+    FileDropModule,
     ReactiveFormsModule,
     RouterModule.forChild(LayoutRoutes)
   ],

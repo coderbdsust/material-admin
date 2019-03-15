@@ -1,6 +1,11 @@
 .wrapper-body{
   margin: 4px;
 }
+
+.content-margin > div{
+  margin: 4px;
+}
+
 .row-container{
   display: flex;
   flex-wrap: nowrap;
