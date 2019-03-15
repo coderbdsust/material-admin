@@ -9,7 +9,7 @@ import {MyMaterialModule} from '../../../../my-material.module';
 @Component({
   selector: "app-filtered-table",
   templateUrl: "./filtered-table.component.html",
-  styleUrls: ["./filtered-table.component.scss",'../../../layout.component.scss']
+  styleUrls: ["./filtered-table.component.scss"]
 })
 export class FilteredTableComponent implements OnInit {
   displayedColumns: string[] = ["position", "name", "weight", "symbol"];

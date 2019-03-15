@@ -114,7 +114,7 @@ export class DynamicDataSource {
 @Component({
   selector: 'app-other-layout',
   templateUrl: './other-layout.component.html',
-  styleUrls: ['./other-layout.component.scss', '../../layout.component.scss']
+  styleUrls: ['./other-layout.component.scss']
 })
 export class OtherLayoutComponent implements OnInit {
 

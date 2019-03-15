@@ -7,7 +7,7 @@ import {SelectionModel} from '@angular/cdk/collections';
 @Component({
   selector: 'app-data-table',
   templateUrl: './data-table.component.html',
-  styleUrls: ['./data-table.component.scss', '../../../layout.component.scss']
+  styleUrls: ['./data-table.component.scss']
 })
 export class DataTableComponent implements OnInit {
 
