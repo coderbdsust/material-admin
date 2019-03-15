@@ -10,7 +10,8 @@ import {LayoutModule} from "./layout/layout.module";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidebarComponent } from "./sidebar/sidebar.component";
 import { ToolbarComponent } from "./toolbar/toolbar.component";
-import { RouterModule } from '@angular/router';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {DynamicDatabase} from '../app/layout/feature/other-layout/other-layout.component'
 
 
 @NgModule({
@@ -25,9 +26,11 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     AppRoutingModule,
     MyMaterialModule,
+    FormsModule,
+    ReactiveFormsModule,
     LayoutModule
   ],
-  providers: [SideNavService],
+  providers: [SideNavService, DynamicDatabase],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

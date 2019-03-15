@@ -1,4 +1,4 @@
-import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from "@angular/core";
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from "@angular/material/icon";
@@ -21,6 +21,13 @@ import { MatSlideToggleModule } from "@angular/material/slide-toggle";
 import { MatTreeModule } from "@angular/material/tree";
 import { MatTableModule } from "@angular/material/table";
 import { MatPaginatorModule } from "@angular/material/paginator";
+import { MatTabsModule } from "@angular/material/tabs";
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatChipsModule} from '@angular/material/chips';
+
+
 
 @NgModule({
   imports: [
@@ -46,7 +53,12 @@ import { MatPaginatorModule } from "@angular/material/paginator";
     MatSlideToggleModule,
     MatTreeModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatTabsModule,
+    MatProgressSpinnerModule,
+    MatButtonToggleModule,
+    MatBadgeModule,
+    MatChipsModule
   ],
   exports: [
     MatButtonModule,
@@ -71,7 +83,12 @@ import { MatPaginatorModule } from "@angular/material/paginator";
     MatSlideToggleModule,
     MatTreeModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatTabsModule,
+    MatProgressSpinnerModule,
+    MatButtonToggleModule,
+    MatBadgeModule,
+    MatChipsModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

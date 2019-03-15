@@ -1,8 +1,6 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { LayoutRoutes } from "./layout.routes";
-import { SidebarComponent } from "../sidebar/sidebar.component";
-import { ToolbarComponent } from "../toolbar/toolbar.component";
 import { CardComponent } from "./feature/card-layout/card/card.component";
 import { CardLayoutComponent } from "./feature/card-layout/card-layout.component";
 import { TablePaginationComponent } from "./feature/table-layout/table-pagination/table-pagination.component";
@@ -11,7 +9,6 @@ import { SortedTableComponent } from "./feature/table-layout/sorted-table/sorted
 import { FilteredTableComponent } from "./feature/table-layout/filtered-table/filtered-table.component";
 import { SelectionTableComponent } from "./feature/table-layout/selection-table/selection-table.component";
 import { StickyTableComponent } from "./feature/table-layout/sticky-table/sticky-table.component";
-import { ButtonLayoutComponent } from "./feature/button-layout/button-layout.component";
 import { FormLayoutComponent } from "./feature/form-layout/form-layout.component";
 
 import { MatButtonModule } from "@angular/material/button";
@@ -36,7 +33,23 @@ import { MatSlideToggleModule } from "@angular/material/slide-toggle";
 import { MatTreeModule } from "@angular/material/tree";
 import { MatTableModule } from "@angular/material/table";
 import { MatPaginatorModule } from "@angular/material/paginator";
-import { DataTableComponent } from './feature/table-layout/data-table/data-table.component';
+import { DataTableComponent } from "./feature/table-layout/data-table/data-table.component";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { CommonModule } from "@angular/common";
+import { MatTabsModule } from "@angular/material/tabs";
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import {MatDialogModule} from '@angular/material/dialog';
+import { OtherLayoutComponent } from './feature/other-layout/other-layout.component';
+import { FileUploadComponent } from './feature/file-upload/file-upload.component';
+import { MatFileUploadModule } from 'angular-material-fileupload';
+import { ImageCropperComponent } from './feature/image-cropper/image-cropper.component';
+import { ImageCropperModule } from 'ngx-image-cropper';
+
+ 
 
 @NgModule({
   declarations: [
@@ -48,12 +61,16 @@ import { DataTableComponent } from './feature/table-layout/data-table/data-table
     FilteredTableComponent,
     SelectionTableComponent,
     StickyTableComponent,
-    ButtonLayoutComponent,
     FormLayoutComponent,
-    DataTableComponent
+    DataTableComponent,
+    OtherLayoutComponent,
+    FileUploadComponent,
+    ImageCropperComponent
   ],
   imports: [
+    CommonModule,
     MatButtonModule,
+    MatCheckboxModule,
     MatToolbarModule,
     MatIconModule,
     MatMenuModule,
@@ -75,7 +92,18 @@ import { DataTableComponent } from './feature/table-layout/data-table/data-table
     MatTreeModule,
     MatTableModule,
     MatPaginatorModule,
+    MatTabsModule,
+    MatProgressSpinnerModule,
+    MatButtonToggleModule,
+    MatBadgeModule,
+    MatChipsModule,
+    MatBottomSheetModule,
+    MatDialogModule,
+    MatFileUploadModule,
+    ImageCropperModule,
     RouterModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forChild(LayoutRoutes)
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
