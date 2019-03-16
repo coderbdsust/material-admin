@@ -32,33 +32,113 @@
             <mat-icon class="sidemenu-icon" mat-button>format_shapes</mat-icon>Componants
           </mat-panel-title>
         </mat-expansion-panel-header>
-        <button mat-button class='btn-full-width' [routerLink]="['/form-componant']">Form Componants</button>
-        <button mat-button class='btn-full-width' [routerLink]="['/tree']">Tree</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/alerts']">Alerts</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/accordions']">Accordion</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/badges']">Badges</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/buttons']">Buttons</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/cards']">Cards</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/card-metrics']">Card Metrics</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/corousels']">Corousels</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/lists']">Lists</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/paginations']">Paginations</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/pop-overs']">Popover</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/progressbars']">Progressbar</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/tabss']">Tabs</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/tooltips']">Tooltip</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/Modals']">Modals</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/sliders']">Slider</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/trees']">Tree</button>
         <button mat-button class='btn-full-width' [routerLink]="['/file-upload']">File Upload</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/dates']">Dates</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/loaders']">Loaders</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/toast']">Toast</button>
       </mat-expansion-panel>
     </mat-accordion>
     <mat-accordion>
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              <mat-icon class="sidemenu-icon" mat-button>format_shapes</mat-icon>Image
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <button mat-button class='btn-full-width' [routerLink]="['/image-cropper']">Cropper</button>
-        </mat-expansion-panel>
-      </mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon class="sidemenu-icon" mat-button>format_shapes</mat-icon>Form
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <button mat-button class='btn-full-width' [routerLink]="['/form-1']">Form-1</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/form-1']">Form-2</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/form-1']">Form-3</button>
+      </mat-expansion-panel>
+    </mat-accordion>
     <mat-accordion>
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              <mat-icon class="sidemenu-icon" mat-button>add_to_queue</mat-icon>Extras
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <button mat-button class='btn-full-width' [routerLink]="['']">Extras 1</button>
-          <button mat-button class='btn-full-width' [routerLink]="['']">Extras 2</button>
-          <button mat-button class='btn-full-width' [routerLink]="['']">Extras 3</button>
-        </mat-expansion-panel>
-      </mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon class="sidemenu-icon" mat-button>format_shapes</mat-icon>Image
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <button mat-button class='btn-full-width' [routerLink]="['/image-cropper']">Cropper</button>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon class="sidemenu-icon" mat-button>add_to_queue</mat-icon>Pages
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <mat-icon class="sidemenu-icon" mat-button>add_to_queue</mat-icon>Sign In
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <button mat-button class='btn-full-width' [routerLink]="['']">SignIn-1</button>
+            <button mat-button class='btn-full-width' [routerLink]="['']">SignIn-2</button>
+            <button mat-button class='btn-full-width' [routerLink]="['']">SignIn-3</button>
+            <button mat-button class='btn-full-width' [routerLink]="['']">SignIn-4</button>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <mat-icon class="sidemenu-icon" mat-button>add_to_queue</mat-icon>Sign Up
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <button mat-button class='btn-full-width' [routerLink]="['']">SignUp-1</button>
+            <button mat-button class='btn-full-width' [routerLink]="['']">SignUp-2</button>
+            <button mat-button class='btn-full-width' [routerLink]="['']">SignUp-3</button>
+            <button mat-button class='btn-full-width' [routerLink]="['']">SignUp-4</button>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <mat-icon class="sidemenu-icon" mat-button>add_to_queue</mat-icon>Forgot Password
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <button mat-button class='btn-full-width' [routerLink]="['']">Forgot password-1</button>
+            <button mat-button class='btn-full-width' [routerLink]="['']">Forgot password-2</button>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <mat-icon class="sidemenu-icon" mat-button>add_to_queue</mat-icon>Extras Page
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <button mat-button class='btn-full-width' [routerLink]="['']">400 Page</button>
+            <button mat-button class='btn-full-width' [routerLink]="['']">500 Page</button>
+            <button mat-button class='btn-full-width' [routerLink]="['']">403 Page</button>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-expansion-panel>
+    </mat-accordion>
+
   </mat-drawer>
   <mat-drawer-content class="mat-drawer-content">
     <app-layout></app-layout>
