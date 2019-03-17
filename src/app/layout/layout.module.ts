@@ -49,6 +49,8 @@ import { MatFileUploadModule } from 'angular-material-fileupload';
 import { ImageCropperComponent } from './feature/image-cropper/image-cropper.component';
 import { ImageCropperModule } from 'ngx-image-cropper';
 import { FileDropModule } from 'ngx-file-drop';
+import { AlertComponent } from './feature/componants/alert/alert.component';
+import { BdAlertComponent } from './feature/componants/alert/alert-componant/bd-alert/bd-alert.component';
 
  
 
@@ -66,7 +68,9 @@ import { FileDropModule } from 'ngx-file-drop';
     DataTableComponent,
     OtherLayoutComponent,
     FileUploadComponent,
-    ImageCropperComponent
+    ImageCropperComponent,
+    AlertComponent,
+    BdAlertComponent
   ],
   imports: [
     CommonModule,

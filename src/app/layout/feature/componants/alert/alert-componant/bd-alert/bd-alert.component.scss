@@ -1,0 +1,33 @@
+.alert-color-danger{
+    background: rgba(244, 204, 209, 0.7);
+}
+
+.alert-color-success{
+    background: rgba(204, 233, 208, 0.7);
+}
+
+.alert-color-info{
+    background: rgba(201, 232, 238, 0.7);
+}
+
+.alert-color-primary{
+    background: rgba(194, 224, 255, 0.7);
+}
+
+.alert-color-warning{
+    background: rgba(254, 240, 192, 0.7);
+}
+
+.alert-color-dark{
+    background: rgba(204, 207, 208, 0.7);
+}
+
+.margin-right{
+    margin-right:10px;
+}
+
+.alert-content { 
+    display: flex; 
+    justify-content: space-between;
+    height: 26px;
+}

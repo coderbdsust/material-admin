@@ -10,6 +10,7 @@ import { DataTableComponent } from './feature/table-layout/data-table/data-table
 import { OtherLayoutComponent } from './feature/other-layout/other-layout.component';
 import { FileUploadComponent } from './feature/file-upload/file-upload.component';
 import { ImageCropperComponent } from './feature/image-cropper/image-cropper.component';
+import { AlertComponent } from './feature/componants/alert/alert.component';
 
 export const LayoutRoutes: Routes = [
   { path: "", component: CardLayoutComponent },
@@ -20,7 +21,7 @@ export const LayoutRoutes: Routes = [
   { path: "table/sorted", component: SortedTableComponent },
   { path: "table/sticky", component: StickyTableComponent },
   { path: "table/data-table", component: DataTableComponent },
-  { path: "alerts", component: FormLayoutComponent },
+  { path: "alerts", component: AlertComponent },
   { path: "accordions", component: FormLayoutComponent },
   { path: "badges", component: FormLayoutComponent },
   { path: "buttons", component: FormLayoutComponent },

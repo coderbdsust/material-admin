@@ -1,0 +1,15 @@
+<mat-card class="alert-content" [ngClass]="{
+'alert-color-success': alert==='success' || alert==='Success',
+'alert-color-info': alert==='info' || alert==='Info',
+'alert-color-danger': alert==='danger' || alert==='Danger',
+'alert-color-warning': alert==='warning' || alert==='Warning',
+'alert-color-primary': alert==='primary' || alert==='Primary',
+'alert-color-dark': alert==='dark' || alert==='Dark'}" *ngIf="show" >
+  <div>
+    <strong class="margin-right">{{alert}}!</strong>
+    <span>{{message}}</span>
+  </div>
+  <div *ngIf="cancelBtn==='True'">
+    <mat-icon mat-button (click)="onCancel()">cancel</mat-icon>
+  </div>
+</mat-card>
