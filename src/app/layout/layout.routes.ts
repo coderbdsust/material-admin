@@ -7,8 +7,8 @@ import { SortedTableComponent } from "./feature/table-layout/sorted-table/sorted
 import { StickyTableComponent } from "./feature/table-layout/sticky-table/sticky-table.component";
 import { FormLayoutComponent } from "./feature/form-layout/form-layout.component";
 import { DataTableComponent } from './feature/table-layout/data-table/data-table.component';
-import { OtherLayoutComponent } from './feature/other-layout/other-layout.component';
-import { FileUploadComponent } from './feature/file-upload/file-upload.component';
+import { TreeComponent } from './feature/componants/tree/tree.component';
+import { FileUploadComponent } from './feature/componants/file-upload/file-upload.component';
 import { ImageCropperComponent } from './feature/image-cropper/image-cropper.component';
 import { AlertComponent } from './feature/componants/alert/alert.component';
 
@@ -36,7 +36,7 @@ export const LayoutRoutes: Routes = [
   { path: "tooltips", component: FormLayoutComponent },
   { path: "modals", component: FormLayoutComponent },
   { path: "sliders", component: FormLayoutComponent },
-  { path: "trees", component: OtherLayoutComponent },
+  { path: "trees", component: TreeComponent },
   { path: "dates", component: FormLayoutComponent },
   { path: "file-upload", component: FileUploadComponent },
   { path: "image-cropper", component: ImageCropperComponent }

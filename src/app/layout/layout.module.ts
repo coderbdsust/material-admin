@@ -43,8 +43,8 @@ import {MatBadgeModule} from '@angular/material/badge';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import {MatDialogModule} from '@angular/material/dialog';
-import { OtherLayoutComponent } from './feature/other-layout/other-layout.component';
-import { FileUploadComponent } from './feature/file-upload/file-upload.component';
+import { TreeComponent } from './feature/componants/tree/tree.component';
+import { FileUploadComponent } from './feature/componants/file-upload/file-upload.component';
 import { MatFileUploadModule } from 'angular-material-fileupload';
 import { ImageCropperComponent } from './feature/image-cropper/image-cropper.component';
 import { ImageCropperModule } from 'ngx-image-cropper';
@@ -66,11 +66,12 @@ import { BdAlertComponent } from './feature/componants/alert/alert-componant/bd-
     StickyTableComponent,
     FormLayoutComponent,
     DataTableComponent,
-    OtherLayoutComponent,
+    TreeComponent,
     FileUploadComponent,
     ImageCropperComponent,
     AlertComponent,
-    BdAlertComponent
+    BdAlertComponent,
+    TreeComponent
   ],
   imports: [
     CommonModule,
