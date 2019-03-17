@@ -1,8 +1,8 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { LayoutRoutes } from "./layout.routes";
-import { CardComponent } from "./feature/card-layout/card/card.component";
-import { CardLayoutComponent } from "./feature/card-layout/card-layout.component";
+import { SocialComponent } from "./feature/social-layout/social/social-card.component";
+import { SocialLayoutComponent } from "./feature/social-layout/social-layout.component";
 import { TablePaginationComponent } from "./feature/table-layout/table-pagination/table-pagination.component";
 import { PaginatedTableComponent } from "./feature/table-layout/paginated-table/paginated-table.component";
 import { SortedTableComponent } from "./feature/table-layout/sorted-table/sorted-table.component";
@@ -10,7 +10,6 @@ import { FilteredTableComponent } from "./feature/table-layout/filtered-table/fi
 import { SelectionTableComponent } from "./feature/table-layout/selection-table/selection-table.component";
 import { StickyTableComponent } from "./feature/table-layout/sticky-table/sticky-table.component";
 import { FormLayoutComponent } from "./feature/form-layout/form-layout.component";
-
 import { MatButtonModule } from "@angular/material/button";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from "@angular/material/icon";
@@ -51,13 +50,15 @@ import { ImageCropperModule } from 'ngx-image-cropper';
 import { FileDropModule } from 'ngx-file-drop';
 import { AlertComponent } from './feature/componants/alert/alert.component';
 import { BdAlertComponent } from './feature/componants/alert/alert-componant/bd-alert/bd-alert.component';
+import { ButtonComponent } from './feature/componants/button/button.component';
+import { TabsComponent } from './feature/componants/tabs/tabs.component';
 
  
 
 @NgModule({
   declarations: [
-    CardComponent,
-    CardLayoutComponent,
+    SocialComponent,
+    SocialLayoutComponent,
     TablePaginationComponent,
     PaginatedTableComponent,
     SortedTableComponent,
@@ -71,7 +72,9 @@ import { BdAlertComponent } from './feature/componants/alert/alert-componant/bd-
     ImageCropperComponent,
     AlertComponent,
     BdAlertComponent,
-    TreeComponent
+    TreeComponent,
+    ButtonComponent,
+    TabsComponent
   ],
   imports: [
     CommonModule,

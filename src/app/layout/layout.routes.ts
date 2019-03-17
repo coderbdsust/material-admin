@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { CardLayoutComponent } from "./feature/card-layout/card-layout.component";
+import { SocialLayoutComponent } from "./feature/social-layout/social-layout.component";
 import { SelectionTableComponent } from "./feature/table-layout/selection-table/selection-table.component";
 import { FilteredTableComponent } from "./feature/table-layout/filtered-table/filtered-table.component";
 import { PaginatedTableComponent } from "./feature/table-layout/paginated-table/paginated-table.component";
@@ -11,10 +11,12 @@ import { TreeComponent } from './feature/componants/tree/tree.component';
 import { FileUploadComponent } from './feature/componants/file-upload/file-upload.component';
 import { ImageCropperComponent } from './feature/image-cropper/image-cropper.component';
 import { AlertComponent } from './feature/componants/alert/alert.component';
+import { ButtonComponent } from './feature/componants/button/button.component';
+import { TabsComponent } from './feature/componants/tabs/tabs.component';
 
 export const LayoutRoutes: Routes = [
-  { path: "", component: CardLayoutComponent },
-  { path: "social", component: CardLayoutComponent },
+  { path: "", component: SocialLayoutComponent },
+  { path: "social", component: SocialLayoutComponent },
   { path: "table/selection", component: SelectionTableComponent },
   { path: "table/filter", component: FilteredTableComponent },
   { path: "table/paginated", component: PaginatedTableComponent },
@@ -24,7 +26,7 @@ export const LayoutRoutes: Routes = [
   { path: "alerts", component: AlertComponent },
   { path: "accordions", component: FormLayoutComponent },
   { path: "badges", component: FormLayoutComponent },
-  { path: "buttons", component: FormLayoutComponent },
+  { path: "buttons", component: ButtonComponent },
   { path: "cards", component: FormLayoutComponent },
   { path: "card-metrics", component: FormLayoutComponent },
   { path: "corousels", component: FormLayoutComponent },
@@ -32,7 +34,7 @@ export const LayoutRoutes: Routes = [
   { path: "paginations", component: FormLayoutComponent },
   { path: "pop-overs", component: FormLayoutComponent },
   { path: "progressbars", component: FormLayoutComponent },
-  { path: "tabs", component: FormLayoutComponent },
+  { path: "tabs", component: TabsComponent },
   { path: "tooltips", component: FormLayoutComponent },
   { path: "modals", component: FormLayoutComponent },
   { path: "sliders", component: FormLayoutComponent },
