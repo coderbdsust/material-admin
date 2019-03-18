@@ -113,3 +113,27 @@ body {
 .alert-color-dark{
   background: rgba(204, 207, 208, 0.7);
 }
+
+.align-start {
+  align-content: flex-start;
+}
+
+.align-center {
+  align-content: center;
+}
+
+.align-end {
+  align-content: flex-end;
+}
+
+.align-space-between {
+  align-content: space-between;
+}
+
+.align-space-around {
+  align-content: space-around;
+}
+
+.align-stretch {
+  align-content: stretch;
+}

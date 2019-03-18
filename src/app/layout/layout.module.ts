@@ -52,6 +52,7 @@ import { AlertComponent } from './feature/componants/alert/alert.component';
 import { BdAlertComponent } from './feature/componants/alert/alert-componant/bd-alert/bd-alert.component';
 import { ButtonComponent } from './feature/componants/button/button.component';
 import { TabsComponent } from './feature/componants/tabs/tabs.component';
+import { CardComponent } from './feature/componants/card/card.component';
 
  
 
@@ -74,7 +75,8 @@ import { TabsComponent } from './feature/componants/tabs/tabs.component';
     BdAlertComponent,
     TreeComponent,
     ButtonComponent,
-    TabsComponent
+    TabsComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,

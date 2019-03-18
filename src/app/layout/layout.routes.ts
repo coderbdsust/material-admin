@@ -13,6 +13,7 @@ import { ImageCropperComponent } from './feature/image-cropper/image-cropper.com
 import { AlertComponent } from './feature/componants/alert/alert.component';
 import { ButtonComponent } from './feature/componants/button/button.component';
 import { TabsComponent } from './feature/componants/tabs/tabs.component';
+import { CardComponent } from './feature/componants/card/card.component';
 
 export const LayoutRoutes: Routes = [
   { path: "", component: SocialLayoutComponent },
@@ -27,7 +28,7 @@ export const LayoutRoutes: Routes = [
   { path: "accordions", component: FormLayoutComponent },
   { path: "badges", component: FormLayoutComponent },
   { path: "buttons", component: ButtonComponent },
-  { path: "cards", component: FormLayoutComponent },
+  { path: "cards", component: CardComponent },
   { path: "card-metrics", component: FormLayoutComponent },
   { path: "corousels", component: FormLayoutComponent },
   { path: "lists", component: FormLayoutComponent },
