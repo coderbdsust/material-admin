@@ -14,8 +14,12 @@ body {
   margin: 0;
 }
 
-.content-margin > div{
+.content-margin > * {
   margin: 4px;
+}
+
+.content-padding > * {
+  padding: 4px;
 }
 
 .row-container{
