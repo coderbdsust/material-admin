@@ -53,7 +53,25 @@
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            <mat-icon class="sidemenu-icon" mat-button>format_shapes</mat-icon>Form
+            <mat-icon class="sidemenu-icon" mat-button>bar_chart</mat-icon> Graph
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <button mat-button class='btn-full-width' [routerLink]="['/charts/line']">Line</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/charts/bar']">Bar</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/charts/radar']">Radar</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/charts/dognut']">Dognut</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/charts/sticky']">Polor</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/charts/bubble']">Bubble</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/charts/scatter']">Scatter</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/charts/area']">Area</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/charts/mixed']">Mixed</button>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon class="sidemenu-icon" mat-button>format_list_bulleted</mat-icon>Form
           </mat-panel-title>
         </mat-expansion-panel-header>
         <button mat-button class='btn-full-width' [routerLink]="['/form-1']">Form-1</button>
@@ -65,7 +83,7 @@
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            <mat-icon class="sidemenu-icon" mat-button>format_shapes</mat-icon>Image
+            <mat-icon class="sidemenu-icon" mat-button>image</mat-icon>Image
           </mat-panel-title>
         </mat-expansion-panel-header>
         <button mat-button class='btn-full-width' [routerLink]="['/image-cropper']">Cropper</button>
@@ -75,7 +93,7 @@
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            <mat-icon class="sidemenu-icon" mat-button>add_to_queue</mat-icon>Pages
+            <mat-icon class="sidemenu-icon" mat-button>pages</mat-icon>Pages
           </mat-panel-title>
         </mat-expansion-panel-header>
 
@@ -83,7 +101,7 @@
           <mat-expansion-panel>
             <mat-expansion-panel-header>
               <mat-panel-title>
-                <mat-icon class="sidemenu-icon" mat-button>add_to_queue</mat-icon>Sign In
+                Sign In
               </mat-panel-title>
             </mat-expansion-panel-header>
             <button mat-button class='btn-full-width' [routerLink]="['']">SignIn-1</button>
@@ -97,7 +115,7 @@
           <mat-expansion-panel>
             <mat-expansion-panel-header>
               <mat-panel-title>
-                <mat-icon class="sidemenu-icon" mat-button>add_to_queue</mat-icon>Sign Up
+                Sign Up
               </mat-panel-title>
             </mat-expansion-panel-header>
             <button mat-button class='btn-full-width' [routerLink]="['']">SignUp-1</button>
@@ -111,7 +129,7 @@
           <mat-expansion-panel>
             <mat-expansion-panel-header>
               <mat-panel-title>
-                <mat-icon class="sidemenu-icon" mat-button>add_to_queue</mat-icon>Forgot Password
+                Forgot Password
               </mat-panel-title>
             </mat-expansion-panel-header>
             <button mat-button class='btn-full-width' [routerLink]="['']">Forgot password-1</button>
@@ -123,7 +141,7 @@
           <mat-expansion-panel>
             <mat-expansion-panel-header>
               <mat-panel-title>
-                <mat-icon class="sidemenu-icon" mat-button>add_to_queue</mat-icon>Extras Page
+                Extras Page
               </mat-panel-title>
             </mat-expansion-panel-header>
             <button mat-button class='btn-full-width' [routerLink]="['']">400 Page</button>

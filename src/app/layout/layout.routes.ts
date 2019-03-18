@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { Routes } from "@angular/router";
 import { SocialLayoutComponent } from "./feature/social-layout/social-layout.component";
 import { SelectionTableComponent } from "./feature/table-layout/selection-table/selection-table.component";
 import { FilteredTableComponent } from "./feature/table-layout/filtered-table/filtered-table.component";
@@ -6,14 +6,14 @@ import { PaginatedTableComponent } from "./feature/table-layout/paginated-table/
 import { SortedTableComponent } from "./feature/table-layout/sorted-table/sorted-table.component";
 import { StickyTableComponent } from "./feature/table-layout/sticky-table/sticky-table.component";
 import { FormLayoutComponent } from "./feature/form-layout/form-layout.component";
-import { DataTableComponent } from './feature/table-layout/data-table/data-table.component';
-import { TreeComponent } from './feature/componants/tree/tree.component';
-import { FileUploadComponent } from './feature/componants/file-upload/file-upload.component';
-import { ImageCropperComponent } from './feature/image-cropper/image-cropper.component';
-import { AlertComponent } from './feature/componants/alert/alert.component';
-import { ButtonComponent } from './feature/componants/button/button.component';
-import { TabsComponent } from './feature/componants/tabs/tabs.component';
-import { CardComponent } from './feature/componants/card/card.component';
+import { DataTableComponent } from "./feature/table-layout/data-table/data-table.component";
+import { TreeComponent } from "./feature/componants/tree/tree.component";
+import { FileUploadComponent } from "./feature/componants/file-upload/file-upload.component";
+import { ImageCropperComponent } from "./feature/image-cropper/image-cropper.component";
+import { AlertComponent } from "./feature/componants/alert/alert.component";
+import { ButtonComponent } from "./feature/componants/button/button.component";
+import { TabsComponent } from "./feature/componants/tabs/tabs.component";
+import { CardComponent } from "./feature/componants/card/card.component";
 
 export const LayoutRoutes: Routes = [
   { path: "", component: SocialLayoutComponent },
@@ -42,5 +42,14 @@ export const LayoutRoutes: Routes = [
   { path: "trees", component: TreeComponent },
   { path: "dates", component: FormLayoutComponent },
   { path: "file-upload", component: FileUploadComponent },
-  { path: "image-cropper", component: ImageCropperComponent }
+  { path: "image-cropper", component: ImageCropperComponent },
+  { path: "charts/line", component: FormLayoutComponent },
+  { path: "charts/bar", component: FormLayoutComponent },
+  { path: "charts/radar", component: FormLayoutComponent },
+  { path: "charts/dognut", component: FormLayoutComponent },
+  { path: "charts/sticky", component: FormLayoutComponent },
+  { path: "charts/bubble", component: FormLayoutComponent },
+  { path: "charts/scatter", component: FormLayoutComponent },
+  { path: "charts/area", component: FormLayoutComponent },
+  { path: "charts/mixed", component: FormLayoutComponent }
 ];
