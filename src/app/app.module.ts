@@ -13,7 +13,6 @@ import { ToolbarComponent } from "./toolbar/toolbar.component";
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {DynamicDatabase} from '../app/layout/feature/componants/tree/tree.component'
 
-
 @NgModule({
   declarations: [
     AppComponent,

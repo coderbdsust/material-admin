@@ -37,39 +37,40 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { MatTabsModule } from "@angular/material/tabs";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
-import {MatButtonToggleModule} from '@angular/material/button-toggle';
-import {MatBadgeModule} from '@angular/material/badge';
-import {MatChipsModule} from '@angular/material/chips';
-import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
-import {MatDialogModule} from '@angular/material/dialog';
-import { TreeComponent } from './feature/componants/tree/tree.component';
-import { FileUploadComponent } from './feature/componants/file-upload/file-upload.component';
-import { MatFileUploadModule } from 'angular-material-fileupload';
-import { ImageCropperComponent } from './feature/image-cropper/image-cropper.component';
-import { ImageCropperModule } from 'ngx-image-cropper';
-import { FileDropModule } from 'ngx-file-drop';
-import { AlertComponent } from './feature/componants/alert/alert.component';
-import { BdAlertComponent } from './feature/componants/alert/alert-componant/bd-alert/bd-alert.component';
-import { ButtonComponent } from './feature/componants/button/button.component';
-import { TabsComponent } from './feature/componants/tabs/tabs.component';
-import { CardComponent } from './feature/componants/card/card.component';
-import { ListComponent } from './feature/componants/list/list.component';
-import { ProgressBarComponent } from './feature/componants/progress-bar/progress-bar.component';
-import { ToolTipComponent } from './feature/componants/tool-tip/tool-tip.component';
-import { ModalComponent } from './feature/componants/modal/modal.component';
-import { PopOverComponent } from './feature/componants/pop-over/pop-over.component';
-import { DateComponent } from './feature/componants/date/date.component';
-import { LineComponent } from './feature/graph/line/line.component';
-import { BarComponent } from './feature/graph/bar/bar.component';
-import { RadarComponent } from './feature/graph/radar/radar.component';
-import { DognutComponent } from './feature/graph/dognut/dognut.component';
-import { StickyComponent } from './feature/graph/sticky/sticky.component';
-import { ScatterComponent } from './feature/graph/scatter/scatter.component';
-import { AreaComponent } from './feature/graph/area/area.component';
-import { MixedComponent } from './feature/graph/mixed/mixed.component';
-import { BubbleComponent } from './feature/graph/bubble/bubble.component';
-
- 
+import { MatButtonToggleModule } from "@angular/material/button-toggle";
+import { MatBadgeModule } from "@angular/material/badge";
+import { MatChipsModule } from "@angular/material/chips";
+import { MatBottomSheetModule } from "@angular/material/bottom-sheet";
+import { MatDialogModule } from "@angular/material/dialog";
+import { TreeComponent } from "./feature/componants/tree/tree.component";
+import { FileUploadComponent } from "./feature/componants/file-upload/file-upload.component";
+import { MatFileUploadModule } from "angular-material-fileupload";
+import { ImageCropperComponent } from "./feature/image-cropper/image-cropper.component";
+import { ImageCropperModule } from "ngx-image-cropper";
+import { FileDropModule } from "ngx-file-drop";
+import { AlertComponent } from "./feature/componants/alert/alert.component";
+import { BdAlertComponent } from "./feature/componants/alert/alert-componant/bd-alert/bd-alert.component";
+import { ButtonComponent } from "./feature/componants/button/button.component";
+import { TabsComponent } from "./feature/componants/tabs/tabs.component";
+import { CardComponent } from "./feature/componants/card/card.component";
+import { ListComponent } from "./feature/componants/list/list.component";
+import { ProgressBarComponent } from "./feature/componants/progress-bar/progress-bar.component";
+import { ToolTipComponent } from "./feature/componants/tool-tip/tool-tip.component";
+import {
+  BottomSheet,
+  ModalComponent
+} from "./feature/componants/modal/modal.component";
+import { PopOverComponent } from "./feature/componants/pop-over/pop-over.component";
+import { DateComponent } from "./feature/componants/date/date.component";
+import { LineComponent } from "./feature/graph/line/line.component";
+import { BarComponent } from "./feature/graph/bar/bar.component";
+import { RadarComponent } from "./feature/graph/radar/radar.component";
+import { DognutComponent } from "./feature/graph/dognut/dognut.component";
+import { StickyComponent } from "./feature/graph/sticky/sticky.component";
+import { ScatterComponent } from "./feature/graph/scatter/scatter.component";
+import { AreaComponent } from "./feature/graph/area/area.component";
+import { MixedComponent } from "./feature/graph/mixed/mixed.component";
+import { BubbleComponent } from "./feature/graph/bubble/bubble.component";
 
 @NgModule({
   declarations: [
@@ -106,7 +107,8 @@ import { BubbleComponent } from './feature/graph/bubble/bubble.component';
     ScatterComponent,
     AreaComponent,
     MixedComponent,
-    BubbleComponent
+    BubbleComponent,
+    BottomSheet
   ],
   imports: [
     CommonModule,
@@ -148,6 +150,7 @@ import { BubbleComponent } from './feature/graph/bubble/bubble.component';
     ReactiveFormsModule,
     RouterModule.forChild(LayoutRoutes)
   ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  entryComponents: [BottomSheet]
 })
 export class LayoutModule {}

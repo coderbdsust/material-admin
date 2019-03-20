@@ -26,6 +26,8 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+
 
 
 
@@ -58,7 +60,8 @@ import {MatChipsModule} from '@angular/material/chips';
     MatProgressSpinnerModule,
     MatButtonToggleModule,
     MatBadgeModule,
-    MatChipsModule
+    MatChipsModule,
+    MatBottomSheetModule
   ],
   exports: [
     MatButtonModule,
