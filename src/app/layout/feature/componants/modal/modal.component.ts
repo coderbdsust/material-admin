@@ -1,5 +1,11 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Inject } from "@angular/core";
 import { MatBottomSheet, MatBottomSheetRef } from "@angular/material";
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from "@angular/material";
+
+export interface DialogData {
+  animal: string;
+  name: string;
+}
 
 @Component({
   selector: "app-bottom-sheet",
@@ -14,12 +20,41 @@ export class BottomSheet {
 }
 
 @Component({
+  selector: "app-dialog-modal",
+  templateUrl: "dialog-modal.html"
+})
+export class DialogModal {
+  constructor(
+    public dialogRef: MatDialogRef<DialogModal>,
+    @Inject(MAT_DIALOG_DATA) public data: DialogData
+  ) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+}
+
+@Component({
   selector: "app-modal",
   templateUrl: "./modal.component.html",
   styleUrls: ["./modal.component.scss"]
 })
 export class ModalComponent implements OnInit {
-  constructor(private bottomSheet: MatBottomSheet) {}
+  animal: string;
+  name: string;
+
+  constructor(public dialog: MatDialog, private bottomSheet: MatBottomSheet) {}
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(DialogModal, {
+      width: "250px",
+      data: { name: this.name, animal: this.animal }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      this.animal = result;
+    });
+  }
 
   openBottomSheet(): void {
     this.bottomSheet.open(BottomSheet);

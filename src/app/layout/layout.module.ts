@@ -22,7 +22,7 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatCardModule } from "@angular/material/card";
 import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MatInputModule } from "@angular/material/input";
-import { MatDatepickerModule } from "@angular/material/datepicker";
+import { MatDatepickerModule, MatNativeDateModule } from "@angular/material";
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { MatAutocompleteModule } from "@angular/material/autocomplete";
 import { MatRadioModule } from "@angular/material/radio";
@@ -58,6 +58,7 @@ import { ProgressBarComponent } from "./feature/componants/progress-bar/progress
 import { ToolTipComponent } from "./feature/componants/tool-tip/tool-tip.component";
 import {
   BottomSheet,
+  DialogModal,
   ModalComponent
 } from "./feature/componants/modal/modal.component";
 import { PopOverComponent } from "./feature/componants/pop-over/pop-over.component";
@@ -108,7 +109,8 @@ import { BubbleComponent } from "./feature/graph/bubble/bubble.component";
     AreaComponent,
     MixedComponent,
     BubbleComponent,
-    BottomSheet
+    BottomSheet,
+    DialogModal
   ],
   imports: [
     CommonModule,
@@ -126,6 +128,7 @@ import { BubbleComponent } from "./feature/graph/bubble/bubble.component";
     MatProgressBarModule,
     MatInputModule,
     MatDatepickerModule,
+    MatNativeDateModule,
     MatCheckboxModule,
     MatAutocompleteModule,
     MatRadioModule,
@@ -151,6 +154,6 @@ import { BubbleComponent } from "./feature/graph/bubble/bubble.component";
     RouterModule.forChild(LayoutRoutes)
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  entryComponents: [BottomSheet]
+  entryComponents: [BottomSheet, DialogModal]
 })
 export class LayoutModule {}

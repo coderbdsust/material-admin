@@ -1,12 +1,26 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-lg-6">
-        <mat-card>
-            <button mat-raised-button (click)="openBottomSheet()">Open file</button>
-        </mat-card>
+      <mat-card>
+        <button mat-raised-button (click)="openBottomSheet()">Open file</button>
+      </mat-card>
     </div>
     <div class="col-lg-6">
-
+      <mat-card>
+        <ol>
+          <li>
+            <mat-form-field>
+              <input matInput [(ngModel)]="name" placeholder="What's your name?">
+            </mat-form-field>
+          </li>
+          <li>
+            <button mat-raised-button (click)="openDialog()">Pick one</button>
+          </li>
+          <li *ngIf="animal">
+            You chose: <i>{{animal}}</i>
+          </li>
+        </ol>
+      </mat-card>
     </div>
   </div>
 </div>
