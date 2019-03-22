@@ -9,19 +9,16 @@
     </mat-form-field>
     <span class='col4'>
       <div class="nav-items">
-        <div class="nav-item-icon" [matMenuTriggerFor]="menu">
-          <mat-icon class="nav-item-icon" mat-button mat-button [matMenuTriggerFor]="menu">notifications
-          </mat-icon>
-          <mat-icon class="nav-item-icon" mat-button mat-button [matMenuTriggerFor]="menu">arrow_drop_down
-          </mat-icon>
+        <div class="nav-item-icon">
+          <mat-icon matBadge="15" matBadgeColor="warn" [matMenuTriggerFor]="menu">notifications</mat-icon>
           <mat-menu #menu="matMenu">
-            <button mat-menu-item>Item 1</button>
-            <button mat-menu-item>Item 2</button>
-          </mat-menu>
+              <button mat-menu-item>Item 1</button>
+              <button mat-menu-item>Item 2</button>
+            </mat-menu>
         </div>
         <div class="nav-item-icon">
-            <mat-icon class="nav-item-icon" mat-button>account_circle
-              </mat-icon>
+          <mat-icon class="nav-item-icon" mat-button>account_circle
+          </mat-icon>
         </div>
       </div>
     </span>
