@@ -37,14 +37,9 @@ export const LayoutRoutes: Routes = [
   { path: "table/sticky", component: StickyTableComponent },
   { path: "table/data-table", component: DataTableComponent },
   { path: "alerts", component: AlertComponent },
-  // { path: "accordions", component: FormLayoutComponent },
-  // { path: "badges", component: FormLayoutComponent },
   { path: "buttons", component: ButtonComponent },
   { path: "cards", component: CardComponent },
-  // { path: "card-metrics", component: FormLayoutComponent },
-  // { path: "corousels", component: FormLayoutComponent },
   { path: "lists", component: ListComponent },
-  // { path: "paginations", component: FormLayoutComponent },
   { path: "progressbars", component: ProgressBarComponent },
   { path: "tabs", component: TabsComponent },
   { path: "modals", component: ModalComponent },
@@ -59,5 +54,11 @@ export const LayoutRoutes: Routes = [
   { path: "charts/polar-area", component: PolarAreaComponent },
   { path: "charts/bubble", component:  BubbleComponent},
   { path: "charts/scatter", component: ScatterComponent },
-  { path: "charts/mixed", component: MixedComponent }
+  { path: "charts/mixed", component: MixedComponent},
+  { path: "pages/404", component: FormLayoutComponent },
+  { path: "pages/500", component: FormLayoutComponent },
+  { path: "pages/sign-in", component: FormLayoutComponent },
+  { path: "pages/sign-up", component: FormLayoutComponent },
+  { path: "pages/forgot-password", component: FormLayoutComponent },
+  { path: "pages/form-1", component: FormLayoutComponent }
 ];
