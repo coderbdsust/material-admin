@@ -1,5 +1,5 @@
-import { Component, OnInit, AfterViewInit } from "@angular/core";
-import { Chart, ChartData, Point } from "chart.js";
+import { Component, OnInit } from "@angular/core";
+import { Chart } from "chart.js";
 import { ChartColor } from "../color.const";
 
 @Component({
