@@ -65,12 +65,11 @@ import { LineComponent } from "./feature/graph/line/line.component";
 import { BarComponent } from "./feature/graph/bar/bar.component";
 import { RadarComponent } from "./feature/graph/radar/radar.component";
 import { DognutComponent } from "./feature/graph/dognut/dognut.component";
-import { StickyComponent } from "./feature/graph/sticky/sticky.component";
 import { ScatterComponent } from "./feature/graph/scatter/scatter.component";
-import { AreaComponent } from "./feature/graph/area/area.component";
 import { MixedComponent } from "./feature/graph/mixed/mixed.component";
 import { BubbleComponent } from "./feature/graph/bubble/bubble.component";
 import { ChartModule } from 'angular2-chartjs';
+import { PolarAreaComponent } from './feature/graph/polar-area/polar-area.component';
 @NgModule({
   declarations: [
     SocialComponent,
@@ -100,13 +99,12 @@ import { ChartModule } from 'angular2-chartjs';
     BarComponent,
     RadarComponent,
     DognutComponent,
-    StickyComponent,
     ScatterComponent,
-    AreaComponent,
     MixedComponent,
     BubbleComponent,
     BottomSheet,
-    DialogModal
+    DialogModal,
+    PolarAreaComponent
   ],
   imports: [
     CommonModule,

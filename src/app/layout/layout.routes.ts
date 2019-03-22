@@ -22,11 +22,10 @@ import { LineComponent } from './feature/graph/line/line.component';
 import { BarComponent } from './feature/graph/bar/bar.component';
 import { RadarComponent } from './feature/graph/radar/radar.component';
 import { DognutComponent } from './feature/graph/dognut/dognut.component';
-import { StickyComponent } from './feature/graph/sticky/sticky.component';
 import { BubbleComponent } from './feature/graph/bubble/bubble.component';
 import { ScatterComponent } from './feature/graph/scatter/scatter.component';
-import { AreaComponent } from './feature/graph/area/area.component';
 import { MixedComponent } from './feature/graph/mixed/mixed.component';
+import { PolarAreaComponent } from './feature/graph/polar-area/polar-area.component';
 
 export const LayoutRoutes: Routes = [
   { path: "", component: SocialLayoutComponent },
@@ -57,9 +56,8 @@ export const LayoutRoutes: Routes = [
   { path: "charts/bar", component: BarComponent },
   { path: "charts/radar", component: RadarComponent },
   { path: "charts/dognut", component: DognutComponent },
-  { path: "charts/sticky", component: StickyComponent },
+  { path: "charts/polar-area", component: PolarAreaComponent },
   { path: "charts/bubble", component:  BubbleComponent},
   { path: "charts/scatter", component: ScatterComponent },
-  { path: "charts/area", component: AreaComponent },
   { path: "charts/mixed", component: MixedComponent }
 ];
