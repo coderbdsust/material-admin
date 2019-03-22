@@ -1,7 +1,19 @@
 .toggle-menu {
   cursor: pointer;
+  margin-right:6px;
 }
 
+.nav-items{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+.nav-item-icon{
+  margin:8px;
+  cursor: pointer;
+  font-size: 28px;
+}
 .search-icon{
   padding-top:10px;
   opacity: 0.5;
