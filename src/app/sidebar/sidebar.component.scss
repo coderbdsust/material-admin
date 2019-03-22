@@ -5,21 +5,17 @@
 
 }
 
-// .example-sidenav-content {
-//   display: flex;
-//   height: 100%;
-//   align-items: center;
-//   justify-content: center;
-// }
-
 .sidenav {
-  padding: 4px;
+  padding: 8px;
   width: 250px;
   overflow: scroll;
 }
+.mat-accordion{
+  padding: 4px;
+}
 
-.sidenav-image {
-  // background-image: url('../../assets/bird/birds-353a.jpg');
+.mat-accordion:hover > .mat-expansion-panel{
+  background: rgba(255, 0, 0, 0.8);
 }
 
 .sidenav-list {
