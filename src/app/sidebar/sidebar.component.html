@@ -68,24 +68,13 @@
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            <mat-icon class="sidemenu-icon" mat-button>format_list_bulleted</mat-icon>Form
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <button mat-button class='btn-full-width' [routerLink]="['/form-1']">Form-1</button>
-        <button mat-button class='btn-full-width' [routerLink]="['/form-1']">Form-2</button>
-        <button mat-button class='btn-full-width' [routerLink]="['/form-1']">Form-3</button>
-      </mat-expansion-panel>
-    </mat-accordion>
-    <mat-accordion>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
             <mat-icon class="sidemenu-icon" mat-button>image</mat-icon>Image
           </mat-panel-title>
         </mat-expansion-panel-header>
         <button mat-button class='btn-full-width' [routerLink]="['/image-cropper']">Cropper</button>
       </mat-expansion-panel>
     </mat-accordion>
+
     <mat-accordion>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
@@ -93,61 +82,15 @@
             <mat-icon class="sidemenu-icon" mat-button>pages</mat-icon>Pages
           </mat-panel-title>
         </mat-expansion-panel-header>
-
-        <mat-accordion>
-          <mat-expansion-panel>
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                Sign In
-              </mat-panel-title>
-            </mat-expansion-panel-header>
-            <button mat-button class='btn-full-width' [routerLink]="['']">SignIn-1</button>
-            <button mat-button class='btn-full-width' [routerLink]="['']">SignIn-2</button>
-            <button mat-button class='btn-full-width' [routerLink]="['']">SignIn-3</button>
-            <button mat-button class='btn-full-width' [routerLink]="['']">SignIn-4</button>
-          </mat-expansion-panel>
-        </mat-accordion>
-
-        <mat-accordion>
-          <mat-expansion-panel>
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                Sign Up
-              </mat-panel-title>
-            </mat-expansion-panel-header>
-            <button mat-button class='btn-full-width' [routerLink]="['']">SignUp-1</button>
-            <button mat-button class='btn-full-width' [routerLink]="['']">SignUp-2</button>
-            <button mat-button class='btn-full-width' [routerLink]="['']">SignUp-3</button>
-            <button mat-button class='btn-full-width' [routerLink]="['']">SignUp-4</button>
-          </mat-expansion-panel>
-        </mat-accordion>
-
-        <mat-accordion>
-          <mat-expansion-panel>
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                Forgot Password
-              </mat-panel-title>
-            </mat-expansion-panel-header>
-            <button mat-button class='btn-full-width' [routerLink]="['']">Forgot password-1</button>
-            <button mat-button class='btn-full-width' [routerLink]="['']">Forgot password-2</button>
-          </mat-expansion-panel>
-        </mat-accordion>
-
-        <mat-accordion>
-          <mat-expansion-panel>
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                Extras Page
-              </mat-panel-title>
-            </mat-expansion-panel-header>
-            <button mat-button class='btn-full-width' [routerLink]="['']">400 Page</button>
-            <button mat-button class='btn-full-width' [routerLink]="['']">500 Page</button>
-            <button mat-button class='btn-full-width' [routerLink]="['']">403 Page</button>
-          </mat-expansion-panel>
-        </mat-accordion>
+        <button mat-button class='btn-full-width' [routerLink]="['/form-1']">Form 1</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/signin']">SignIn</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/signup']">Sign Up</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/forgot-password']">Forgot Password</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/404']">404 Not Found</button>
+        <button mat-button class='btn-full-width' [routerLink]="['/500']">500 Internal Error Occured</button>
       </mat-expansion-panel>
     </mat-accordion>
+
 
   </mat-drawer>
   <mat-drawer-content class="mat-drawer-content">
