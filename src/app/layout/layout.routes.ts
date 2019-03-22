@@ -16,8 +16,6 @@ import { TabsComponent } from "./feature/componants/tabs/tabs.component";
 import { CardComponent } from "./feature/componants/card/card.component";
 import { ListComponent } from './feature/componants/list/list.component';
 import { ProgressBarComponent } from './feature/componants/progress-bar/progress-bar.component';
-import { PopOverComponent } from './feature/componants/pop-over/pop-over.component';
-import { ToolTipComponent } from './feature/componants/tool-tip/tool-tip.component';
 import { ModalComponent } from './feature/componants/modal/modal.component';
 import { DateComponent } from './feature/componants/date/date.component';
 import { LineComponent } from './feature/graph/line/line.component';
@@ -48,10 +46,8 @@ export const LayoutRoutes: Routes = [
   // { path: "corousels", component: FormLayoutComponent },
   { path: "lists", component: ListComponent },
   // { path: "paginations", component: FormLayoutComponent },
-  { path: "pop-overs", component: PopOverComponent },
   { path: "progressbars", component: ProgressBarComponent },
   { path: "tabs", component: TabsComponent },
-  { path: "tooltips", component: ToolTipComponent },
   { path: "modals", component: ModalComponent },
   { path: "trees", component: TreeComponent },
   { path: "dates", component: DateComponent },
