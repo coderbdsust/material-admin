@@ -26,10 +26,12 @@ import { BubbleComponent } from './feature/graph/bubble/bubble.component';
 import { ScatterComponent } from './feature/graph/scatter/scatter.component';
 import { MixedComponent } from './feature/graph/mixed/mixed.component';
 import { PolarAreaComponent } from './feature/graph/polar-area/polar-area.component';
+import { AdminLayoutComponent } from './feature/admin-layout/admin-layout.component';
 
 export const LayoutRoutes: Routes = [
   { path: "", component: SocialLayoutComponent },
   { path: "social", component: SocialLayoutComponent },
+  { path: "admin", component: AdminLayoutComponent },
   { path: "table/selection", component: SelectionTableComponent },
   { path: "table/filter", component: FilteredTableComponent },
   { path: "table/paginated", component: PaginatedTableComponent },
@@ -60,5 +62,6 @@ export const LayoutRoutes: Routes = [
   { path: "pages/sign-in", component: FormLayoutComponent },
   { path: "pages/sign-up", component: FormLayoutComponent },
   { path: "pages/forgot-password", component: FormLayoutComponent },
-  { path: "pages/form-1", component: FormLayoutComponent }
+  { path: "pages/form-1", component: FormLayoutComponent },
+  { path: "pages/billing", component: FormLayoutComponent }
 ];

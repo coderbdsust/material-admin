@@ -70,6 +70,7 @@ import { MixedComponent } from "./feature/graph/mixed/mixed.component";
 import { BubbleComponent } from "./feature/graph/bubble/bubble.component";
 import { ChartModule } from 'angular2-chartjs';
 import { PolarAreaComponent } from './feature/graph/polar-area/polar-area.component';
+import { AdminLayoutComponent } from './feature/admin-layout/admin-layout.component';
 @NgModule({
   declarations: [
     SocialComponent,
@@ -104,7 +105,8 @@ import { PolarAreaComponent } from './feature/graph/polar-area/polar-area.compon
     BubbleComponent,
     BottomSheet,
     DialogModal,
-    PolarAreaComponent
+    PolarAreaComponent,
+    AdminLayoutComponent
   ],
   imports: [
     CommonModule,

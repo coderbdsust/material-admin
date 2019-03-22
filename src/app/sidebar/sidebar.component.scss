@@ -6,22 +6,32 @@
 }
 
 .sidenav {
-  padding: 8px;
   width: 250px;
   overflow: scroll;
 }
 .mat-accordion{
-  padding: 4px;
+  // padding: 4px;
 }
 
 .mat-accordion:hover > .mat-expansion-panel{
-  background: rgba(255, 0, 0, 0.8);
+  // background: rgba(243, 238, 238, 0.9);
 }
 
 .sidenav-list {
   display: flex;
   flex-wrap: nowrap;
   flex-flow: column;
+}
+
+.sidenav-image{
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(97, 61, 175, 0.9),
+    rgba(40, 6, 114, 0.9)
+   ),
+  url('../../assets/bird/birds-353a.jpg');
+  background-size: cover;
+  background-position: top;
 }
 
 .mat-list-icon {
