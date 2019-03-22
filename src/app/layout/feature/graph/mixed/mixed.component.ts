@@ -34,7 +34,20 @@ export class MixedComponent implements OnInit {
           }],
           labels: ['January', 'February', 'March', 'April']
       },
-      options: {}
+      options: {
+        scales: {
+          xAxes: [
+            {
+              stacked: true
+            }
+          ],
+          yAxes: [
+            {
+              stacked: true
+            }
+          ]
+        }
+      }
     });
   }
 
