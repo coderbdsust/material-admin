@@ -6,7 +6,7 @@
 }
 
 .sidenav {
-  width: 250px;
+  max-width: 250px;
   overflow: scroll;
 }
 
@@ -49,6 +49,9 @@
   font-weight: 400;
 }
 
+// .mat-expansion-panel-header{
+//   padding:5px;
+// }
 .mat-expansion-panel-header-title {
   color: rgba(255, 255, 255, 0.80);
   font-weight: 400;
@@ -61,6 +64,6 @@
 }
 
 .sidemenu-icon {
-  padding-right: 35px;
+  padding-right: 8px;
   font-size: 22px;
 }
