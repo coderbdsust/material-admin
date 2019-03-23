@@ -1,3 +1,8 @@
+.row{
+  margin:0px;
+  padding:0px;
+}
+
 .card-logo-icon {
   min-width: 40px;
   height: 80px;
@@ -6,10 +11,11 @@
 
 .card-info {
   min-width: 200px;
+  margin: 15px;
 }
 
 .card-row-margin {
-  margin-top: 2%;
+  margin-top: 40px;
 }
 
 .card-icon {
