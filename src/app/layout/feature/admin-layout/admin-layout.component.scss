@@ -1,0 +1,48 @@
+.card-logo-icon {
+  min-width: 40px;
+  height: 80px;
+  transform: translate(0%, -50%);
+}
+
+.card-info {
+  min-width: 200px;
+}
+
+.card-row-margin {
+  margin-top: 2%;
+}
+
+.card-icon {
+  font-size: 55px;
+  text-align: center;
+}
+
+.color-orange {
+  background: linear-gradient(to right bottom,
+    rgba(255, 166, 0, 0.4),
+    rgba(255, 166, 0, 0.8));
+}
+
+.color-red {
+  background: linear-gradient(to right bottom,
+    rgba(255, 0, 0, 0.4),
+    rgba(255, 0, 0, 0.8));
+}
+
+.color-green {
+  background: linear-gradient(to right bottom,
+    rgba(0, 128, 0, 0.4),
+    rgba(0, 128, 0, 0.8));
+}
+
+.color-skyblue {
+  background: linear-gradient(to right bottom,
+    rgba(135, 207, 235, 0.4),
+    rgba(135, 207, 235, 0.8));
+}
+
+.card-text-content{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
