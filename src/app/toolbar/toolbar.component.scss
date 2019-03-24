@@ -1,3 +1,5 @@
+@import '../../styles.scss';
+
 .toggle-menu {
   cursor: pointer;
   margin-right:6px;
@@ -29,10 +31,18 @@
   color:rgba(255, 255, 255, 0.90);
 }
 
-.color-bluish{
-  background: linear-gradient(
+.color-gradient-blue{
+  background-image: linear-gradient(
     to left bottom,
-    rgba(95, 53, 185, 0.8),
-    rgba(40, 6, 114, 0.9)
-   );
+    $color-blue-alpha,
+    $color-blue-beta
+   ), url('../../assets/seashells-65a.jpg');
+}
+
+.color-gradient-red{
+  background-image: linear-gradient(
+    to left bottom,
+    $color-red-alpha,
+    $color-red-beta
+   ), url('../../assets/seashells-65a.jpg');
 }

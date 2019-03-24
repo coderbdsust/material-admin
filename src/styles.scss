@@ -1,9 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-.color-bluish{
-  background: rgba(80, 38, 171, 1);
-}
+$color-red-alpha: rgba(192, 39, 39, 0.8);
+$color-red-beta: rgba(219, 27, 13, 0.8);
+$color-blue-alpha: rgba(97, 61, 175, 0.8);
+$color-blue-beta: rgba(40, 6, 114, 0.9);
+
 
 body,
 html {
