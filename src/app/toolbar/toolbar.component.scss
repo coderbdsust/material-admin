@@ -36,7 +36,9 @@
     to left bottom,
     $color-blue-alpha,
     $color-blue-beta
-   ), url('../../assets/seashells-65a.jpg');
+   ), url('../../assets/toolbar-1.jpg');
+   background-size: cover;
+   background-position: top;
 }
 
 .color-gradient-red{
@@ -44,5 +46,7 @@
     to left bottom,
     $color-red-alpha,
     $color-red-beta
-   ), url('../../assets/seashells-65a.jpg');
+   ), url('../../assets/toolbar-1.jpg');
+   background-size: cover;
+   background-position: top;
 }

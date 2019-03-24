@@ -9,7 +9,6 @@
 .sidenav {
   max-width: 250px;
   overflow: scroll;
-  padding: 6px;
 }
 
 
@@ -23,7 +22,7 @@
   background-image: linear-gradient(to right bottom,
     $color-blue-alpha,
     $color-blue-beta),
-    url('../../assets/bird/birds-353a.jpg');
+    url('../../assets/sidebar-1.jpg');
   background-size: cover;
   background-position: top;
 }
@@ -32,7 +31,7 @@
   background-image: linear-gradient(to right bottom,
     $color-red-alpha,
     $color-red-beta),
-    url('../../assets/bird/birds-353a.jpg');
+    url('../../assets/sidebar-1.jpg');
   background-size: cover;
   background-position: top;
 }
