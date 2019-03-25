@@ -68,10 +68,10 @@ import { DognutComponent } from "./feature/graph/dognut/dognut.component";
 import { ScatterComponent } from "./feature/graph/scatter/scatter.component";
 import { MixedComponent } from "./feature/graph/mixed/mixed.component";
 import { BubbleComponent } from "./feature/graph/bubble/bubble.component";
-import { ChartModule } from 'angular2-chartjs';
-import { PolarAreaComponent } from './feature/graph/polar-area/polar-area.component';
-import { AdminLayoutComponent } from './feature/admin-layout/admin-layout.component';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { ChartModule } from "angular2-chartjs";
+import { PolarAreaComponent } from "./feature/graph/polar-area/polar-area.component";
+import { AdminLayoutComponent } from "./feature/admin-layout/admin-layout.component";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
 
 @NgModule({
   declarations: [

@@ -1,6 +1,9 @@
 import { Component, OnInit } from "@angular/core";
 import { Chart, ChartData, Point } from "chart.js";
 import { ChartColor } from "../color.const";
+import 'chartjs-plugin-datalabels';
+
+
 @Component({
   selector: "app-bar",
   templateUrl: "./bar.component.html",

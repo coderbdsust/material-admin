@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart, ChartData, Point } from "chart.js";
 import { ChartColor } from "../color.const";
+import 'chartjs-plugin-datalabels';
 @Component({
   selector: 'app-radar',
   templateUrl: './radar.component.html',
