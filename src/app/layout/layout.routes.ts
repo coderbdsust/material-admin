@@ -29,7 +29,7 @@ import { PolarAreaComponent } from './feature/graph/polar-area/polar-area.compon
 import { AdminLayoutComponent } from './feature/admin-layout/admin-layout.component';
 
 export const LayoutRoutes: Routes = [
-  { path: "", component: SocialLayoutComponent },
+  { path: "", component: AdminLayoutComponent },
   { path: "social", component: SocialLayoutComponent },
   { path: "admin", component: AdminLayoutComponent },
   { path: "table/selection", component: SelectionTableComponent },

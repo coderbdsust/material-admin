@@ -8,7 +8,7 @@ import { LayoutModule } from './layout/layout.module';
 const routes: Routes = [
   {
     path: "",
-    redirectTo: "social",
+    redirectTo: "admin",
     pathMatch: "full"
   },
   {
