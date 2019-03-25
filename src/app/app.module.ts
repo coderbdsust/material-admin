@@ -13,6 +13,7 @@ import { ToolbarComponent } from "./toolbar/toolbar.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { DynamicDatabase } from "../app/layout/feature/componants/tree/tree.component";
 import { MatDatepickerModule } from "@angular/material";
+import { AlertService } from './service/alert.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { MatDatepickerModule } from "@angular/material";
     ReactiveFormsModule,
     LayoutModule
   ],
-  providers: [SideNavService, DynamicDatabase, MatDatepickerModule],
+  providers: [SideNavService, DynamicDatabase, MatDatepickerModule, AlertService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
