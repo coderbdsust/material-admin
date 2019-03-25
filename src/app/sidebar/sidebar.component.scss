@@ -36,6 +36,15 @@
   background-position: top;
 }
 
+.sidenav-gradient-black {
+  background-image: linear-gradient(to right bottom,
+    $color-black-alpha,
+    $color-black-beta),
+    url('../../assets/sidebar-1.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
 .mat-list-icon {
   color: rgba(0, 0, 0, 0.54);
 }
@@ -51,14 +60,12 @@
   border-radius: 0px;
 }
 
-
-
-// .mat-panel-blue>.mat-expanded,
-// .mat-expansion-panel {
-//   background: rgba(80, 38, 171, 0.4);
-//   color: rgba(255, 255, 255, 0.80);
-//   font-weight: 400;
-// }
+.mat-panel-blue>.mat-expanded,
+.mat-expansion-panel {
+  background: rgba(80, 38, 171, 0.4);
+  color: rgba(255, 255, 255, 0.80);
+  font-weight: 400;
+}
 
 .mat-panel-red>.mat-expanded,
 .mat-expansion-panel {
@@ -67,15 +74,12 @@
   font-weight: 400;
 }
 
-.mat-header-red>.mat-expansion-panel-header,
-.mat-expanded {
-  background: rgba(230, 78, 32, 0.2) ;
+.mat-panel-black>.mat-expanded,
+.mat-expansion-panel {
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.80);
+  font-weight: 400;
 }
-
-// .mat-header-blue>.mat-expansion-panel-header,
-// .mat-expanded {
-//   background: rgba(80, 38, 171, 0.4) ;
-// }
 
 .mat-expansion-panel-header-title {
   color: rgba(255, 255, 255, 0.80);

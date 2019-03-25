@@ -1,5 +1,9 @@
 <mat-drawer-container class="sidenav-container" autosize>
-  <mat-drawer #sideNav mode="side" opened="true" class="sidenav mat-panel-red mat-header-red sidenav-gradient-red"  mode="side">
+  <mat-drawer #sideNav mode="side" opened="true" class="sidenav"
+   [ngClass]="{
+     'sidenav-gradient-red': sidenavService.isOpen()===true,
+     'sidenav-gradient-black': sidenavService.isOpen()===false
+    }" mode="side">
     <mat-accordion (click)="sidenavService.open()">
       <mat-expansion-panel>
         <mat-expansion-panel-header>

@@ -51,3 +51,13 @@
    background-size: cover;
    background-position: top;
 }
+
+.color-gradient-black{
+  background-image: linear-gradient(
+    to left bottom,
+    $color-black-alpha,
+    $color-black-beta
+   ), url('../../assets/toolbar-1.jpg');
+   background-size: cover;
+   background-position: top;
+}
