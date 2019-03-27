@@ -74,6 +74,9 @@ import { AdminLayoutComponent } from "./feature/admin-layout/admin-layout.compon
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import {OverlayModule} from '@angular/cdk/overlay';
 import { SettingComponent } from './feature/setting/setting.component';
+import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { ExceptionComponent } from './pages/exception/exception.component';
 
 @NgModule({
   declarations: [
@@ -111,7 +114,10 @@ import { SettingComponent } from './feature/setting/setting.component';
     DialogModal,
     PolarAreaComponent,
     AdminLayoutComponent,
-    SettingComponent
+    SettingComponent,
+    ForgotPasswordComponent,
+    NotFoundComponent,
+    ExceptionComponent
   ],
   imports: [
     CommonModule,
