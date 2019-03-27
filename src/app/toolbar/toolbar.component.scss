@@ -61,3 +61,23 @@
    background-size: cover;
    background-position: top;
 }
+
+.color-gradient-green{
+  background-image: linear-gradient(
+    to left bottom,
+    $color-green-alpha,
+    $color-green-beta
+   ), url('../../assets/toolbar-1.jpg');
+   background-size: cover;
+   background-position: top;
+}
+
+.color-gradient-orange{
+  background-image: linear-gradient(
+    to left bottom,
+    $color-orange-alpha,
+    $color-orange-beta
+   ), url('../../assets/toolbar-1.jpg');
+   background-size: cover;
+   background-position: top;
+}

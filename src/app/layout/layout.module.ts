@@ -72,6 +72,8 @@ import { ChartModule } from "angular2-chartjs";
 import { PolarAreaComponent } from "./feature/graph/polar-area/polar-area.component";
 import { AdminLayoutComponent } from "./feature/admin-layout/admin-layout.component";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
+import {OverlayModule} from '@angular/cdk/overlay';
+import { SettingComponent } from './feature/setting/setting.component';
 
 @NgModule({
   declarations: [
@@ -108,7 +110,8 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
     BottomSheet,
     DialogModal,
     PolarAreaComponent,
-    AdminLayoutComponent
+    AdminLayoutComponent,
+    SettingComponent
   ],
   imports: [
     CommonModule,
@@ -151,6 +154,7 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
     FileDropModule,
     ReactiveFormsModule,
     ChartModule,
+    OverlayModule,
     RouterModule.forChild(LayoutRoutes)
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

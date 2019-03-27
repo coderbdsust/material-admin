@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+          <mat-card>  
+            <h3>Sidebar & Toolbar Color</h3>
+            <div class="button-row">
+              <button mat-fab class="color-red" (click)="onChooseColor('red')" [ngClass]="{'selection-border': getColor()==='red'}">Red</button>
+              <button mat-fab class="color-blue" (click)="onChooseColor('blue')" [ngClass]="{'selection-border': getColor()==='blue'}">Blue</button>
+              <button mat-fab class="color-black" (click)="onChooseColor('black')" [ngClass]="{'selection-border': getColor()==='black'}">Black</button>
+              <button mat-fab class="color-green" (click)="onChooseColor('green')" [ngClass]="{'selection-border': getColor()==='green'}">Green</button>
+              <button mat-fab class="color-orange" (click)="onChooseColor('orange')" [ngClass]="{'selection-border': getColor()==='orange'}">Orange</button>
+            </div>
+          </mat-card>
+      </div>
+    </div>
+</div>

@@ -45,6 +45,24 @@
   background-position: top;
 }
 
+.sidenav-gradient-green {
+  background-image: linear-gradient(to right bottom,
+    $color-green-alpha,
+    $color-green-beta),
+    url('../../assets/sidebar-1.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
+.sidenav-gradient-orange {
+  background-image: linear-gradient(to right bottom,
+    $color-orange-alpha,
+    $color-orange-beta),
+    url('../../assets/sidebar-1.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
 .mat-list-icon {
   color: rgba(0, 0, 0, 0.54);
 }
@@ -81,6 +99,20 @@
   font-weight: 400;
 }
 
+.mat-panel-green>.mat-expanded,
+.mat-expansion-panel {
+  background: rgba(10, 134, 37, 0.1);
+  color: rgba(255, 255, 255, 0.80);
+  font-weight: 400;
+}
+
+.mat-panel-orange>.mat-expanded,
+.mat-expansion-panel {
+  background: rgba(231, 147, 21, 0.1);
+  color: rgba(255, 255, 255, 0.80);
+  font-weight: 400;
+}
+
 .mat-expansion-panel-header-title {
   color: rgba(255, 255, 255, 0.80);
   font-weight: 400;
@@ -89,4 +121,13 @@
 .sidemenu-icon {
   padding-right: 8px;
   font-size: 22px;
+}
+
+.setting-btn{
+  background:rgba(230, 78, 32, 0.05);
+  width:100%;
+  color:rgba(255, 255, 255, 0.80);
+  text-align: left;
+  padding-left:24px;
+
 }

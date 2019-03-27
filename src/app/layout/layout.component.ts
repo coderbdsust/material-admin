@@ -6,6 +6,7 @@ import { SideNavService } from '../service/side-nav.service';
   styleUrls: ['./layout.component.scss']
 })
 export class LayoutComponent implements OnInit {
+
   constructor(private sidenavService: SideNavService) { }
 
   ngOnInit() {

@@ -1,8 +1,10 @@
 <mat-drawer-container class="sidenav-container" autosize>
-  <mat-drawer #sideNav mode="side" opened="true" class="sidenav"
-   [ngClass]="{
-     'sidenav-gradient-red': sidenavService.isOpen()===true,
-     'sidenav-gradient-black': sidenavService.isOpen()===false
+  <mat-drawer #sideNav mode="side" opened="true" class="sidenav" [ngClass]="{
+     'sidenav-gradient-red': colorPicker.getColor()==='red',
+     'sidenav-gradient-black': colorPicker.getColor()==='black',
+     'sidenav-gradient-blue': colorPicker.getColor()==='blue',
+     'sidenav-gradient-green': colorPicker.getColor()==='green',
+     'sidenav-gradient-orange': colorPicker.getColor()==='orange'
     }" mode="side">
     <mat-accordion (click)="sidenavService.open()">
       <mat-expansion-panel>
@@ -134,6 +136,12 @@
           [routerLink]="['/pages/500']">500</button>
       </mat-expansion-panel>
     </mat-accordion>
+
+    <button type="button" mat-button [routerLink]="['/setting']" class="setting-btn">
+        <mat-icon class="sidemenu-icon" mat-button>settings</mat-icon>
+        <span>Settings</span>
+    </button>
+
   </mat-drawer>
   <mat-drawer-content class="mat-drawer-content">
     <app-layout></app-layout>

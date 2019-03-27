@@ -1,0 +1,42 @@
+@import '../../../../styles.scss';
+
+.login {
+  background-image: linear-gradient(to right bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.6)), url('../../../../assets/bird/birds-353a.jpg');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  height: 100vh;
+  margin: -10px;
+}
+
+.login-section{
+  padding:4px;
+  transform: translate(0%, 50%);
+}
+
+.login-input-width{
+  width: 100%;
+}
+
+.login-button{
+  width:150px;
+}
+
+.login-btn-margin > * {
+  margin-right:8px;
+}
+
+.form-login>*{
+  text-align: center;
+  font-weight: 700;
+}
+
+.form-item>*{
+  margin-bottom: 16px;
+}
+
+.forgot-label{
+  padding-left:10px;
+}

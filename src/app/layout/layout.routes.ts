@@ -27,6 +27,9 @@ import { ScatterComponent } from './feature/graph/scatter/scatter.component';
 import { MixedComponent } from './feature/graph/mixed/mixed.component';
 import { PolarAreaComponent } from './feature/graph/polar-area/polar-area.component';
 import { AdminLayoutComponent } from './feature/admin-layout/admin-layout.component';
+import { SettingComponent } from './feature/setting/setting.component';
+import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
 
 export const LayoutRoutes: Routes = [
   { path: "", component: AdminLayoutComponent },
@@ -59,9 +62,8 @@ export const LayoutRoutes: Routes = [
   { path: "charts/mixed", component: MixedComponent},
   { path: "pages/404", component: FormLayoutComponent },
   { path: "pages/500", component: FormLayoutComponent },
-  { path: "pages/sign-in", component: FormLayoutComponent },
-  { path: "pages/sign-up", component: FormLayoutComponent },
   { path: "pages/forgot-password", component: FormLayoutComponent },
   { path: "pages/form-1", component: FormLayoutComponent },
-  { path: "pages/billing", component: FormLayoutComponent }
+  { path: "pages/billing", component: FormLayoutComponent },
+  { path: "setting", component: SettingComponent }
 ];
