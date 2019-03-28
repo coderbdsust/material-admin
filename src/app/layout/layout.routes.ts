@@ -14,25 +14,20 @@ import { AlertComponent } from "./feature/componants/alert/alert.component";
 import { ButtonComponent } from "./feature/componants/button/button.component";
 import { TabsComponent } from "./feature/componants/tabs/tabs.component";
 import { CardComponent } from "./feature/componants/card/card.component";
-import { ListComponent } from './feature/componants/list/list.component';
-import { ProgressBarComponent } from './feature/componants/progress-bar/progress-bar.component';
-import { ModalComponent } from './feature/componants/modal/modal.component';
-import { DateComponent } from './feature/componants/date/date.component';
-import { LineComponent } from './feature/graph/line/line.component';
-import { BarComponent } from './feature/graph/bar/bar.component';
-import { RadarComponent } from './feature/graph/radar/radar.component';
-import { DognutComponent } from './feature/graph/dognut/dognut.component';
-import { BubbleComponent } from './feature/graph/bubble/bubble.component';
-import { ScatterComponent } from './feature/graph/scatter/scatter.component';
-import { MixedComponent } from './feature/graph/mixed/mixed.component';
-import { PolarAreaComponent } from './feature/graph/polar-area/polar-area.component';
-import { AdminLayoutComponent } from './feature/admin-layout/admin-layout.component';
-import { SettingComponent } from './feature/setting/setting.component';
-import { LoginComponent } from './pages/login/login.component';
-import { SignupComponent } from './pages/signup/signup.component';
-import { ExceptionComponent } from './pages/exception/exception.component';
-import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
+import { ListComponent } from "./feature/componants/list/list.component";
+import { ProgressBarComponent } from "./feature/componants/progress-bar/progress-bar.component";
+import { ModalComponent } from "./feature/componants/modal/modal.component";
+import { DateComponent } from "./feature/componants/date/date.component";
+import { LineComponent } from "./feature/graph/line/line.component";
+import { BarComponent } from "./feature/graph/bar/bar.component";
+import { RadarComponent } from "./feature/graph/radar/radar.component";
+import { DognutComponent } from "./feature/graph/dognut/dognut.component";
+import { BubbleComponent } from "./feature/graph/bubble/bubble.component";
+import { ScatterComponent } from "./feature/graph/scatter/scatter.component";
+import { MixedComponent } from "./feature/graph/mixed/mixed.component";
+import { PolarAreaComponent } from "./feature/graph/polar-area/polar-area.component";
+import { AdminLayoutComponent } from "./feature/admin-layout/admin-layout.component";
+import { SettingComponent } from "./feature/setting/setting.component";
 
 export const LayoutRoutes: Routes = [
   { path: "", component: AdminLayoutComponent },
@@ -60,12 +55,9 @@ export const LayoutRoutes: Routes = [
   { path: "charts/radar", component: RadarComponent },
   { path: "charts/dognut", component: DognutComponent },
   { path: "charts/polar-area", component: PolarAreaComponent },
-  { path: "charts/bubble", component:  BubbleComponent},
+  { path: "charts/bubble", component: BubbleComponent },
   { path: "charts/scatter", component: ScatterComponent },
-  { path: "charts/mixed", component: MixedComponent},
-  { path: "pages/404", component: NotFoundComponent },
-  { path: "pages/500", component: ExceptionComponent },
-  { path: "pages/forgot-password", component: ForgotPasswordComponent },
+  { path: "charts/mixed", component: MixedComponent },
   { path: "pages/form-1", component: FormLayoutComponent },
   { path: "setting", component: SettingComponent }
 ];
