@@ -1,5 +1,11 @@
 @import '../../styles.scss';
 
+.wrapper-body {
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 8px;
+}
+
 .sidenav-container {
   width: 100%;
   height: 100vh;
@@ -123,11 +129,11 @@
   font-size: 22px;
 }
 
-.setting-btn{
-  background:rgba(230, 78, 32, 0.05);
-  width:100%;
-  color:rgba(255, 255, 255, 0.80);
+.setting-btn {
+  background: rgba(230, 78, 32, 0.05);
+  width: 100%;
+  color: rgba(255, 255, 255, 0.80);
   text-align: left;
-  padding-left:24px;
+  padding-left: 24px;
 
 }

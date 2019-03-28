@@ -34,6 +34,8 @@ import { SignupComponent } from "./layout/pages/signup/signup.component";
     MyMaterialModule,
     FormsModule,
     ReactiveFormsModule,
+    CommonModule,
+    MatDatepickerModule,
     LayoutModule
   ],
   providers: [
