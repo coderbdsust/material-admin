@@ -84,37 +84,9 @@
   border-radius: 0px;
 }
 
-::ng-deep .mat-panel-blue>.mat-expanded,
+::ng-deep .mat-panel-transparent>.mat-expanded,
 .mat-expansion-panel {
-  background: rgba(80, 38, 171, 0.4);
-  color: rgba(255, 255, 255, 0.80);
-  font-weight: 400;
-}
-
-::ng-deep .mat-panel-red>.mat-expanded,
-.mat-expansion-panel {
-  background: rgba(230, 78, 32, 0.1);
-  color: rgba(255, 255, 255, 0.80);
-  font-weight: 400;
-}
-
-::ng-deep .mat-panel-black>.mat-expanded,
-.mat-expansion-panel {
-  background: rgba(0, 0, 0, 0.1);
-  color: rgba(255, 255, 255, 0.80);
-  font-weight: 400;
-}
-
-::ng-deep .mat-panel-green>.mat-expanded,
-.mat-expansion-panel {
-  background: rgba(10, 134, 37, 0.1);
-  color: rgba(255, 255, 255, 0.80);
-  font-weight: 400;
-}
-
-::ng-deep .mat-panel-orange>.mat-expanded,
-.mat-expansion-panel {
-  background: rgba(231, 147, 21, 0.1);
+  background: rgba(80, 38, 171, 0.0);
   color: rgba(255, 255, 255, 0.80);
   font-weight: 400;
 }
@@ -134,7 +106,7 @@
 }
 
 .setting-btn {
-  background: rgba(230, 78, 32, 0.05);
+  background: rgba(230, 78, 32, 0.0);
   width: 100%;
   color: rgba(255, 255, 255, 0.80);
   text-align: left;
