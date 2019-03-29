@@ -135,13 +135,7 @@
       </mat-expansion-panel>
     </mat-accordion>
 
-    <button type="button" mat-button [routerLink]="['/setting']" class="setting-btn" [ngClass]="{
-      'background-red': colorPicker.getColor()==='red',
-      'background-black': colorPicker.getColor()==='black',
-      'background-blue': colorPicker.getColor()==='blue',
-      'background-green': colorPicker.getColor()==='green',
-      'background-orange': colorPicker.getColor()==='orange'
-     }" >
+    <button type="button" mat-button [routerLink]="['/setting']" class="setting-btn">
       <mat-icon class="sidemenu-icon"  mat-button>settings</mat-icon>
       <span *ngIf="sidenavService.isOpen()">Settings</span>
     </button>
