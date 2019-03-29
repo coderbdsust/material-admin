@@ -1,4 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import {
+  FormControl,
+  FormGroupDirective,
+  NgForm,
+  Validators,
+  FormBuilder,
+  FormGroup
+} from "@angular/forms";
 
 @Component({
   selector: 'app-forgot-password',
@@ -6,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./forgot-password.component.scss']
 })
 export class ForgotPasswordComponent implements OnInit {
-
+  stateCtrl = new FormControl();
   constructor() { }
 
   ngOnInit() {

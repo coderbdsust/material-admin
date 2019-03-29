@@ -6,9 +6,9 @@
      'sidenav-gradient-green': colorPicker.getColor()==='green',
      'sidenav-gradient-orange': colorPicker.getColor()==='orange'
     }" mode="side">
-    <mat-accordion (click)="sidenavService.open()">
+    <mat-accordion (click)="sidenavService.open()" >
       <mat-expansion-panel>
-        <mat-expansion-panel-header>
+        <mat-expansion-panel-header class="indicator-arrow">
           <mat-panel-title>
             <mat-icon class="sidemenu-icon" mat-button>home</mat-icon>
             <span *ngIf="sidenavService.isOpen()">Home</span>
@@ -22,7 +22,7 @@
     </mat-accordion>
     <mat-accordion (click)="sidenavService.open()">
       <mat-expansion-panel>
-        <mat-expansion-panel-header>
+        <mat-expansion-panel-header class="indicator-arrow">
           <mat-panel-title>
             <mat-icon class="sidemenu-icon" mat-button>format_shapes</mat-icon>
             <span *ngIf="sidenavService.isOpen()">Componants</span>
@@ -54,7 +54,7 @@
     </mat-accordion>
     <mat-accordion (click)="sidenavService.open()">
       <mat-expansion-panel>
-        <mat-expansion-panel-header>
+        <mat-expansion-panel-header class="indicator-arrow">
           <mat-panel-title>
             <mat-icon class="sidemenu-icon" mat-button>table</mat-icon>
             <span *ngIf="sidenavService.isOpen()">Table</span>
@@ -76,7 +76,7 @@
     </mat-accordion>
     <mat-accordion (click)="sidenavService.open()">
       <mat-expansion-panel>
-        <mat-expansion-panel-header>
+        <mat-expansion-panel-header class="indicator-arrow">
           <mat-panel-title>
             <mat-icon class="sidemenu-icon" mat-button>bar_chart</mat-icon>
             <span *ngIf="sidenavService.isOpen()">Graph</span>
@@ -102,7 +102,7 @@
     </mat-accordion>
     <mat-accordion (click)="sidenavService.open()">
       <mat-expansion-panel>
-        <mat-expansion-panel-header>
+        <mat-expansion-panel-header class="indicator-arrow">
           <mat-panel-title>
             <mat-icon class="sidemenu-icon" mat-button>image</mat-icon>
             <span *ngIf="sidenavService.isOpen()">Image</span>
@@ -114,7 +114,7 @@
     </mat-accordion>
     <mat-accordion (click)="sidenavService.open()">
       <mat-expansion-panel>
-        <mat-expansion-panel-header>
+        <mat-expansion-panel-header class="indicator-arrow">
           <mat-panel-title>
             <mat-icon class="sidemenu-icon" mat-button>pages</mat-icon>
             <span *ngIf="sidenavService.isOpen()">Pages</span>
@@ -135,9 +135,15 @@
       </mat-expansion-panel>
     </mat-accordion>
 
-    <button type="button" mat-button [routerLink]="['/setting']" class="setting-btn">
-      <mat-icon class="sidemenu-icon" mat-button>settings</mat-icon>
-      <span>Settings</span>
+    <button type="button" mat-button [routerLink]="['/setting']" class="setting-btn" [ngClass]="{
+      'background-red': colorPicker.getColor()==='red',
+      'background-black': colorPicker.getColor()==='black',
+      'background-blue': colorPicker.getColor()==='blue',
+      'background-green': colorPicker.getColor()==='green',
+      'background-orange': colorPicker.getColor()==='orange'
+     }" >
+      <mat-icon class="sidemenu-icon"  mat-button>settings</mat-icon>
+      <span *ngIf="sidenavService.isOpen()">Settings</span>
     </button>
 
   </mat-drawer>
