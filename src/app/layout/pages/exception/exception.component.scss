@@ -1,0 +1,55 @@
+.section {
+    background-image: linear-gradient(to right bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.7)), url('../../../../assets/space.png');
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+  
+  }
+  
+  .text-section{
+      position: absolute;
+      top:40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+  
+  }
+  
+  .text-primary {
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .text-header{
+      display: block;
+      font-size: 70px;
+      font-weight: 700;
+      letter-spacing: 10px;
+  }
+  .text-main {
+      display: block;
+      font-size: 60px;
+      font-weight: 500;
+  
+  }
+  
+  .text-title {
+      display: block;
+      font-size: 24px;
+      letter-spacing: 8px;
+  }
+  
+  .text-content {
+     padding-top:12px;
+     padding-bottom: 12px;
+     font-size:14px;
+     letter-spacing: 6px;
+     display: block;
+  }
+  
+  .go-back-btn{
+      display: inline-block;
+  }
+  
