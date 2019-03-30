@@ -77,7 +77,9 @@ import { SettingComponent } from './feature/setting/setting.component';
 import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ExceptionComponent } from './pages/exception/exception.component';
-
+import { UserProfileComponent } from './pages/user-profile/user-profile.component';
+import { StepperComponent } from './feature/componants/stepper/stepper.component';
+import {MatStepperModule} from '@angular/material/stepper';
 @NgModule({
   declarations: [
     SocialComponent,
@@ -117,7 +119,9 @@ import { ExceptionComponent } from './pages/exception/exception.component';
     SettingComponent,
     ForgotPasswordComponent,
     NotFoundComponent,
-    ExceptionComponent
+    ExceptionComponent,
+    UserProfileComponent,
+    StepperComponent
   ],
   imports: [
     CommonModule,
@@ -154,6 +158,7 @@ import { ExceptionComponent } from './pages/exception/exception.component';
     MatDialogModule,
     MatFileUploadModule,
     MatSnackBarModule,
+    MatStepperModule,
     ImageCropperModule,
     RouterModule,
     FormsModule,

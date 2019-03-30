@@ -19,13 +19,16 @@
         <div class="nav-item-icon">
           <mat-icon matBadge="15" matBadgeColor="warn" [matMenuTriggerFor]="menu">notifications</mat-icon>
           <mat-menu #menu="matMenu">
-              <button mat-menu-item>Item 1</button>
-              <button mat-menu-item>Item 2</button>
-            </mat-menu>
+              <button mat-menu-item>Recevied 10 Emails</button>
+              <button mat-menu-item>4 Task Pending</button>
+          </mat-menu>
         </div>
         <div class="nav-item-icon">
-          <mat-icon class="nav-item-icon" mat-button>account_circle
-          </mat-icon>
+          <mat-icon class="nav-item-icon" mat-button [matMenuTriggerFor]="menuprofile" >account_circle</mat-icon>
+          <mat-menu #menuprofile="matMenu">
+            <button mat-menu-item [routerLink]="['/pages/user-profile']">Profile</button>
+            <button mat-menu-item>Logout</button>
+          </mat-menu>
         </div>
       </div>
     </span>

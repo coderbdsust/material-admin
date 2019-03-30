@@ -28,6 +28,8 @@ import { MixedComponent } from "./feature/graph/mixed/mixed.component";
 import { PolarAreaComponent } from "./feature/graph/polar-area/polar-area.component";
 import { AdminLayoutComponent } from "./feature/admin-layout/admin-layout.component";
 import { SettingComponent } from "./feature/setting/setting.component";
+import { UserProfileComponent } from './pages/user-profile/user-profile.component';
+import { StepperComponent } from './feature/componants/stepper/stepper.component';
 
 export const LayoutRoutes: Routes = [
   { path: "", component: AdminLayoutComponent },
@@ -48,6 +50,7 @@ export const LayoutRoutes: Routes = [
   { path: "modals", component: ModalComponent },
   { path: "trees", component: TreeComponent },
   { path: "dates", component: DateComponent },
+  { path: "stepper", component: StepperComponent },
   { path: "file-upload", component: FileUploadComponent },
   { path: "image-cropper", component: ImageCropperComponent },
   { path: "charts/line", component: LineComponent },
@@ -58,6 +61,7 @@ export const LayoutRoutes: Routes = [
   { path: "charts/bubble", component: BubbleComponent },
   { path: "charts/scatter", component: ScatterComponent },
   { path: "charts/mixed", component: MixedComponent },
+  { path: "pages/user-profile", component: UserProfileComponent },
   { path: "pages/form-1", component: FormLayoutComponent },
   { path: "setting", component: SettingComponent }
 ];

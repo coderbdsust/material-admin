@@ -1,0 +1,33 @@
+.card-header-image{
+    background-image: url('../../../../assets/srk2.jpeg');
+    background-size: cover;
+    background-position: top;
+    width: 100px;
+    height: 100px;
+}
+
+.card-header-text{
+    margin-top: 5%;
+}
+
+.profile-text{
+    display: block;
+    padding-top:5%;
+}
+
+.row-container{
+    margin: 3%;
+    padding-left:6%;
+}
+
+.row-container div:first-child{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.row-container div:last-child{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
