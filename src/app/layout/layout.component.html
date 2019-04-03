@@ -3,13 +3,37 @@
 </div> -->
 
 <div class='col-container'>
-  <div class='col1' >
+  <div class='col1'>
     <app-toolbar></app-toolbar>
   </div>
   <div class="col1">
     <div class="row-container">
       <div class='col1'>
         <app-sidebar></app-sidebar>
+
+        <div class="menu-block" [ngClass]="{
+          'menu-block-hide': closeSetting===true,
+          'menu-block-open': closeSetting===false}">
+
+          <mat-card class="menu-block-card">
+            <button mat-raised-button (click)="toggle()" class="setting-btn" color="primary">
+              <mat-icon class="sidemenu-icon" mat-button>settings</mat-icon>
+            </button>
+            <div class="button-row">
+              <h4>Sidebar & Toolbar Color</h4>
+              <button mat-mini-fab class="color-red" (click)="onChooseColor('red')"
+                [ngClass]="{'selection-border': getColor()==='red'}"></button>
+              <button mat-mini-fab class="color-blue" (click)="onChooseColor('blue')"
+                [ngClass]="{'selection-border': getColor()==='blue'}"></button>
+              <button mat-mini-fab class="color-black" (click)="onChooseColor('black')"
+                [ngClass]="{'selection-border': getColor()==='black'}"></button>
+              <button mat-mini-fab class="color-green" (click)="onChooseColor('green')"
+                [ngClass]="{'selection-border': getColor()==='green'}"></button>
+              <button mat-mini-fab class="color-orange" (click)="onChooseColor('orange')"
+                [ngClass]="{'selection-border': getColor()==='orange'}"></button>
+            </div>
+          </mat-card>
+        </div>
       </div>
     </div>
   </div>
