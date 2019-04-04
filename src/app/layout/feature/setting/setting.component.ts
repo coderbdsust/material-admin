@@ -8,18 +8,10 @@ import { ColorPickerService } from 'src/app/service/color-picker.service';
 })
 export class SettingComponent implements OnInit {
 
-  constructor(private colorPicker: ColorPickerService) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
-  public onChooseColor(action){
-    console.log(action);
-    this.colorPicker.setColor(action);
-  }
-
-  public getColor(){
-    return this.colorPicker.getColor();
-  }
 
 }
