@@ -27,6 +27,7 @@
           <mat-icon class="nav-item-icon" mat-button [matMenuTriggerFor]="menuprofile" >account_circle</mat-icon>
           <mat-menu #menuprofile="matMenu">
             <button mat-menu-item [routerLink]="['/pages/user-profile']">Profile</button>
+            <button mat-menu-item [routerLink]="['/setting']">Settings</button>
             <button mat-menu-item [routerLink]="['/pages/sign-in']">Logout</button>
           </mat-menu>
         </div>
