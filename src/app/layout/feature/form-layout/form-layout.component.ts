@@ -52,6 +52,11 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   styleUrls: ["./form-layout.component.scss"]
 })
 export class FormLayoutComponent implements OnInit {
+  checked = false;
+  indeterminate = false;
+  labelPosition = 'after';
+  disabled = false;
+  
   visible = true;
   selectable = true;
   removable = true;
