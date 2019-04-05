@@ -80,6 +80,7 @@ import { ExceptionComponent } from './pages/exception/exception.component';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 import { StepperComponent } from './feature/componants/stepper/stepper.component';
 import {MatStepperModule} from '@angular/material/stepper';
+import { RegularFormComponent } from './feature/form-layout/regular-form/regular-form.component';
 @NgModule({
   declarations: [
     SocialComponent,
@@ -121,7 +122,8 @@ import {MatStepperModule} from '@angular/material/stepper';
     NotFoundComponent,
     ExceptionComponent,
     UserProfileComponent,
-    StepperComponent
+    StepperComponent,
+    RegularFormComponent
   ],
   imports: [
     CommonModule,

@@ -6,7 +6,7 @@
      'sidenav-gradient-green': colorPicker.getColor()==='green',
      'sidenav-gradient-orange': colorPicker.getColor()==='orange'
     }" mode="side">
-    <mat-accordion (click)="sidenavService.open()" >
+    <mat-accordion (click)="sidenavService.open()">
       <mat-expansion-panel>
         <mat-expansion-panel-header class="indicator-arrow">
           <mat-panel-title>
@@ -45,7 +45,7 @@
           [routerLink]="['/modals']">Modals</button>
         <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width'
           [routerLink]="['/trees']">Tree</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width'
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width'
           [routerLink]="['/stepper']">Stepper</button>
         <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/file-upload']">File
           Upload</button>
@@ -119,11 +119,21 @@
         <mat-expansion-panel-header class="indicator-arrow">
           <mat-panel-title>
             <mat-icon class="sidemenu-icon" mat-button>pages</mat-icon>
+            <span *ngIf="sidenavService.isOpen()">Forms</span>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/form-1']">Form 1</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/regular-form']">Form 2</button>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion (click)="sidenavService.open()">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header class="indicator-arrow">
+          <mat-panel-title>
+            <mat-icon class="sidemenu-icon" mat-button>pages</mat-icon>
             <span *ngIf="sidenavService.isOpen()">Pages</span>
           </mat-panel-title>
         </mat-expansion-panel-header>
-        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/form-1']">Form
-          1</button>
         <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/sign-in']">Sign
           In</button>
         <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/sign-up']">Sign
