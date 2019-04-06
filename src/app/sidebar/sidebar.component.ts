@@ -12,7 +12,7 @@ export class SidebarComponent implements OnInit {
   showFiller = false;
   @ViewChild('sideNav') public sideNav: MatDrawer;
   
-  constructor(private sidenavService: SideNavService, private colorPicker: ColorPickerService) {
+  constructor(public sidenavService: SideNavService, public colorPicker: ColorPickerService) {
   }
   
   ngOnInit() {

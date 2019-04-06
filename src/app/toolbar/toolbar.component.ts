@@ -8,7 +8,7 @@ import { ColorPickerService } from '../service/color-picker.service';
   styleUrls: ["./toolbar.component.scss", '../layout/layout.component.scss']
 })
 export class ToolbarComponent implements OnInit {
-  constructor(private sidenav: SideNavService, private colorPicker: ColorPickerService) {}
+  constructor(public sidenav: SideNavService, public colorPicker: ColorPickerService) {}
 
   ngOnInit() {}
 
