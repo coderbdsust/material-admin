@@ -1,4 +1,3 @@
-
 <mat-toolbar class='toolbar' [ngClass]="{
   'color-gradient-red': colorPicker.getColor()==='red',
   'color-gradient-black': colorPicker.getColor()==='black',
@@ -19,15 +18,14 @@
         <div class="nav-item-icon">
           <mat-icon matBadge="15" matBadgeColor="warn" [matMenuTriggerFor]="menu">notifications</mat-icon>
           <mat-menu #menu="matMenu">
-              <button mat-menu-item>Recevied 10 Emails</button>
-              <button mat-menu-item>4 Task Pending</button>
+            <button mat-menu-item>Recevied 10 Emails</button>
+            <button mat-menu-item>4 Task Pending</button>
           </mat-menu>
         </div>
         <div class="nav-item-icon">
-          <mat-icon class="nav-item-icon" mat-button [matMenuTriggerFor]="menuprofile" >account_circle</mat-icon>
+          <mat-icon class="nav-item-icon" mat-button [matMenuTriggerFor]="menuprofile">account_circle</mat-icon>
           <mat-menu #menuprofile="matMenu">
             <button mat-menu-item [routerLink]="['/pages/user-profile']">Profile</button>
-            <button mat-menu-item [routerLink]="['/setting']">Settings</button>
             <button mat-menu-item [routerLink]="['/pages/sign-in']">Logout</button>
           </mat-menu>
         </div>
@@ -35,4 +33,4 @@
     </span>
   </mat-toolbar-row>
 </mat-toolbar>
-<mat-progress-bar mode="query"  color="warn"></mat-progress-bar>
+<mat-progress-bar mode="query" color="warn"></mat-progress-bar>

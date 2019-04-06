@@ -27,10 +27,9 @@ import { ScatterComponent } from "./feature/graph/scatter/scatter.component";
 import { MixedComponent } from "./feature/graph/mixed/mixed.component";
 import { PolarAreaComponent } from "./feature/graph/polar-area/polar-area.component";
 import { AdminLayoutComponent } from "./feature/admin-layout/admin-layout.component";
-import { SettingComponent } from "./feature/setting/setting.component";
-import { UserProfileComponent } from './pages/user-profile/user-profile.component';
-import { StepperComponent } from './feature/componants/stepper/stepper.component';
-import { RegularFormComponent } from './feature/form-layout/regular-form/regular-form.component';
+import { UserProfileComponent } from "./pages/user-profile/user-profile.component";
+import { StepperComponent } from "./feature/componants/stepper/stepper.component";
+import { RegularFormComponent } from "./feature/form-layout/regular-form/regular-form.component";
 
 export const LayoutRoutes: Routes = [
   { path: "", component: AdminLayoutComponent },
@@ -64,6 +63,5 @@ export const LayoutRoutes: Routes = [
   { path: "charts/mixed", component: MixedComponent },
   { path: "pages/user-profile", component: UserProfileComponent },
   { path: "pages/form-1", component: FormLayoutComponent },
-  { path: "pages/regular-form", component: RegularFormComponent },
-  { path: "setting", component: SettingComponent }
+  { path: "pages/regular-form", component: RegularFormComponent }
 ];

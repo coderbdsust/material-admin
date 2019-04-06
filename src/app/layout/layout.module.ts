@@ -72,15 +72,14 @@ import { ChartModule } from "angular2-chartjs";
 import { PolarAreaComponent } from "./feature/graph/polar-area/polar-area.component";
 import { AdminLayoutComponent } from "./feature/admin-layout/admin-layout.component";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
-import {OverlayModule} from '@angular/cdk/overlay';
-import { SettingComponent } from './feature/setting/setting.component';
-import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
-import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { ExceptionComponent } from './pages/exception/exception.component';
-import { UserProfileComponent } from './pages/user-profile/user-profile.component';
-import { StepperComponent } from './feature/componants/stepper/stepper.component';
-import {MatStepperModule} from '@angular/material/stepper';
-import { RegularFormComponent } from './feature/form-layout/regular-form/regular-form.component';
+import { OverlayModule } from "@angular/cdk/overlay";
+import { ForgotPasswordComponent } from "./pages/forgot-password/forgot-password.component";
+import { NotFoundComponent } from "./pages/not-found/not-found.component";
+import { ExceptionComponent } from "./pages/exception/exception.component";
+import { UserProfileComponent } from "./pages/user-profile/user-profile.component";
+import { StepperComponent } from "./feature/componants/stepper/stepper.component";
+import { MatStepperModule } from "@angular/material/stepper";
+import { RegularFormComponent } from "./feature/form-layout/regular-form/regular-form.component";
 @NgModule({
   declarations: [
     SocialComponent,
@@ -117,7 +116,6 @@ import { RegularFormComponent } from './feature/form-layout/regular-form/regular
     DialogModal,
     PolarAreaComponent,
     AdminLayoutComponent,
-    SettingComponent,
     ForgotPasswordComponent,
     NotFoundComponent,
     ExceptionComponent,
