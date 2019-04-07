@@ -1,3 +1,6 @@
+$menu_height: 250px;
+$menu_width: 250px;
+
 .wrapper-body{
   margin-left: 4px;
   margin-right: 4px;
@@ -21,8 +24,8 @@ mat-drawer-content {
 .menu-block{
   position: absolute;
   top:10%;
-  height: 250px;
-  width:250px;
+  height: $menu_height;
+  width:$menu_width;
   background: none;
   z-index: 1000;
   transition: 0.5s;
@@ -32,8 +35,10 @@ mat-drawer-content {
   left:100%;
 }
 
-.menu-block-open{
-  left:85%;
+.menu-block-open {
+  left:-webkit-calc(100% - #{$menu_width});
+  left:-moz-calc(100% - #{$menu_width});
+  left:calc(100% - #{$menu_width});
 }
 
 .menu-block-card{
