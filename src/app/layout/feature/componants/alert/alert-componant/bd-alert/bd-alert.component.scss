@@ -1,9 +1,10 @@
-.margin-right{
+.margin-right {
     margin-right:10px;
 }
 
-.alert-content { 
-    display: flex; 
+.alert-content {
+    display: flex;
     justify-content: space-between;
     height: 55px;
+    cursor: pointer;
 }
