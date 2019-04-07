@@ -11,7 +11,7 @@ export class LayoutComponent implements OnInit {
   
   public closeSetting: boolean = true;
 
-  constructor(private sidenavService: SideNavService,private colorPicker: ColorPickerService) { }
+  constructor(public sidenavService: SideNavService,public colorPicker: ColorPickerService) { }
 
   public onChooseColor(action){
     console.log(action);

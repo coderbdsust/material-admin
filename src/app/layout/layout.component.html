@@ -16,7 +16,13 @@
           'menu-block-open': closeSetting===false}">
 
           <mat-card class="menu-block-card">
-            <button mat-raised-button (click)="toggle()" class="setting-btn" color="primary">
+            <button mat-raised-button (click)="toggle()" class="setting-btn" [ngClass]="{
+              'color-red': colorPicker.getColor()==='red',
+              'color-black': colorPicker.getColor()==='black',
+              'color-blue': colorPicker.getColor()==='blue',
+              'color-green': colorPicker.getColor()==='green',
+              'color-orange': colorPicker.getColor()==='orange'
+             }">
               <mat-icon class="sidemenu-icon" mat-button>settings</mat-icon>
             </button>
             <div class="button-row">
