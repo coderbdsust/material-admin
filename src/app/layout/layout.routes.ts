@@ -30,6 +30,7 @@ import { AdminLayoutComponent } from "./feature/admin-layout/admin-layout.compon
 import { UserProfileComponent } from "./pages/user-profile/user-profile.component";
 import { StepperComponent } from "./feature/componants/stepper/stepper.component";
 import { RegularFormComponent } from "./feature/form-layout/regular-form/regular-form.component";
+import { CalendarComponent } from './feature/calendar/calendar.component';
 
 export const LayoutRoutes: Routes = [
   { path: "", component: AdminLayoutComponent },
@@ -63,5 +64,6 @@ export const LayoutRoutes: Routes = [
   { path: "charts/mixed", component: MixedComponent },
   { path: "pages/user-profile", component: UserProfileComponent },
   { path: "pages/form-1", component: FormLayoutComponent },
-  { path: "pages/regular-form", component: RegularFormComponent }
+  { path: "pages/regular-form", component: RegularFormComponent },
+  { path: "pages/calendar", component: CalendarComponent }
 ];

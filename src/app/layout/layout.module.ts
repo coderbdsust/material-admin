@@ -80,6 +80,8 @@ import { UserProfileComponent } from "./pages/user-profile/user-profile.componen
 import { StepperComponent } from "./feature/componants/stepper/stepper.component";
 import { MatStepperModule } from "@angular/material/stepper";
 import { RegularFormComponent } from "./feature/form-layout/regular-form/regular-form.component";
+import { FullCalendarModule } from '@fullcalendar/angular';
+import { CalendarComponent } from './feature/calendar/calendar.component';
 @NgModule({
   declarations: [
     SocialComponent,
@@ -121,7 +123,8 @@ import { RegularFormComponent } from "./feature/form-layout/regular-form/regular
     ExceptionComponent,
     UserProfileComponent,
     StepperComponent,
-    RegularFormComponent
+    RegularFormComponent,
+    CalendarComponent
   ],
   imports: [
     CommonModule,
@@ -166,7 +169,8 @@ import { RegularFormComponent } from "./feature/form-layout/regular-form/regular
     ReactiveFormsModule,
     ChartModule,
     OverlayModule,
-    RouterModule.forChild(LayoutRoutes)
+    RouterModule.forChild(LayoutRoutes),
+    FullCalendarModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   entryComponents: [BottomSheet, DialogModal]
