@@ -136,27 +136,27 @@ body {
 }
 
 .align-start {
-  align-content: flex-start;
+  align-items: flex-start;
 }
 
 .align-center {
-  align-content: center;
+  align-items: center;
 }
 
 .align-end {
-  align-content: flex-end;
+  align-items: flex-end;
 }
 
 .align-space-between {
-  align-content: space-between;
+  align-items: space-between;
 }
 
 .align-space-around {
-  align-content: space-around;
+  align-items: space-around;
 }
 
 .align-stretch {
-  align-content: stretch;
+  align-items: stretch;
 }
 
 .row{
