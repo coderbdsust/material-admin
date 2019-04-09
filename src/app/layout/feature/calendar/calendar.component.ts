@@ -5,7 +5,7 @@ import {
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import listPlugin from '@fullcalendar/list';
-
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-calendar',
@@ -25,15 +25,15 @@ export class CalendarComponent implements OnInit {
   public eventList = [
     { 
       title: 'Disco Party', 
-      date: '2019-04-01'
+      date: moment().subtract(3, 'd').format('LLLL')
     },
     { 
       title: 'Farewell Party', 
-      date: '2019-04-06'
+      date: moment().format('LLLL')
     },
     { 
       title: 'Sleep Party', 
-      date: '2019-04-08'
+      date: moment().add(9, 'days').format('LLLL')
     }
   ];
 
