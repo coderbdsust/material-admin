@@ -14,19 +14,26 @@ import listPlugin from '@fullcalendar/list';
 })
 export class CalendarComponent implements OnInit {
 
-  calendarPlugins = [dayGridPlugin, timeGridPlugin, listPlugin];
+  public calendarPlugins = [dayGridPlugin, timeGridPlugin, listPlugin];
 
-  header = {
+  public header = {
     left: 'prev,next today',
     center: 'title',
     right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
   };
 
-  events: [
-    { id:'idx2019',
+  public eventList = [
+    { 
       title: 'Disco Party', 
-      start: '2019-04-06', 
-      end: '2019-04-08' 
+      date: '2019-04-01'
+    },
+    { 
+      title: 'Farewell Party', 
+      date: '2019-04-06'
+    },
+    { 
+      title: 'Sleep Party', 
+      date: '2019-04-08'
     }
   ];
 
