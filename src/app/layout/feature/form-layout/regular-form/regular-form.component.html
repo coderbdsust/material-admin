@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="row">
+  <div class="row content-padding">
     <div class="col-md-6 col-lg-6">
       <mat-card>
         <h1>Stacked Form</h1>
@@ -61,14 +61,14 @@
       </mat-card>
     </div>
   </div>
-  <div class="row ">
+  <div class="row content-padding">
     <div class="col-md-12">
       <mat-card>
         <h1>Form Elements</h1>
         <form class="form-horizontal">
           <div class="form-group">
             <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
-            <div class="col-sm-4">
+            <div class="col-sm-7">
               <mat-form-field class="example-full-width">
                 <mat-label></mat-label>
                 <input matInput placeholder="Name">
@@ -77,7 +77,7 @@
           </div>
           <div class="form-group">
             <label for="inputPassword3" class="col-sm-2 control-label">Address</label>
-            <div class="col-sm-4">
+            <div class="col-sm-7">
               <mat-form-field class="example-full-width">
                 <mat-label></mat-label>
                 <input matInput>
@@ -86,7 +86,7 @@
           </div>
           <div class="form-group">
             <label for="inputPassword3" class="col-sm-2 control-label">Contact No.</label>
-            <div class="col-sm-4">
+            <div class="col-sm-7">
               <mat-form-field class="example-full-width">
                 <mat-label></mat-label>
                 <input matInput>
@@ -95,13 +95,38 @@
           </div>
           <div class="form-group">
             <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
-            <div class="col-sm-4">
+            <div class="col-sm-7">
               <mat-form-field class="example-full-width">
                 <mat-label></mat-label>
                 <input matInput>
               </mat-form-field>
             </div>
           </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Designation</label>
+            <div class="col-sm-7">
+              <mat-form-field class="example-full-width">
+                <mat-label></mat-label>
+                <mat-select placeholder="Your Designation">
+                  <mat-option *ngFor="let design of designations" [value]="design.value">
+                    {{design.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+          <!-- <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Job Nature</label>
+            <div class="col-sm-4">
+              <mat-form-field class="example-full-width">
+                  <mat-radio-group formControlName="floatLabel">
+                    <mat-radio-button value="full-time">Full Time</mat-radio-button>
+                    <mat-radio-button value="part-time">Part Time</mat-radio-button>
+                    <mat-radio-button value="intern">Intern</mat-radio-button>
+                  </mat-radio-group>
+              </mat-form-field>
+            </div>
+          </div> -->
           <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
               <mat-checkbox class="example-margin">
