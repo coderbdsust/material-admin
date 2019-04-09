@@ -31,6 +31,7 @@ import { UserProfileComponent } from "./pages/user-profile/user-profile.componen
 import { StepperComponent } from "./feature/componants/stepper/stepper.component";
 import { RegularFormComponent } from "./feature/form-layout/regular-form/regular-form.component";
 import { CalendarComponent } from './feature/calendar/calendar.component';
+import { MapsComponent } from './pages/maps/maps.component';
 
 export const LayoutRoutes: Routes = [
   { path: "", component: AdminLayoutComponent },
@@ -65,5 +66,6 @@ export const LayoutRoutes: Routes = [
   { path: "pages/user-profile", component: UserProfileComponent },
   { path: "pages/form-1", component: FormLayoutComponent },
   { path: "pages/regular-form", component: RegularFormComponent },
-  { path: "pages/calendar", component: CalendarComponent }
+  { path: "pages/calendar", component: CalendarComponent },
+  { path: "pages/maps", component: MapsComponent }
 ];

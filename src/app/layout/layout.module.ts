@@ -82,6 +82,8 @@ import { MatStepperModule } from "@angular/material/stepper";
 import { RegularFormComponent } from "./feature/form-layout/regular-form/regular-form.component";
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { CalendarComponent } from './feature/calendar/calendar.component';
+import { MapsComponent } from './pages/maps/maps.component';
+import { AgmCoreModule } from '@agm/core';
 @NgModule({
   declarations: [
     SocialComponent,
@@ -124,7 +126,8 @@ import { CalendarComponent } from './feature/calendar/calendar.component';
     UserProfileComponent,
     StepperComponent,
     RegularFormComponent,
-    CalendarComponent
+    CalendarComponent,
+    MapsComponent
   ],
   imports: [
     CommonModule,
@@ -170,7 +173,10 @@ import { CalendarComponent } from './feature/calendar/calendar.component';
     ChartModule,
     OverlayModule,
     RouterModule.forChild(LayoutRoutes),
-    FullCalendarModule
+    FullCalendarModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyD43YSgOPyRtnMm9NJjIKvHT8iXDThJQyg'
+    })
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   entryComponents: [BottomSheet, DialogModal]
