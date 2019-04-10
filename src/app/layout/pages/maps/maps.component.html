@@ -14,7 +14,9 @@
   <div class="row content-padding">
     <div class="col-md-12 col-lg-12">
       <mat-card>
-        <agm-map [latitude]="lat2" [longitude]="lng2"></agm-map>
+        <agm-map [latitude]="curLat" [longitude]="curLng">
+          <agm-marker [latitude]="curLat" [longitude]="curLng"></agm-marker>
+        </agm-map>
       </mat-card>
     </div>
   </div>
