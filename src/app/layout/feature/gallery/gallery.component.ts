@@ -18,7 +18,7 @@ export class GalleryComponent implements OnInit {
     this.galleryOptions = [
       {
         width: '100%',
-        height: '800px',
+        height: '650px',
         thumbnailsColumns: 6,
         imageAnimation: NgxGalleryAnimation.Slide
       },
@@ -26,7 +26,7 @@ export class GalleryComponent implements OnInit {
         breakpoint: 800,
         width: '100%',
         height: '600px',
-        imagePercent: 80,
+        imagePercent: 100,
         thumbnailsPercent: 20,
         thumbnailsMargin: 20,
         thumbnailMargin: 20
