@@ -32,6 +32,7 @@ import { StepperComponent } from "./feature/componants/stepper/stepper.component
 import { RegularFormComponent } from "./feature/form-layout/regular-form/regular-form.component";
 import { CalendarComponent } from './feature/calendar/calendar.component';
 import { MapsComponent } from './pages/maps/maps.component';
+import { GalleryComponent } from './feature/gallery/gallery.component';
 
 export const LayoutRoutes: Routes = [
   { path: "", component: AdminLayoutComponent },
@@ -55,6 +56,7 @@ export const LayoutRoutes: Routes = [
   { path: "stepper", component: StepperComponent },
   { path: "file-upload", component: FileUploadComponent },
   { path: "image-cropper", component: ImageCropperComponent },
+  { path: "gallery", component: GalleryComponent },
   { path: "charts/line", component: LineComponent },
   { path: "charts/bar", component: BarComponent },
   { path: "charts/radar", component: RadarComponent },

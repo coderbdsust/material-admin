@@ -112,6 +112,8 @@
         </mat-expansion-panel-header>
         <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width'
           [routerLink]="['/image-cropper']">Cropper</button>
+          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width'
+          [routerLink]="['/gallery']">Gallery</button>
       </mat-expansion-panel>
     </mat-accordion>
     <mat-accordion (click)="sidenavService.open()">

@@ -84,6 +84,9 @@ import { FullCalendarModule } from '@fullcalendar/angular';
 import { CalendarComponent } from './feature/calendar/calendar.component';
 import { MapsComponent } from './pages/maps/maps.component';
 import { AgmCoreModule } from '@agm/core';
+import { GalleryComponent } from './feature/gallery/gallery.component';
+import { NgxGalleryModule } from 'ngx-gallery';
+
 @NgModule({
   declarations: [
     SocialComponent,
@@ -127,7 +130,8 @@ import { AgmCoreModule } from '@agm/core';
     StepperComponent,
     RegularFormComponent,
     CalendarComponent,
-    MapsComponent
+    MapsComponent,
+    GalleryComponent
   ],
   imports: [
     CommonModule,
@@ -174,6 +178,7 @@ import { AgmCoreModule } from '@agm/core';
     OverlayModule,
     RouterModule.forChild(LayoutRoutes),
     FullCalendarModule,
+    NgxGalleryModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyD43YSgOPyRtnMm9NJjIKvHT8iXDThJQyg'
     })
