@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
+import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryImageSize } from 'ngx-gallery';
 
 @Component({
   selector: 'app-gallery',
@@ -18,14 +18,15 @@ export class GalleryComponent implements OnInit {
     this.galleryOptions = [
       {
         width: '100%',
-        height: '650px',
+        height: '750px',
         thumbnailsColumns: 6,
-        imageAnimation: NgxGalleryAnimation.Slide
+        imagePercent: 100,
+        imageAnimation: NgxGalleryAnimation.Rotate
       },
       {
         breakpoint: 800,
         width: '100%',
-        height: '600px',
+        height: '750px',
         imagePercent: 100,
         thumbnailsPercent: 20,
         thumbnailsMargin: 20,

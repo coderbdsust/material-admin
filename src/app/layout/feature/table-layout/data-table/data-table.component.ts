@@ -12,7 +12,7 @@ import { SelectionModel } from '@angular/cdk/collections';
 export class DataTableComponent implements OnInit {
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
-  displayedColumns: string[] = ['select', 'position', 'name', 'weight', 'symbol', 'action'];
+  displayedColumns: string[] = ['select', 'position', 'name', 'weight', 'symbol', 'edit', 'remove'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
   selection = new SelectionModel<PeriodicElement>(true, []);
 
