@@ -56,7 +56,8 @@ export class DataTableComponent implements OnInit {
   }
 
   editItem(row) {
-    this.openDialog(row);
+    let clone = Object.assign({}, row);
+    this.openDialog(clone);
   }
 
   removeItem(row) {
