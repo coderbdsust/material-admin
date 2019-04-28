@@ -32,7 +32,7 @@ import { MatSlideToggleModule } from "@angular/material/slide-toggle";
 import { MatTreeModule } from "@angular/material/tree";
 import { MatTableModule } from "@angular/material/table";
 import { MatPaginatorModule } from "@angular/material/paginator";
-import { DataTableComponent } from "./feature/table-layout/data-table/data-table.component";
+import { DataTableComponent, DataTableItemAddModal } from "./feature/table-layout/data-table/data-table.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { MatTabsModule } from "@angular/material/tabs";
@@ -87,6 +87,7 @@ import { AgmCoreModule } from '@agm/core';
 import { GalleryComponent } from './feature/gallery/gallery.component';
 import { NgxGalleryModule } from 'ngx-gallery';
 
+
 @NgModule({
   declarations: [
     SocialComponent,
@@ -121,6 +122,7 @@ import { NgxGalleryModule } from 'ngx-gallery';
     BubbleComponent,
     BottomSheet,
     DialogModal,
+    DataTableItemAddModal,
     PolarAreaComponent,
     AdminLayoutComponent,
     ForgotPasswordComponent,
@@ -184,6 +186,6 @@ import { NgxGalleryModule } from 'ngx-gallery';
     })
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  entryComponents: [BottomSheet, DialogModal]
+  entryComponents: [BottomSheet, DialogModal, DataTableItemAddModal]
 })
 export class LayoutModule {}

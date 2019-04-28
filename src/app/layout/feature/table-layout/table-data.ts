@@ -5,6 +5,13 @@ export interface PeriodicElement {
   symbol: string;
 }
 
+export class PElement implements PeriodicElement{
+  name: string;
+  position: number;
+  weight: number;
+  symbol: string;
+}
+
 export const ELEMENT_DATA: PeriodicElement[] = [
   {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
   {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
