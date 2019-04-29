@@ -61,7 +61,10 @@ export class DataTableComponent implements OnInit {
   }
 
   removeItem(row) {
-    this.removeRow(row);
+    const yes = confirm("Are you sure to remove this item?");
+    if(yes){
+      this.removeRow(row);
+    }
   }
 
   openDialog(row): void {

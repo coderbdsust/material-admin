@@ -1,3 +1,4 @@
+
 table {
   width: 100%;
 }
@@ -22,4 +23,8 @@ table {
 .btn-padding > * {
   padding:5px !important;
   margin:5px !important;
+}
+
+mat-icon:hover{
+  color: royalblue;
 }
