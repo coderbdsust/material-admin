@@ -49,7 +49,7 @@ import { ImageCropperComponent } from "./feature/image-cropper/image-cropper.com
 import { ImageCropperModule } from "ngx-image-cropper";
 import { FileDropModule } from "ngx-file-drop";
 import { AlertComponent } from "./feature/componants/alert/alert.component";
-import { BdAlertComponent } from "./feature/componants/alert/alert-componant/bd-alert/bd-alert.component";
+import { BdAlertComponent } from "./feature/componants/alert/bd-alert/bd-alert.component";
 import { ButtonComponent } from "./feature/componants/button/button.component";
 import { TabsComponent } from "./feature/componants/tabs/tabs.component";
 import { CardComponent } from "./feature/componants/card/card.component";
@@ -71,11 +71,7 @@ import { BubbleComponent } from "./feature/graph/bubble/bubble.component";
 import { ChartModule } from "angular2-chartjs";
 import { PolarAreaComponent } from "./feature/graph/polar-area/polar-area.component";
 import { AdminLayoutComponent } from "./feature/admin-layout/admin-layout.component";
-import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { OverlayModule } from "@angular/cdk/overlay";
-import { ForgotPasswordComponent } from "./pages/forgot-password/forgot-password.component";
-import { NotFoundComponent } from "./pages/not-found/not-found.component";
-import { ExceptionComponent } from "./pages/exception/exception.component";
 import { UserProfileComponent } from "./pages/user-profile/user-profile.component";
 import { StepperComponent } from "./feature/componants/stepper/stepper.component";
 import { MatStepperModule } from "@angular/material/stepper";
@@ -103,8 +99,8 @@ import { NgxGalleryModule } from 'ngx-gallery';
     TreeComponent,
     FileUploadComponent,
     ImageCropperComponent,
-    AlertComponent,
     BdAlertComponent,
+    AlertComponent,
     TreeComponent,
     ButtonComponent,
     TabsComponent,
@@ -125,9 +121,6 @@ import { NgxGalleryModule } from 'ngx-gallery';
     DataTableItemAddModal,
     PolarAreaComponent,
     AdminLayoutComponent,
-    ForgotPasswordComponent,
-    NotFoundComponent,
-    ExceptionComponent,
     UserProfileComponent,
     StepperComponent,
     RegularFormComponent,
@@ -169,7 +162,6 @@ import { NgxGalleryModule } from 'ngx-gallery';
     MatBottomSheetModule,
     MatDialogModule,
     MatFileUploadModule,
-    MatSnackBarModule,
     MatStepperModule,
     ImageCropperModule,
     RouterModule,

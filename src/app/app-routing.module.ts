@@ -3,7 +3,6 @@ import { CommonModule } from "@angular/common";
 import { BrowserModule } from "@angular/platform-browser";
 import { Routes, RouterModule } from "@angular/router";
 import { LayoutComponent } from "./layout/layout.component";
-import { LayoutModule } from "./layout/layout.module";
 import { LoginComponent } from "./layout/pages/login/login.component";
 import { SignupComponent } from "./layout/pages/signup/signup.component";
 import { ExceptionComponent } from "./layout/pages/exception/exception.component";
@@ -27,7 +26,7 @@ const routes: Routes = [
     children: [
       {
         path: "",
-        loadChildren: () => LayoutModule
+        loadChildren: './layout/layout.module#LayoutModule'
       }
     ]
   }

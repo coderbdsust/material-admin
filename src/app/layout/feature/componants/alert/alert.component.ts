@@ -13,9 +13,9 @@ import { AlertService } from "src/app/service/alert.service";
 })
 export class AlertComponent implements OnInit {
   constructor(
-    private snackBar: MatSnackBar,
+    private matSnackBar: MatSnackBar,
     private alertService: AlertService
-  ) {}
+  ) { }
 
   openSnackBar(action: string, duration: number) {
     this.alertService.setDuration(duration);
@@ -44,5 +44,5 @@ export class AlertComponent implements OnInit {
     }
   }
 
-  ngOnInit() {}
+  ngOnInit() { }
 }

@@ -6,7 +6,6 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { MyMaterialModule } from "./my-material.module";
 import { CommonModule } from "@angular/common";
-import { LayoutModule } from "./layout/layout.module";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { SidebarComponent } from "./sidebar/sidebar.component";
 import { ToolbarComponent } from "./toolbar/toolbar.component";
@@ -16,6 +15,10 @@ import { MatDatepickerModule } from "@angular/material";
 import { AlertService } from "./service/alert.service";
 import { LoginComponent } from "./layout/pages/login/login.component";
 import { SignupComponent } from "./layout/pages/signup/signup.component";
+import { ForgotPasswordComponent } from "./layout/pages/forgot-password/forgot-password.component";
+import { NotFoundComponent } from "./layout/pages/not-found/not-found.component";
+import { ExceptionComponent } from "./layout/pages/exception/exception.component";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { SignupComponent } from "./layout/pages/signup/signup.component";
     SidebarComponent,
     ToolbarComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    ForgotPasswordComponent,
+    NotFoundComponent,
+    ExceptionComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +42,7 @@ import { SignupComponent } from "./layout/pages/signup/signup.component";
     ReactiveFormsModule,
     CommonModule,
     MatDatepickerModule,
-    LayoutModule
+    MatSnackBarModule
   ],
   providers: [
     SideNavService,

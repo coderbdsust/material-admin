@@ -41,48 +41,48 @@ export class GalleryComponent implements OnInit {
 
     this.galleryImages = [
       {
-        small: '../../../../assets/bird/birds-291a.jpg',
-        medium: '../../../../assets/bird/birds-291a.jpg',
-        big: '../../../../assets/bird/birds-291a.jpg'
+        small: 'assets/bird/birds-291a.jpg',
+        medium: 'assets/bird/birds-291a.jpg',
+        big: 'assets/bird/birds-291a.jpg'
       },
       {
-        small: '../../../../assets/bird/birds-327a.jpg',
-        medium: '../../../../assets/bird/birds-327a.jpg',
-        big: '../../../../assets/bird/birds-327a.jpg'
+        small: 'assets/bird/birds-327a.jpg',
+        medium: 'assets/bird/birds-327a.jpg',
+        big: 'assets/bird/birds-327a.jpg'
       },
       {
-        small: '../../../../assets/bird/birds-351a.jpg',
-        medium: '../../../../assets/bird/birds-351a.jpg',
-        big: '../../../../assets/bird/birds-351a.jpg'
+        small: 'assets/bird/birds-351a.jpg',
+        medium: 'assets/bird/birds-351a.jpg',
+        big: 'assets/bird/birds-351a.jpg'
       },
       {
-        small: '../../../../assets/bird/birds-352a.jpg',
-        medium: '../../../../assets/bird/birds-352a.jpg',
-        big: '../../../../assets/bird/birds-352a.jpg'
+        small: 'assets/bird/birds-352a.jpg',
+        medium: 'assets/bird/birds-352a.jpg',
+        big: 'assets/bird/birds-352a.jpg'
       },
       {
-        small: '../../../../assets/bird/birds-353a.jpg',
-        medium: '../../../../assets/bird/birds-353a.jpg',
-        big: '../../../../assets/bird/birds-353a.jpg'
+        small: 'assets/bird/birds-353a.jpg',
+        medium: 'assets/bird/birds-353a.jpg',
+        big: 'assets/bird/birds-353a.jpg'
       },
       {
-        small: '../../../../assets/bird/birds-356a.jpg',
-        medium: '../../../../assets/bird/birds-356a.jpg',
-        big: '../../../../assets/bird/birds-356a.jpg'
+        small: 'assets/bird/birds-356a.jpg',
+        medium: 'assets/bird/birds-356a.jpg',
+        big: 'assets/bird/birds-356a.jpg'
       },
       {
-        small: '../../../../assets/bird/birds-361a.jpg',
-        medium: '../../../../assets/bird/birds-361a.jpg',
-        big: '../../../../assets/bird/birds-361a.jpg'
+        small: 'assets/bird/birds-361a.jpg',
+        medium: 'assets/bird/birds-361a.jpg',
+        big: 'assets/bird/birds-361a.jpg'
       },
       {
-        small: '../../../../assets/bird/birds-363a.jpg',
-        medium: '../../../../assets/bird/birds-363a.jpg',
-        big: '../../../../assets/bird/birds-363a.jpg'
+        small: 'assets/bird/birds-363a.jpg',
+        medium: 'assets/bird/birds-363a.jpg',
+        big: 'assets/bird/birds-363a.jpg'
       },      {
-        small: '../../../../assets/bird/butterfly-49a.jpg',
-        medium: '../../../../assets/bird/butterfly-49a.jpg',
-        big: '../../../../assets/bird/butterfly-49a.jpg'
+        small: 'assets/bird/butterfly-49a.jpg',
+        medium: 'assets/bird/butterfly-49a.jpg',
+        big: 'assets/bird/butterfly-49a.jpg'
       }
     ];
   }
