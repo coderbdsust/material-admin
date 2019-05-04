@@ -67,6 +67,10 @@ export class DataTableComponent implements OnInit {
     }
   }
 
+  createDialog():void{
+    this.openDialog(null);
+  }
+
   openDialog(row): void {
     let data:any;
     if(!row){
