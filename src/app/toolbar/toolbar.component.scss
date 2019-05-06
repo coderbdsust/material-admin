@@ -1,5 +1,9 @@
 @import '../../styles.scss';
 
+.toolbar-shadow {
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+
 .toggle-menu {
   cursor: pointer;
   margin-right:6px;
