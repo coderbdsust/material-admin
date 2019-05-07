@@ -27,11 +27,11 @@ import { ScatterComponent } from "./feature/graph/scatter/scatter.component";
 import { MixedComponent } from "./feature/graph/mixed/mixed.component";
 import { PolarAreaComponent } from "./feature/graph/polar-area/polar-area.component";
 import { AdminLayoutComponent } from "./feature/admin-layout/admin-layout.component";
-import { UserProfileComponent } from "./pages/user-profile/user-profile.component";
+import { UserProfileComponent } from "./feature/user-profile/user-profile.component";
 import { StepperComponent } from "./feature/componants/stepper/stepper.component";
 import { RegularFormComponent } from "./feature/form-layout/regular-form/regular-form.component";
 import { CalendarComponent } from './feature/calendar/calendar.component';
-import { MapsComponent } from './pages/maps/maps.component';
+import { MapsComponent } from './feature/maps/maps.component';
 import { GalleryComponent } from './feature/gallery/gallery.component';
 
 export const LayoutRoutes: Routes = [
