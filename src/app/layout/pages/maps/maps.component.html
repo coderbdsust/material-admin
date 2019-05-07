@@ -1,19 +1,19 @@
 <div class="container-fluid">
   <div class="row content-padding">
     <div class="col-md-6 col-lg-6">
-      <mat-card>
+      <mat-card class="mat-elevation-z4">
         <agm-map [latitude]="lat1" [longitude]="lng1"></agm-map>
       </mat-card>
     </div>
     <div class="col-md-6 col-lg-6">
-      <mat-card>
+      <mat-card class="mat-elevation-z4">
         <agm-map [latitude]="lat2" [longitude]="lng2"></agm-map>
       </mat-card>
     </div>
   </div>
   <div class="row content-padding">
     <div class="col-md-12 col-lg-12">
-      <mat-card>
+      <mat-card class="mat-elevation-z4">
         <agm-map [latitude]="curLat" [longitude]="curLng">
           <agm-marker [latitude]="curLat" [longitude]="curLng"></agm-marker>
         </agm-map>
