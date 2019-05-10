@@ -34,6 +34,11 @@
               <button mat-mini-fab class="color-orange" (click)="onChooseColor('orange')"
                 [ngClass]="{'selection-border': getColor()==='orange'}"></button>
             </div>
+            <div class="button-row">
+              <h4>Query Loader</h4>
+                <mat-slide-toggle #queryToggle>
+                </mat-slide-toggle>
+            </div>
           </mat-card>
         </div>
       </div>

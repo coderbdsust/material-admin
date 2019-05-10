@@ -1,6 +1,11 @@
-import { Component, OnInit, NgModule} from '@angular/core';
+import { Component, OnInit, NgModule, ViewChild} from '@angular/core';
+import { MatSlideToggle } from "@angular/material";
+
 import { SideNavService } from '../service/side-nav.service';
 import { ColorPickerService } from 'src/app/service/color-picker.service';
+import {
+  FormControl,
+} from "@angular/forms";
 
 @Component({
   selector: 'app-layout',
@@ -10,11 +15,14 @@ import { ColorPickerService } from 'src/app/service/color-picker.service';
 export class LayoutComponent implements OnInit {
   
   public closeSetting: boolean = true;
-
+  // color = 'accent';
+  // checked = false;
+  // public stateCtrl = new FormControl();
+  @ViewChild('queryToggle') ref: MatSlideToggle;
   constructor(public sidenavService: SideNavService,public colorPicker: ColorPickerService) { }
+  
 
   public onChooseColor(action){
-    console.log(action);
     this.colorPicker.setColor(action);
   }
 
@@ -23,11 +31,13 @@ export class LayoutComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.sidenavService.setQueryToggle(this.ref);
+
   }
 
   toggle(){
     console.log('toggle menu');
-    this.closeSetting=!this.closeSetting;
+    this.closeSetting = !this.closeSetting;
   }
-
+  
 }

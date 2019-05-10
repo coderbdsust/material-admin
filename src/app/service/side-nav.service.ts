@@ -1,11 +1,12 @@
 import { Injectable } from "@angular/core";
-import { MatDrawer } from "@angular/material";
+import { MatDrawer, MatSlideToggle } from "@angular/material";
 
 @Injectable()
 export class SideNavService {
-  constructor() {}
+  constructor() { }
 
   private sidenav: MatDrawer;
+  private matToggleElement: MatSlideToggle;
   private fullOpenSidebar: boolean = true;
 
   public setSidenav(sidenav: MatDrawer) {
@@ -13,23 +14,30 @@ export class SideNavService {
   }
 
   public open() {
-    this.fullOpenSidebar=true;
-    // return this.sidenav.open();
+    this.fullOpenSidebar = true;
   }
 
   public close() {
-    this.fullOpenSidebar=false;
-    // return this.sidenav.close();
+    this.fullOpenSidebar = false;
   }
 
   public isOpen(): boolean {
     return this.fullOpenSidebar;
-    // return this.sidenav.opened;
   }
 
   public toggle(): void {
-    this.fullOpenSidebar=!this.fullOpenSidebar;
-    // this.sidenav.toggle();
+    this.fullOpenSidebar = !this.fullOpenSidebar;
   }
-  
+
+  setQueryToggle(ref:MatSlideToggle){
+    this.matToggleElement = ref;
+  }
+  public getQueryMode(): string {
+    if (this.matToggleElement.checked === false) {
+      return "normal";
+    } else {
+      return "query";
+    }
+  }
+
 }
