@@ -7,7 +7,7 @@ import { defaultComparator } from '@angular/common/src/pipes/keyvalue_pipe';
 })
 export class ColorPickerService {
 
-  private defaultColor = 'red';
+  private defaultColor = 'white';
   private progressBarColor = 'warn';
 
   constructor() { }
