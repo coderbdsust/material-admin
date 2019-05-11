@@ -1,10 +1,13 @@
-<mat-toolbar class='toolbar toolbar-shadow toolbar-white' [ngClass]="{
+<mat-toolbar class='toolbar toolbar-shadow'   
+[ngClass]="{
   'color-gradient-red': colorPicker.getColor()==='red',
   'color-gradient-black': colorPicker.getColor()==='black',
   'color-gradient-blue': colorPicker.getColor()==='blue',
   'color-gradient-green': colorPicker.getColor()==='green',
   'color-gradient-orange': colorPicker.getColor()==='orange',
-  'color-gradient-white': colorPicker.getColor()==='white'
+  'color-gradient-white': colorPicker.getColor()==='white',
+  'toolbar-black' : colorPicker.getColor() === 'white',
+  'toolbar-white' : colorPicker.getColor() !== 'white'
 }">
   <mat-toolbar-row class='row-container'>
     <mat-icon class="toggle-menu" mat-button (click)="toggleRightSidenav()">menu</mat-icon>
