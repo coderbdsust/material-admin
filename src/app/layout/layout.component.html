@@ -17,7 +17,8 @@
               'color-black': colorPicker.getColor()==='black',
               'color-blue': colorPicker.getColor()==='blue',
               'color-green': colorPicker.getColor()==='green',
-              'color-orange': colorPicker.getColor()==='orange'
+              'color-orange': colorPicker.getColor()==='orange',
+              'color-white': colorPicker.getColor()==='white'
              }">
               <mat-icon class="sidemenu-icon" mat-button>settings</mat-icon>
             </button>
@@ -33,6 +34,8 @@
                 [ngClass]="{'selection-border': getColor()==='green'}"></button>
               <button mat-mini-fab class="color-orange" (click)="onChooseColor('orange')"
                 [ngClass]="{'selection-border': getColor()==='orange'}"></button>
+              <button mat-mini-fab class="color-white" (click)="onChooseColor('white')"
+                [ngClass]="{'selection-border': getColor()==='white'}"></button>
             </div>
             <div class="button-row">
               <h4>Query Loader</h4>

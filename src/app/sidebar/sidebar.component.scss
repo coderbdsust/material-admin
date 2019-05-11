@@ -13,7 +13,18 @@
 .sidenav-container {
   width: 100%;
   height: 100vh;
-  background: white; 
+}
+
+.sidenav-white > * {
+  color: rgba(255, 255, 255, 0.75);
+  font-family:"Roboto","Helvetica","Arial","sans-serif";
+  font-weight: 100;
+}
+
+.sidenav-black > * {
+  color: rgba(60, 72, 80, 0.75);
+  font-family:"Roboto","Helvetica","Arial","sans-serif";
+  font-weight: 100;
 }
 
 .sidenav {
@@ -73,6 +84,15 @@
   background-position: top;
 }
 
+.sidenav-gradient-white {
+  background-image: linear-gradient(to right bottom,
+    $color-white-alpha,
+    $color-white-beta),
+    url('../../assets/sidebar-1.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
 .mat-list-icon {
   color: rgba(0, 0, 0, 0.54);
 }
@@ -88,31 +108,53 @@
   border-radius: 0px;
 }
 
+// ::ng-deep .mat-panel-transparent>.mat-expanded,
+// .mat-expansion-panel {
+//   background: rgba(80, 38, 171, 0.0);
+//   color: rgba(255, 255, 255, 0.80);
+//   font-weight: 400;
+// }
+
+// .mat-expansion-panel-header-title {
+//   color: rgba(255, 255, 255, 0.80);
+//   font-weight: 400;
+// }
+
+// ::ng-deep .indicator-arrow > .mat-expansion-indicator:after {
+//   color: rgba(255, 255, 255, 0.80);
+// }
+
+
+
 ::ng-deep .mat-panel-transparent>.mat-expanded,
 .mat-expansion-panel {
-  background: rgba(80, 38, 171, 0.0);
-  color: rgba(255, 255, 255, 0.80);
-  font-weight: 400;
+  // background: rgba(80, 38, 171, 0.0);
+  // color: rgba(60, 72, 80, 0.8);
+  background: inherit;
+  color:inherit;
+  font-weight: 50;
 }
 
 .mat-expansion-panel-header-title {
-  color: rgba(255, 255, 255, 0.80);
-  font-weight: 400;
+  // color: rgba(60, 72, 80, 0.8);
+  color:inherit;
+  font-weight: 50;
 }
 
 ::ng-deep .indicator-arrow > .mat-expansion-indicator:after {
-  color: rgba(255, 255, 255, 0.80);
+  // color: rgba(60, 72, 80, 0.8);
+  color: inherit;
 }
 
 .sidemenu-icon {
   padding-right: 8px;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .setting-btn {
   background: rgba(230, 78, 32, 0.0);
   width: 100%;
-  color: rgba(255, 255, 255, 0.80);
+  color: rgba(255, 255, 255, 0.80) ;
   text-align: left;
   padding-left: 24px;
 

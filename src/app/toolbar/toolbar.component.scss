@@ -33,9 +33,18 @@
 
 .toolbar{
   width: 100% !important;
-  color:rgba(255, 255, 255, 0.90);
+  color:rgba(60, 72, 80, 0.8);
 }
 
+.toolbar-white>*{
+
+  color: rgba(255, 255, 255, 0.75);
+
+}
+
+.toolbar-black>*{
+  color: rgba(60, 72, 80, 0.75);
+}
 .color-gradient-blue{
   background-image: linear-gradient(
     to left bottom,
@@ -81,6 +90,16 @@
     to left bottom,
     $color-orange-alpha,
     $color-orange-beta
+   ), url('../../assets/toolbar-1.jpg');
+   background-size: cover;
+   background-position: top;
+}
+
+.color-gradient-white{
+  background-image: linear-gradient(
+    to left bottom,
+    $color-white-alpha,
+    $color-white-beta
    ), url('../../assets/toolbar-1.jpg');
    background-size: cover;
    background-position: top;

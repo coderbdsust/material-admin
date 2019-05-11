@@ -38,6 +38,9 @@ export class ColorPickerService {
       case 'orange':
         this.progressBarColor = 'accent';
         break;
+      case 'white':
+        this.progressBarColor = 'primary';
+        break;
       default:
         this.progressBarColor = 'basic';
     }
