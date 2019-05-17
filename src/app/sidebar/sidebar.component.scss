@@ -144,3 +144,16 @@ button:hover{
   background: white;
   color: black;
 }
+
+.doc-btn{
+  text-decoration: none;
+  background: white;
+  position: absolute;
+  display: inline-block;
+  bottom: 100px;
+}
+
+.doc-btn:hover{
+  background: red;
+  color: white;
+}
