@@ -145,7 +145,7 @@ button:hover{
   color: black;
 }
 
-.doc-btn{
+.doc-btn-white{
   text-decoration: none;
   background: white;
   position: absolute;
@@ -153,7 +153,20 @@ button:hover{
   bottom: 100px;
 }
 
-.doc-btn:hover{
+.doc-btn-gen{
+  text-decoration: none;
+  background: black;
+  position: absolute;
+  display: inline-block;
+  bottom: 100px;
+}
+
+.doc-btn-white:hover{
   background: red;
   color: white;
+}
+
+.doc-btn-gen:hover{
+  background: white;
+  color: black;
 }

@@ -167,7 +167,13 @@
       </mat-expansion-panel>
     </mat-accordion>
 
-    <a *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width doc-btn' href="http://167.99.201.191:8080/nxt2solvedocs/" target="_blank">Documentation</a>
+    <a *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width'
+    
+    [ngClass]="{
+      'doc-btn-white' : colorPicker.getColor() === 'white',
+      'doc-btn-gen' : colorPicker.getColor() !== 'white'}"
+
+    href="http://167.99.201.191:8080/nxt2solvedocs/" target="_blank">Documentation</a>
 
 
   </mat-drawer>
