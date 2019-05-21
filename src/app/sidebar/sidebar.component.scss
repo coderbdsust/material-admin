@@ -140,10 +140,10 @@
 
 }
 
-button:hover{
-  background: white;
-  color: black;
-}
+// button:hover{
+//   background: white;
+//   color: black;
+// }
 
 .doc-btn-white{
   text-decoration: none;
@@ -169,4 +169,10 @@ button:hover{
 .doc-btn-gen:hover{
   background: white;
   color: black;
+}
+
+.active{
+  background:rgba(255, 255, 255, 0.959);
+  color: black;
+  box-shadow: 0 5px 5px -10px rgba(0,0,0,.60), 0 4px 5px 0 rgba(0,0,0,.14), 0 9px 8px -4px rgba(0,0,0,.22);
 }
