@@ -1,5 +1,6 @@
 @import '../../styles.scss';
 
+
 .sidebar-shadow {
   box-shadow: 0 16px 40px -10px rgba(0,0,0,.60), 0 4px 25px 0 rgba(0,0,0,.14), 0 9px 12px -4px rgba(0,0,0,.22);
 }
@@ -28,8 +29,7 @@
 }
 
 .sidenav {
-  max-width: 250px;
-  overflow: scroll;
+  max-width: $side-nav-width;
 }
 
 .sidenav-list {

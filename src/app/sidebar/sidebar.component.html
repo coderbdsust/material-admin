@@ -11,10 +11,10 @@
         'sidenav-gradient-orange': colorPicker.getColor()==='orange',
         'sidenav-gradient-white': colorPicker.getColor()==='white'
       }" mode="side">
-    <perfect-scrollbar style="overflow: scroll;">
+    <perfect-scrollbar style="overflow: hidden;">
       <mat-accordion (click)="sidenavService.open()">
-        <mat-expansion-panel>
-          <mat-expansion-panel-header class="indicator-arrow ">
+        <mat-expansion-panel >
+          <mat-expansion-panel-header class="indicator-arrow">
             <mat-panel-title>
               <mat-icon class="sidemenu-icon" mat-button>home</mat-icon>
               <span *ngIf="sidenavService.isOpen()">Home</span>
