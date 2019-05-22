@@ -19,6 +19,13 @@ import { ForgotPasswordComponent } from "./layout/pages/forgot-password/forgot-p
 import { NotFoundComponent } from "./layout/pages/not-found/not-found.component";
 import { ExceptionComponent } from "./layout/pages/exception/exception.component";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
+import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
+import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+
+const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
+  suppressScrollX: true
+};
 
 @NgModule({
   declarations: [
@@ -42,13 +49,18 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
     ReactiveFormsModule,
     CommonModule,
     MatDatepickerModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    PerfectScrollbarModule
   ],
   providers: [
     SideNavService,
     DynamicDatabase,
     MatDatepickerModule,
-    AlertService
+    AlertService,
+    {
+      provide: PERFECT_SCROLLBAR_CONFIG,
+      useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
+    }
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

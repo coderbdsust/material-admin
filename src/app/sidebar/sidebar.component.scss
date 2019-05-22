@@ -32,7 +32,6 @@
   overflow: scroll;
 }
 
-
 .sidenav-list {
   display: flex;
   flex-wrap: nowrap;
@@ -108,7 +107,6 @@
   border-radius: 0px;
 }
 
-
 ::ng-deep .mat-panel-transparent>.mat-expanded,
 .mat-expansion-panel {
   background: inherit;
@@ -122,7 +120,7 @@
   font-weight: 100;
 }
 
-::ng-deep .indicator-arrow > .mat-expansion-indicator:after {
+::ng-deep .indicator-arrow>.mat-expansion-indicator:after {
   color: inherit;
 }
 
@@ -138,37 +136,6 @@
   text-align: left;
   padding-left: 24px;
 
-}
-
-// button:hover{
-//   background: white;
-//   color: black;
-// }
-
-.doc-btn-white{
-  text-decoration: none;
-  background: white;
-  position: absolute;
-  display: inline-block;
-  bottom: 100px;
-}
-
-.doc-btn-gen{
-  text-decoration: none;
-  background: black;
-  position: absolute;
-  display: inline-block;
-  bottom: 100px;
-}
-
-.doc-btn-white:hover{
-  background: red;
-  color: white;
-}
-
-.doc-btn-gen:hover{
-  background: white;
-  color: black;
 }
 
 .active{

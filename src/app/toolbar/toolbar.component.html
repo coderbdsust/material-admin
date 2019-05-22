@@ -1,5 +1,4 @@
-<mat-toolbar class='toolbar toolbar-shadow'   
-[ngClass]="{
+<mat-toolbar class='toolbar toolbar-shadow' [ngClass]="{
   'color-gradient-red': colorPicker.getColor()==='red',
   'color-gradient-black': colorPicker.getColor()==='black',
   'color-gradient-blue': colorPicker.getColor()==='blue',
@@ -19,6 +18,11 @@
     </mat-form-field>
     <span class='col4'>
       <div class="nav-items">
+        <div class="nav-item-icon">
+          <a href="http://docs.theme-lands.com" target="_blank">
+            <mat-icon>event_note</mat-icon>
+          </a>
+        </div>
         <div class="nav-item-icon">
           <mat-icon matBadge="15" matBadgeColor="warn" [matMenuTriggerFor]="menu">notifications</mat-icon>
           <mat-menu #menu="matMenu">
