@@ -15,11 +15,8 @@ import {
 export class LayoutComponent implements OnInit {
   
   public closeSetting: boolean = true;
-  // color = 'accent';
-  // checked = false;
-  // public stateCtrl = new FormControl();
   @ViewChild('queryToggle') ref: MatSlideToggle;
-  constructor(public sidenavService: SideNavService,public colorPicker: ColorPickerService) { }
+  constructor(public sidenavService: SideNavService, public colorPicker: ColorPickerService) { }
   
 
   public onChooseColor(action){
@@ -36,7 +33,6 @@ export class LayoutComponent implements OnInit {
   }
 
   toggle(){
-    console.log('toggle menu');
     this.closeSetting = !this.closeSetting;
   }
   

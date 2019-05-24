@@ -1,5 +1,6 @@
-<div class="row-container content-margin">
-  <div class="col1">
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-md-6">
     <mat-card>
       <label for="singleFile">Upload file</label>
       <input id="singleFile" type="file" [fileUploadInputFor]="fileUploadQueue" />
@@ -9,7 +10,7 @@
       </mat-file-upload-queue>
     </mat-card>
   </div>
-  <div class="col1">
+  <div class="col-md-6">
     <mat-card>
       <div>
         <file-drop dropZoneLabel="Drop files here" (onFileDrop)="dropped($event)" (onFileOver)="fileOver($event)"
@@ -33,4 +34,5 @@
       </div>
     </mat-card>
   </div>
+</div>
 </div>

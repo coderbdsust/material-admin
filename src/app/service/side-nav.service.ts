@@ -33,7 +33,7 @@ export class SideNavService {
     this.matToggleElement = ref;
   }
   public getQueryMode(): string {
-    if (this.matToggleElement.checked === false) {
+    if (this.matToggleElement && this.matToggleElement.checked === false) {
       return "normal";
     } else {
       return "query";

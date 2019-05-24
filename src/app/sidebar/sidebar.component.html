@@ -13,7 +13,7 @@
       }" mode="side">
     <perfect-scrollbar style="overflow: hidden;">
       <mat-accordion (click)="sidenavService.open()">
-        <mat-expansion-panel >
+        <mat-expansion-panel>
           <mat-expansion-panel-header class="indicator-arrow">
             <mat-panel-title>
               <mat-icon class="sidemenu-icon" mat-button>home</mat-icon>
@@ -70,6 +70,8 @@
               <span *ngIf="sidenavService.isOpen()">Table</span>
             </mat-panel-title>
           </mat-expansion-panel-header>
+          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/table/data-table']"
+          routerLinkActive="active">Data Table</button>
           <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/table/filter']"
             routerLinkActive="active">Filtered Table</button>
           <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/table/paginated']"
@@ -80,8 +82,6 @@
             routerLinkActive="active">Sorted Table</button>
           <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/table/sticky']"
             routerLinkActive="active">Sticky Table</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/table/data-table']"
-            routerLinkActive="active">Data Table</button>
         </mat-expansion-panel>
       </mat-accordion>
       <mat-accordion (click)="sidenavService.open()">
@@ -174,13 +174,15 @@
             routerLinkActive="active">AGM</button>
         </mat-expansion-panel>
       </mat-accordion>
-      
+
     </perfect-scrollbar>
   </mat-drawer>
 
   <mat-drawer-content class="mat-drawer-content">
-    <div class="wrapper-body">
-      <router-outlet></router-outlet>
-    </div>
+    <perfect-scrollbar style="overflow: hidden;">
+      <div class="wrapper-body">
+        <router-outlet></router-outlet>
+      </div>
+    </perfect-scrollbar>
   </mat-drawer-content>
 </mat-drawer-container>
