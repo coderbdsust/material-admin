@@ -1,68 +1,7 @@
 <div class="container-fluid">
-    <mat-drawer-container class="social-container" autosize>
-        <mat-drawer #drawer class="messenger-block" mode="side" opened="true" position="end">
-            <mat-list class="msg-list">
-                <mat-list-item>
-                    <mat-card-header>
-                        <div mat-card-avatar class="social-card-header-image"></div>
-                        <mat-card-subtitle class="msg-title">Hayacinth</mat-card-subtitle>
-                    </mat-card-header>
-                </mat-list-item>
-
-                <mat-list-item>
-                    <mat-card-header>
-                        <div mat-card-avatar class="social-card-header-image"></div>
-                        <mat-card-subtitle class="msg-title">Blue & Gold</mat-card-subtitle>
-                    </mat-card-header>
-                </mat-list-item>
-
-                <mat-list-item>
-                    <mat-card-header>
-                        <div mat-card-avatar class="social-card-header-image"></div>
-                        <mat-card-subtitle class="msg-title">Scarlet</mat-card-subtitle>
-                    </mat-card-header>
-                </mat-list-item>
-                
-
-                <mat-list-item>
-                    <mat-card-header>
-                        <div mat-card-avatar class="social-card-header-image"></div>
-                        <mat-card-subtitle class="msg-title">Blue & Gold</mat-card-subtitle>
-                    </mat-card-header>
-                </mat-list-item>
-
-                <mat-list-item>
-                    <mat-card-header>
-                        <div mat-card-avatar class="social-card-header-image"></div>
-                        <mat-card-subtitle class="msg-title">Scarlet</mat-card-subtitle>
-                    </mat-card-header>
-                </mat-list-item>
-
-                <mat-list-item>
-                    <mat-card-header>
-                        <div mat-card-avatar class="social-card-header-image"></div>
-                        <mat-card-subtitle class="msg-title">Blue & Gold</mat-card-subtitle>
-                    </mat-card-header>
-                </mat-list-item>
-
-                <mat-list-item>
-                    <mat-card-header>
-                        <div mat-card-avatar class="social-card-header-image"></div>
-                        <mat-card-subtitle class="msg-title">Scarlet</mat-card-subtitle>
-                    </mat-card-header>
-                </mat-list-item>
-
-                <mat-list-item>
-                    <mat-card-header>
-                        <div mat-card-avatar class="social-card-header-image"></div>
-                        <mat-card-subtitle class="msg-title">Blue & Gold</mat-card-subtitle>
-                    </mat-card-header>
-                </mat-list-item>
-
-
-            </mat-list>
-        </mat-drawer>
-
+        <div>
+            <ng-chat [adapter]="adapter" [userId]="userId" #ngChatInstance></ng-chat>
+        </div>
         <div class="social-block">
             <div class="row content-padding">
                 <div class="col-md-4 col-lg-4 col-sm-6">
@@ -109,5 +48,4 @@
                 </div>
             </div>
         </div>
-    </mat-drawer-container>
 </div>

@@ -1,4 +1,5 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from "@angular/router";
 import { LayoutRoutes } from "./layout.routes";
 import { SocialComponent } from "./feature/social-layout/social/social-card.component";
@@ -82,6 +83,7 @@ import { MapsComponent } from './feature/maps/maps.component';
 import { AgmCoreModule } from '@agm/core';
 import { GalleryComponent } from './feature/gallery/gallery.component';
 import { NgxGalleryModule } from 'ngx-gallery';
+import { NgChatModule } from 'ng-chat';
 
 
 @NgModule({
@@ -172,6 +174,8 @@ import { NgxGalleryModule } from 'ngx-gallery';
     RouterModule.forChild(LayoutRoutes),
     FullCalendarModule,
     NgxGalleryModule,
+    HttpClientModule,
+    NgChatModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyD43YSgOPyRtnMm9NJjIKvHT8iXDThJQyg'
     })
