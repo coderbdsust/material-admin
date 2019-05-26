@@ -86,6 +86,14 @@ import { NgxGalleryModule } from 'ngx-gallery';
 import { NgChatModule } from 'ng-chat';
 
 
+import { FusionChartsModule } from 'angular-fusioncharts';
+import * as FusionCharts from 'fusioncharts';
+import * as FusionMaps from 'fusioncharts/fusioncharts.maps';
+import * as World from 'fusionmaps/maps/fusioncharts.world';
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
+
+
 @NgModule({
   declarations: [
     SocialComponent,
@@ -176,6 +184,7 @@ import { NgChatModule } from 'ng-chat';
     NgxGalleryModule,
     HttpClientModule,
     NgChatModule,
+    FusionChartsModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyD43YSgOPyRtnMm9NJjIKvHT8iXDThJQyg'
     })

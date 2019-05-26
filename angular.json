@@ -28,7 +28,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/styles.preload.scss"
+              "src/styles.preload.scss",
+              "node_modules/flag-icon-css/css/flag-icon.min.css"
             ],
             "scripts": [],
             "es5BrowserSupport": true
