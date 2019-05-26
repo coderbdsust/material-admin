@@ -10,7 +10,6 @@ import { ChartColor } from "../graph/color.const";
 export class AdminLayoutComponent implements OnInit {
 
   chart1: any;
-  chart2: any;
   chart3: any;
   analytic1: any;
   analytic2: any;
@@ -78,39 +77,6 @@ export class AdminLayoutComponent implements OnInit {
   ngOnInit() {
     this.chart1 = new Chart("chart-1", {
       type: "line",
-      data: {
-        labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016"],
-        datasets: [
-          {
-            backgroundColor: ChartColor.RED,
-            borderColor: ChartColor.RED,
-            fill: false,
-            label: "Apple",
-            data: [4, 3, 4, 5, 6, 9, 3],
-            borderWidth: 3
-          },
-          {
-            backgroundColor: ChartColor.GREEN,
-            borderColor: ChartColor.GREEN,
-            fill: false,
-            label: "Google",
-            data: [8, 6, 4, 5, 6, 9, 1],
-            borderWidth: 3
-          },
-          {
-            backgroundColor: ChartColor.BLUE,
-            borderColor: ChartColor.BLUE,
-            fill: false,
-            label: "Facebook",
-            data: [5, 7, 4, 2, 6, 9, 10],
-            borderWidth: 3
-          }
-        ]
-      },
-      options: {}
-    });
-    this.chart2 = new Chart("chart-2", {
-      type: "bar",
       data: {
         labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016"],
         datasets: [
