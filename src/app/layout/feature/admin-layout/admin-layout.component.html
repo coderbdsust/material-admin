@@ -96,7 +96,7 @@
         </mat-card-header>
         <mat-card-content>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-5">
               <table class="table">
                 <tr>
                   <td><span class="flag-icon flag-icon-bd"></span></td>
@@ -142,11 +142,11 @@
                 </tr>
               </table>
             </div>
-            <div class="col-md-6">
-              <fusioncharts
-                type="world"
-                [dataSource]="dataSource">
-             </fusioncharts>
+            <div class="col-md-7">
+              <div>
+                <fusioncharts type="world" width="100%" height="250" [dataSource]="dataSource">
+                </fusioncharts>
+              </div>
             </div>
           </div>
         </mat-card-content>
