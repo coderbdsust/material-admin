@@ -41,7 +41,13 @@
   top: 35%;
   display: inline-block;
   position: absolute;
-  left: 15%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.center-item{
+  margin: 0 auto !important;
 }
 
 .row-container > *{
