@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularEditorConfig } from '@kolkov/angular-editor';
+import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 
 @Component({
@@ -33,6 +34,8 @@ export class EditorComponent implements OnInit {
       },
     ]
   };
+
+  public classicEditor = ClassicEditor;
 
   constructor() { }
 

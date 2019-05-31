@@ -84,6 +84,7 @@ import { GalleryComponent } from './feature/gallery/gallery.component';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { NgChatModule } from 'ng-chat';
 import { AngularEditorModule } from '@kolkov/angular-editor';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 
 import { FusionChartsModule } from 'angular-fusioncharts';
@@ -187,6 +188,8 @@ FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
     NgChatModule,
     FusionChartsModule,
     AngularEditorModule,
+    CKEditorModule,
+
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyD43YSgOPyRtnMm9NJjIKvHT8iXDThJQyg'
     })

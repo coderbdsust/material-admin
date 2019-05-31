@@ -158,12 +158,22 @@
             routerLinkActive="active">404</button>
           <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/500']"
             routerLinkActive="active">500</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/calendar']"
-            routerLinkActive="active">Calendar</button>
-            <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/editor']"
-            routerLinkActive="active">Editor</button>
         </mat-expansion-panel>
       </mat-accordion>
+      <mat-accordion (click)="sidenavService.open()">
+          <mat-expansion-panel>
+            <mat-expansion-panel-header class="indicator-arrow">
+              <mat-panel-title>
+                <mat-icon class="sidemenu-icon" mat-button>extension</mat-icon>
+                <span *ngIf="sidenavService.isOpen()">Extras</span>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/calendar']"
+              routerLinkActive="active">Calendar</button>
+              <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/editor']"
+              routerLinkActive="active">Editor</button>
+          </mat-expansion-panel>
+        </mat-accordion>
       <mat-accordion (click)="sidenavService.open()">
         <mat-expansion-panel>
           <mat-expansion-panel-header class="indicator-arrow">
