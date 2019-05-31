@@ -158,6 +158,8 @@
             routerLinkActive="active">404</button>
           <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/500']"
             routerLinkActive="active">500</button>
+            <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/billing']"
+            routerLinkActive="active">Billing</button>
         </mat-expansion-panel>
       </mat-accordion>
       <mat-accordion (click)="sidenavService.open()">

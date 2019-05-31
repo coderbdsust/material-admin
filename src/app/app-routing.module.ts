@@ -8,6 +8,7 @@ import { SignupComponent } from "./layout/pages/signup/signup.component";
 import { ExceptionComponent } from "./layout/pages/exception/exception.component";
 import { NotFoundComponent } from "./layout/pages//not-found/not-found.component";
 import { ForgotPasswordComponent } from "./layout/pages/forgot-password/forgot-password.component";
+import { BillingComponent } from './layout/pages/billing/billing.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: "pages/404", component: NotFoundComponent },
   { path: "pages/500", component: ExceptionComponent },
   { path: "pages/forgot-password", component: ForgotPasswordComponent },
+  { path: "pages/billing", component: BillingComponent },
   {
     path: "",
     component: LayoutComponent,

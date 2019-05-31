@@ -189,7 +189,6 @@ FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
     FusionChartsModule,
     AngularEditorModule,
     CKEditorModule,
-
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyD43YSgOPyRtnMm9NJjIKvHT8iXDThJQyg'
     })
