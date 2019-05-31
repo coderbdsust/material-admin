@@ -33,6 +33,7 @@ import { RegularFormComponent } from "./feature/form-layout/regular-form/regular
 import { CalendarComponent } from './feature/calendar/calendar.component';
 import { MapsComponent } from './feature/maps/maps.component';
 import { GalleryComponent } from './feature/gallery/gallery.component';
+import { EditorComponent } from './feature/editor/editor.component';
 
 export const LayoutRoutes: Routes = [
   { path: "", component: AdminLayoutComponent },
@@ -69,5 +70,6 @@ export const LayoutRoutes: Routes = [
   { path: "pages/form-1", component: FormLayoutComponent },
   { path: "pages/regular-form", component: RegularFormComponent },
   { path: "pages/calendar", component: CalendarComponent },
-  { path: "pages/maps", component: MapsComponent }
+  { path: "pages/maps", component: MapsComponent },
+  { path: "pages/editor", component: EditorComponent }
 ];

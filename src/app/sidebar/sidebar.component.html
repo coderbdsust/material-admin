@@ -160,6 +160,8 @@
             routerLinkActive="active">500</button>
           <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/calendar']"
             routerLinkActive="active">Calendar</button>
+            <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/editor']"
+            routerLinkActive="active">Editor</button>
         </mat-expansion-panel>
       </mat-accordion>
       <mat-accordion (click)="sidenavService.open()">

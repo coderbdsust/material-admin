@@ -22,6 +22,7 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+import { HttpClientModule } from '@angular/common/http';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -50,9 +51,11 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     CommonModule,
     MatDatepickerModule,
     MatSnackBarModule,
-    PerfectScrollbarModule
+    PerfectScrollbarModule,
+    HttpClientModule,
   ],
   providers: [
+    HttpClientModule,
     SideNavService,
     DynamicDatabase,
     MatDatepickerModule,
@@ -65,4 +68,4 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule {}
+export class AppModule { }

@@ -1,5 +1,4 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
-import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from "@angular/router";
 import { LayoutRoutes } from "./layout.routes";
 import { SocialComponent } from "./feature/social-layout/social/social-card.component";
@@ -84,6 +83,7 @@ import { AgmCoreModule } from '@agm/core';
 import { GalleryComponent } from './feature/gallery/gallery.component';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { NgChatModule } from 'ng-chat';
+import { AngularEditorModule } from '@kolkov/angular-editor';
 
 
 import { FusionChartsModule } from 'angular-fusioncharts';
@@ -91,6 +91,7 @@ import * as FusionCharts from 'fusioncharts';
 import * as FusionMaps from 'fusioncharts/fusioncharts.maps';
 import * as World from 'fusionmaps/maps/fusioncharts.world';
 import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import { EditorComponent } from './feature/editor/editor.component';
 FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
 
 
@@ -136,7 +137,8 @@ FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
     RegularFormComponent,
     CalendarComponent,
     MapsComponent,
-    GalleryComponent
+    GalleryComponent,
+    EditorComponent
   ],
   imports: [
     CommonModule,
@@ -182,9 +184,9 @@ FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
     RouterModule.forChild(LayoutRoutes),
     FullCalendarModule,
     NgxGalleryModule,
-    HttpClientModule,
     NgChatModule,
     FusionChartsModule,
+    AngularEditorModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyD43YSgOPyRtnMm9NJjIKvHT8iXDThJQyg'
     })
