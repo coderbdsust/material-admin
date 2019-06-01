@@ -34,6 +34,7 @@ import { CalendarComponent } from './feature/calendar/calendar.component';
 import { MapsComponent } from './feature/maps/maps.component';
 import { GalleryComponent } from './feature/gallery/gallery.component';
 import { EditorComponent } from './feature/editor/editor.component';
+import { BoostrapTableComponent } from './feature/table-layout/boostrap-table/boostrap-table.component';
 
 export const LayoutRoutes: Routes = [
   { path: "", component: AdminLayoutComponent },
@@ -45,6 +46,7 @@ export const LayoutRoutes: Routes = [
   { path: "table/sorted", component: SortedTableComponent },
   { path: "table/sticky", component: StickyTableComponent },
   { path: "table/data-table", component: DataTableComponent },
+  { path: "table/boostrap-data-table", component: BoostrapTableComponent },
   { path: "alerts", component: AlertComponent },
   { path: "buttons", component: ButtonComponent },
   { path: "cards", component: CardComponent },
