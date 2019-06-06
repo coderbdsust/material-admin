@@ -248,6 +248,8 @@
   color: inherit;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items:center;
   background: rgba(0, 0, 0, 0.54);
 }
 
@@ -257,7 +259,6 @@
   background-position: top;
   width: 60px;
   height: 60px;
-  margin:6px;
   color: inherit;
 }
 
@@ -265,7 +266,7 @@
   color: inherit;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding-top:6px;
-  padding-left: 4px;
+  padding-left: 8px;
   font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
 }
