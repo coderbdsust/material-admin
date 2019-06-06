@@ -1,4 +1,4 @@
-<mat-toolbar class='toolbar toolbar-shadow' [ngClass]="{
+<mat-toolbar class='toolbar mat-elevation-z4' [ngClass]="{
   'color-gradient-red': colorPicker.getColor()==='red',
   'color-gradient-black': colorPicker.getColor()==='black',
   'color-gradient-blue': colorPicker.getColor()==='blue',
@@ -10,7 +10,6 @@
 }">
   <mat-toolbar-row class='row-container'>
     <mat-icon class="toggle-menu" mat-button (click)="toggleRightSidenav()">menu</mat-icon>
-    <span class='col1'>nxt2solve</span>
     <span class='col1'></span>
     <mat-form-field class='col5'>
       <mat-icon class="search-icon" mat-button>search</mat-icon>
@@ -41,5 +40,5 @@
     </span>
   </mat-toolbar-row>
 </mat-toolbar>
-<mat-progress-bar [mode]="sidenav.getQueryMode()" [color]="colorPicker.getProgressBarColor()">
-</mat-progress-bar>
+<!-- <mat-progress-bar [mode]="sidenav.getQueryMode()" [color]="colorPicker.getProgressBarColor()">
+</mat-progress-bar> -->

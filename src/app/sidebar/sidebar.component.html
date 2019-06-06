@@ -11,6 +11,18 @@
         'sidenav-gradient-orange': colorPicker.getColor()==='orange',
         'sidenav-gradient-white': colorPicker.getColor()==='white'
       }" mode="side">
+      
+    <div class="sidebar-site-title">
+        <div  class="site-logo"></div>
+        <h2 class="site-title" *ngIf="sidenavService.isOpen()"> nxt2Solve </h2>
+    </div>
+
+    <div class="sidebar-user-profile">
+      <div mat-card-avatar class="user-image"></div>
+      <h1 class="user-title" *ngIf="sidenavService.isOpen()"><strong>Biswajit Debnath</strong></h1>
+      <p class="user-email" *ngIf="sidenavService.isOpen()">biswajit.sust@gmail.com</p>
+    </div>
+
     <perfect-scrollbar style="overflow: hidden;">
       <mat-accordion (click)="sidenavService.open()">
         <mat-expansion-panel>
@@ -190,15 +202,18 @@
             routerLinkActive="active">AGM</button>
         </mat-expansion-panel>
       </mat-accordion>
-
     </perfect-scrollbar>
+
   </mat-drawer>
 
   <mat-drawer-content class="mat-drawer-content">
     <perfect-scrollbar style="overflow: hidden;">
+      <app-toolbar></app-toolbar>
+
       <div class="wrapper-body">
         <router-outlet></router-outlet>
       </div>
+
       <footer class="footer">
         <div class="container-fluid">
           <nav>
