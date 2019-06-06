@@ -254,11 +254,12 @@
 }
 
 .site-logo{
-  background-image: url('/assets/favicon.ico');
+  background-image: url('/assets/logo4.png');
   background-size: cover;
   background-position: top;
   width: 60px;
   height: 60px;
+  margin-top:2px;
   color: inherit;
 }
 
@@ -269,8 +270,4 @@
   padding-left: 8px;
   font-size: 24px;
   color: rgba(255, 255, 255, 0.8);
-}
-
-.sidebar-menus{
-
 }
