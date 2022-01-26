@@ -2,7 +2,6 @@
   'sidenav-black' : colorPicker.getColor() === 'white',
   'sidenav-white' : colorPicker.getColor() !== 'white'}" autosize>
 
-
   <mat-drawer #sideNav mode="side" opened="true" class="sidenav sidebar-shadow" [ngClass]="{
         'sidenav-gradient-red': colorPicker.getColor()==='red',
         'sidenav-gradient-black': colorPicker.getColor()==='black',
@@ -17,202 +16,198 @@
       <h2 class="site-title" *ngIf="sidenavService.isOpen()"> nxt2Solve </h2>
     </div>
 
-    <perfect-scrollbar style="overflow: hidden;">
-      <div class="sidebar-user-profile">
-        <div mat-card-avatar class="user-image"></div>
-        <h1 class="user-title" *ngIf="sidenavService.isOpen()"><strong>Biswajit Debnath</strong></h1>
-        <p class="user-email" *ngIf="sidenavService.isOpen()">biswajit.sust@gmail.com</p>
-      </div>
-      <mat-accordion (click)="sidenavService.open()">
-        <mat-expansion-panel>
-          <mat-expansion-panel-header class="indicator-arrow">
-            <mat-panel-title>
-              <mat-icon class="sidemenu-icon" mat-button>home</mat-icon>
-              <span *ngIf="sidenavService.isOpen()">Home</span>
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/social']"
-            routerLinkActive="active">Social</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/admin']"
-            routerLinkActive="active">Admin</button>
-        </mat-expansion-panel>
-      </mat-accordion>
-      <mat-accordion (click)="sidenavService.open()">
-        <mat-expansion-panel>
-          <mat-expansion-panel-header class="indicator-arrow">
-            <mat-panel-title>
-              <mat-icon class="sidemenu-icon" mat-button>format_shapes</mat-icon>
-              <span *ngIf="sidenavService.isOpen()">Componants</span>
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/alerts']"
-            routerLinkActive="active">Alerts</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/buttons']"
-            routerLinkActive="active">Buttons</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/cards']"
-            routerLinkActive="active">Cards</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/lists']"
-            routerLinkActive="active">Lists</button>
-          <!-- <button mat-button class='btn-full-width' [routerLink]="['/pop-overs']">Popover</button> -->
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/progressbars']"
-            routerLinkActive="active">Progressbar</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/tabs']"
-            routerLinkActive="active">Tabs</button>
-          <!-- <button mat-button class='btn-full-width' [routerLink]="['/tooltips']">Tooltip</button> -->
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/modals']"
-            routerLinkActive="active">Modals</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/trees']"
-            routerLinkActive="active">Tree</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/stepper']"
-            routerLinkActive="active">Stepper</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/file-upload']"
-            routerLinkActive="active">File
-            Upload</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/dates']"
-            routerLinkActive="active">Dates</button>
-          <!-- <button mat-button class='btn-full-width' [routerLink]="['/toast']">Toast</button> -->
-        </mat-expansion-panel>
-      </mat-accordion>
-      <mat-accordion (click)="sidenavService.open()">
-        <mat-expansion-panel>
-          <mat-expansion-panel-header class="indicator-arrow">
-            <mat-panel-title>
-              <mat-icon class="sidemenu-icon" mat-button>table</mat-icon>
-              <span *ngIf="sidenavService.isOpen()">Table</span>
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/table/data-table']"
-            routerLinkActive="active">Data Table</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/table/filter']"
-            routerLinkActive="active">Filtered Table</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/table/paginated']"
-            routerLinkActive="active">Paginated Table</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/table/selection']"
-            routerLinkActive="active">Selection Table</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/table/sorted']"
-            routerLinkActive="active">Sorted Table</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/table/sticky']"
-            routerLinkActive="active">Sticky Table</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width'
-            [routerLink]="['/table/boostrap-data-table']" routerLinkActive="active">Bootstrap Datatable</button>
-        </mat-expansion-panel>
-      </mat-accordion>
-      <mat-accordion (click)="sidenavService.open()">
-        <mat-expansion-panel>
-          <mat-expansion-panel-header class="indicator-arrow">
-            <mat-panel-title>
-              <mat-icon class="sidemenu-icon" mat-button>bar_chart</mat-icon>
-              <span *ngIf="sidenavService.isOpen()">Graph</span>
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/charts/line']"
-            routerLinkActive="active">Line</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/charts/bar']"
-            routerLinkActive="active">Bar</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/charts/radar']"
-            routerLinkActive="active">Radar</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/charts/dognut']"
-            routerLinkActive="active">Dognut</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width'
-            [routerLink]="['/charts/polar-area']" routerLinkActive="active">Polor Area</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/charts/bubble']"
-            routerLinkActive="active">Bubble</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/charts/scatter']"
-            routerLinkActive="active">Scatter</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/charts/mixed']"
-            routerLinkActive="active">Mixed</button>
-        </mat-expansion-panel>
-      </mat-accordion>
-      <mat-accordion (click)="sidenavService.open()">
-        <mat-expansion-panel>
-          <mat-expansion-panel-header class="indicator-arrow">
-            <mat-panel-title>
-              <mat-icon class="sidemenu-icon" mat-button>image</mat-icon>
-              <span *ngIf="sidenavService.isOpen()">Image</span>
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/image-cropper']"
-            routerLinkActive="active">Cropper</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/gallery']"
-            routerLinkActive="active">Gallery</button>
-        </mat-expansion-panel>
-      </mat-accordion>
-      <mat-accordion (click)="sidenavService.open()">
-        <mat-expansion-panel>
-          <mat-expansion-panel-header class="indicator-arrow">
-            <mat-panel-title>
-              <mat-icon class="sidemenu-icon" mat-button>list_alt</mat-icon>
-              <span *ngIf="sidenavService.isOpen()">Forms</span>
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/form-1']"
-            routerLinkActive="active">Form 1</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width'
-            [routerLink]="['/pages/regular-form']" routerLinkActive="active">Form 2</button>
-        </mat-expansion-panel>
-      </mat-accordion>
-      <mat-accordion (click)="sidenavService.open()">
-        <mat-expansion-panel>
-          <mat-expansion-panel-header class="indicator-arrow">
-            <mat-panel-title>
-              <mat-icon class="sidemenu-icon" mat-button>pages</mat-icon>
-              <span *ngIf="sidenavService.isOpen()">Pages</span>
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/sign-in']"
-            routerLinkActive="active">Sign
-            In</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/sign-up']"
-            routerLinkActive="active">Sign
-            Up</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width'
-            [routerLink]="['/pages/forgot-password']" routerLinkActive="active">Forgot Password</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/404']"
-            routerLinkActive="active">404</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/500']"
-            routerLinkActive="active">500</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/billing']"
-            routerLinkActive="active">Billing</button>
-        </mat-expansion-panel>
-      </mat-accordion>
-      <mat-accordion (click)="sidenavService.open()">
-        <mat-expansion-panel>
-          <mat-expansion-panel-header class="indicator-arrow">
-            <mat-panel-title>
-              <mat-icon class="sidemenu-icon" mat-button>extension</mat-icon>
-              <span *ngIf="sidenavService.isOpen()">Extras</span>
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/calendar']"
-            routerLinkActive="active">Calendar</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/editor']"
-            routerLinkActive="active">Editor</button>
-        </mat-expansion-panel>
-      </mat-accordion>
-      <mat-accordion (click)="sidenavService.open()">
-        <mat-expansion-panel>
-          <mat-expansion-panel-header class="indicator-arrow">
-            <mat-panel-title>
-              <mat-icon class="sidemenu-icon" mat-button>location_on</mat-icon>
-              <span *ngIf="sidenavService.isOpen()">Maps</span>
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/maps']"
-            routerLinkActive="active">AGM</button>
-        </mat-expansion-panel>
-      </mat-accordion>
-    </perfect-scrollbar>
+    <div class="sidebar-user-profile">
+      <div mat-card-avatar class="user-image"></div>
+      <h1 class="user-title" *ngIf="sidenavService.isOpen()"><strong>Biswajit Debnath</strong></h1>
+      <p class="user-email" *ngIf="sidenavService.isOpen()">biswajit.sust@gmail.com</p>
+    </div>
 
+    <mat-accordion (click)="sidenavService.open()">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header class="indicator-arrow">
+          <mat-panel-title>
+            <mat-icon class="sidemenu-icon" mat-button>home</mat-icon>
+            <span *ngIf="sidenavService.isOpen()">Home</span>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/social']"
+          routerLinkActive="active">Social</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/admin']"
+          routerLinkActive="active">Admin</button>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion (click)="sidenavService.open()">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header class="indicator-arrow">
+          <mat-panel-title>
+            <mat-icon class="sidemenu-icon" mat-button>format_shapes</mat-icon>
+            <span *ngIf="sidenavService.isOpen()">Componants</span>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/alerts']"
+          routerLinkActive="active">Alerts</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/buttons']"
+          routerLinkActive="active">Buttons</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/cards']"
+          routerLinkActive="active">Cards</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/lists']"
+          routerLinkActive="active">Lists</button>
+        <!-- <button mat-button class='btn-full-width' [routerLink]="['/pop-overs']">Popover</button> -->
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/progressbars']"
+          routerLinkActive="active">Progressbar</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/tabs']"
+          routerLinkActive="active">Tabs</button>
+        <!-- <button mat-button class='btn-full-width' [routerLink]="['/tooltips']">Tooltip</button> -->
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/modals']"
+          routerLinkActive="active">Modals</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/trees']"
+          routerLinkActive="active">Tree</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/stepper']"
+          routerLinkActive="active">Stepper</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/file-upload']"
+          routerLinkActive="active">File
+          Upload</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/dates']"
+          routerLinkActive="active">Dates</button>
+        <!-- <button mat-button class='btn-full-width' [routerLink]="['/toast']">Toast</button> -->
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion (click)="sidenavService.open()">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header class="indicator-arrow">
+          <mat-panel-title>
+            <mat-icon class="sidemenu-icon" mat-button>table</mat-icon>
+            <span *ngIf="sidenavService.isOpen()">Table</span>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/table/data-table']"
+          routerLinkActive="active">Data Table</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/table/filter']"
+          routerLinkActive="active">Filtered Table</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/table/paginated']"
+          routerLinkActive="active">Paginated Table</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/table/selection']"
+          routerLinkActive="active">Selection Table</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/table/sorted']"
+          routerLinkActive="active">Sorted Table</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/table/sticky']"
+          routerLinkActive="active">Sticky Table</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width'
+          [routerLink]="['/table/boostrap-data-table']" routerLinkActive="active">Bootstrap Datatable</button>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion (click)="sidenavService.open()">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header class="indicator-arrow">
+          <mat-panel-title>
+            <mat-icon class="sidemenu-icon" mat-button>bar_chart</mat-icon>
+            <span *ngIf="sidenavService.isOpen()">Graph</span>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/charts/line']"
+          routerLinkActive="active">Line</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/charts/bar']"
+          routerLinkActive="active">Bar</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/charts/radar']"
+          routerLinkActive="active">Radar</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/charts/dognut']"
+          routerLinkActive="active">Dognut</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/charts/polar-area']"
+          routerLinkActive="active">Polor Area</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/charts/bubble']"
+          routerLinkActive="active">Bubble</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/charts/scatter']"
+          routerLinkActive="active">Scatter</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/charts/mixed']"
+          routerLinkActive="active">Mixed</button>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion (click)="sidenavService.open()">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header class="indicator-arrow">
+          <mat-panel-title>
+            <mat-icon class="sidemenu-icon" mat-button>image</mat-icon>
+            <span *ngIf="sidenavService.isOpen()">Image</span>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/image-cropper']"
+          routerLinkActive="active">Cropper</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/gallery']"
+          routerLinkActive="active">Gallery</button>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion (click)="sidenavService.open()">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header class="indicator-arrow">
+          <mat-panel-title>
+            <mat-icon class="sidemenu-icon" mat-button>list_alt</mat-icon>
+            <span *ngIf="sidenavService.isOpen()">Forms</span>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/form-1']"
+          routerLinkActive="active">Form 1</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/regular-form']"
+          routerLinkActive="active">Form 2</button>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion (click)="sidenavService.open()">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header class="indicator-arrow">
+          <mat-panel-title>
+            <mat-icon class="sidemenu-icon" mat-button>pages</mat-icon>
+            <span *ngIf="sidenavService.isOpen()">Pages</span>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/sign-in']"
+          routerLinkActive="active">Sign
+          In</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/sign-up']"
+          routerLinkActive="active">Sign
+          Up</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width'
+          [routerLink]="['/pages/forgot-password']" routerLinkActive="active">Forgot Password</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/404']"
+          routerLinkActive="active">404</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/500']"
+          routerLinkActive="active">500</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/billing']"
+          routerLinkActive="active">Billing</button>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion (click)="sidenavService.open()">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header class="indicator-arrow">
+          <mat-panel-title>
+            <mat-icon class="sidemenu-icon" mat-button>extension</mat-icon>
+            <span *ngIf="sidenavService.isOpen()">Extras</span>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/calendar']"
+          routerLinkActive="active">Calendar</button>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/editor']"
+          routerLinkActive="active">Editor</button>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion (click)="sidenavService.open()">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header class="indicator-arrow">
+          <mat-panel-title>
+            <mat-icon class="sidemenu-icon" mat-button>location_on</mat-icon>
+            <span *ngIf="sidenavService.isOpen()">Maps</span>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/pages/maps']"
+          routerLinkActive="active">AGM</button>
+      </mat-expansion-panel>
+    </mat-accordion>
   </mat-drawer>
 
   <mat-drawer-content class="mat-drawer-content">
     <perfect-scrollbar style="overflow: hidden;">
       <app-toolbar></app-toolbar>
-
       <div class="wrapper-body">
         <router-outlet></router-outlet>
       </div>
-
       <footer class="footer">
         <div class="container-fluid">
           <nav>

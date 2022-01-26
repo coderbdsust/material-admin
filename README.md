@@ -6,12 +6,12 @@ This project is done for making easier and faster web application UI development
 ## Features Summary with UI - [Live Demo](https://material-admin-bsk-y2022.glitch.me/)
 
 * Home Page - Admin
-![Admin Page - Red](/demo-img/03-theme-admin-page-red.png)
-![Admin Page - Black](/demo-img/04-theme-admin-page-black.png)
-![Admin Page - White](/demo-img/02-theme-admin-page-white.png)
+![Admin Page - Red](/demo-img/03-theme-admin-page-red-v1.png)
+![Admin Page - Black](/demo-img/04-theme-admin-page-black-v1.png)
+![Admin Page - White](/demo-img/02-theme-admin-page-white-v1.png)
 
 * Home Page - Social
-![Social Page](/demo-img/18-theme-social.png)
+![Social Page](/demo-img/18-theme-social-v1.png)
 
 * Graph Page
 ![Graph Page - Line](/demo-img/05-theme-graph-line.png)
