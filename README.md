@@ -87,7 +87,7 @@ We use `@Git` for versioning
 
 * [VS Code](https://code.visualstudio.com/ "VSCode Home Page")
 
-## Used Web Library
+## Used Packages
 
 ![Library](/demo-img/18-theme-library.png)
 
