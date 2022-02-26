@@ -6,38 +6,38 @@ This project is done for making easier and faster web application UI development
 ## Features Summary with UI - [Live Demo](https://material-admin-bsk-y2022.glitch.me/)
 
 * Home Page - Admin
-![Admin Page - Red](/demo-img/03-theme-admin-page-red-v1.png)
-![Admin Page - Black](/demo-img/04-theme-admin-page-black-v1.png)
-![Admin Page - White](/demo-img/02-theme-admin-page-white-v1.png)
+![Admin Page - Red](/demo-img/03-theme-admin-page-red-v2.png)
+![Admin Page - Black](/demo-img/04-theme-admin-page-black-v2.png)
+![Admin Page - White](/demo-img/02-theme-admin-page-white-v2.png)
 
 * Home Page - Social
-![Social Page](/demo-img/18-theme-social-v1.png)
+![Social Page](/demo-img/18-theme-social-v2.png)
 
 * Graph Page
-![Graph Page - Line](/demo-img/05-theme-graph-line.png)
-![Graph Page - Bar](/demo-img/14-theme-graph-bar.png)
-![Graph Page - Dognut](/demo-img/07-theme-graph-dognut.png)
-![Graph Page - Polar](/demo-img/08-theme-graph-polar.png)
-![Graph Page - Radar](/demo-img/06-theme-graph-radar.png)
+![Graph Page - Line](/demo-img/05-theme-graph-line-v2.png)
+![Graph Page - Bar](/demo-img/14-theme-graph-bar-v2.png)
+![Graph Page - Dognut](/demo-img/07-theme-graph-dognut-v2.png)
+![Graph Page - Polar](/demo-img/08-theme-graph-polar-v2.png)
+![Graph Page - Radar](/demo-img/06-theme-graph-radar-v2.png)
 
 * Form
-![Form Page - 1](/demo-img/10-theme-form-component.png)
-![Form Page - 2](/demo-img/11-theme-form.png)
+![Form Page - 1](/demo-img/10-theme-form-component-v2.png)
+![Form Page - 2](/demo-img/11-theme-form-v2.png)
 
 * Components
-![Components](/demo-img/16-theme-components-card.png)
+![Components](/demo-img/16-theme-components-card-v2.png)
 
 * Table
-![Table](/demo-img/17-theme-table.png)
+![Table](/demo-img/17-theme-table-v2.png)
 
 * Editor
-![Editor - 1](/demo-img/12-theme-editor.png)
+![Editor - 1](/demo-img/12-theme-editor-v2.png)
 
 * Calendar
-![Calendar - 2](/demo-img/13-theme-calendar.png)
+![Calendar - 2](/demo-img/13-theme-calendar-v2.png)
 
 * Profile
-![Profile](/demo-img/14-theme-profile.png)
+![Profile](/demo-img/14-theme-profile-v2.png)
 
 * Page - Billing
 ![Calendar - 2](/demo-img/15-theme-billing.png)
