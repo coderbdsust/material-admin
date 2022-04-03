@@ -3,7 +3,7 @@
 
 This project is done for making easier and faster web application UI development using resuable component. Here, In this application all kind of modern web UI component plugged for making working prototype.
 
-## Features Summary with UI - [Live Demo](https://material-admin-bsk-y2022.glitch.me/)
+## Features Summary with UI - [Live Demo](https://material-admin-y2022.glitch.me/#/social)
 
 * Home Page - Admin
 ![Admin Page - Red](/demo-img/03-theme-admin-page-red-v2.png)

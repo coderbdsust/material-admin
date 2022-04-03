@@ -18,8 +18,8 @@ export class AdminLayoutComponent implements OnInit {
   constructor() {
     this.dataSource = {
       "chart": {
-        "caption": "Country wise revenue",
-        "subcaption": " 1955-2015",
+        "caption": "Region wise revenue",
+        "subcaption": " 1955-2020",
         "numbersuffix": "%",
         "includevalueinlabels": "1",
         "labelsepchar": ": ",
