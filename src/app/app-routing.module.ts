@@ -13,7 +13,7 @@ import { BillingComponent } from './layout/pages/billing/billing.component';
 const routes: Routes = [
   {
     path: "",
-    redirectTo: "admin",
+    redirectTo: "social",
     pathMatch: "full"
   },
   { path: "pages/sign-in", component: LoginComponent },

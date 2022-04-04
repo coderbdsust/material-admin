@@ -37,7 +37,7 @@ import { EditorComponent } from './feature/editor/editor.component';
 import { BoostrapTableComponent } from './feature/table-layout/boostrap-table/boostrap-table.component';
 
 export const LayoutRoutes: Routes = [
-  { path: "", component: AdminLayoutComponent },
+  { path: "", component: SocialLayoutComponent },
   { path: "social", component: SocialLayoutComponent },
   { path: "admin", component: AdminLayoutComponent },
   { path: "table/selection", component: SelectionTableComponent },
