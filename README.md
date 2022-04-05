@@ -11,7 +11,7 @@ This project is done for making easier and faster web application UI development
 ![Admin Page - White](/demo-img/02-theme-admin-page-white-v2.png)
 
 * Home Page - Social
-![Social Page](/demo-img/18-theme-social-v4.png)
+![Social Page](/demo-img/18-theme-social-v5.png)
 
 * Graph Page
 ![Graph Page - Line](/demo-img/05-theme-graph-line-v2.png)
