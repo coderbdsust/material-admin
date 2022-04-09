@@ -1,50 +1,46 @@
-<div class="container-fluid">
+<div fxLayout="column">
+    
     <div>
         <ng-chat [adapter]="adapter" [userId]="userId" #ngChatInstance></ng-chat>
     </div>
-    <div class="social-block">
-        <div class="row">
-            <div class="col-md-offset-2 col-md-8">
-                <div class="row content-padding">
-                    <div class="col-md-6 col-lg-6 col-sm-6">
-                        <app-social-card 
-                            [socialCardImage]="'assets/bird/birds-291a.jpg'"
-                            [socialCardTitle]="'Scarlet Macaw'"
-                            [socialCardSubTitle]="'My life is full of color'"
-                            [socialCardSubDesc]="'The scarlet macaw is a large red, yellow, and blue Central and South American parrot. Its range extends from south-eastern Mexico to Peru, Ecuador, Colombia, Bolivia, Venezuela and Brazil'"
-                        >
-                        </app-social-card>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-sm-6">
-                        <app-social-card 
-                            [socialCardImage]="'assets/bird/birds-361a.jpg'"
-                            [socialCardTitle]="'Kingfisher'"
-                            [socialCardSubTitle]="'I hunt with beauty and skill'"
-                            [socialCardSubDesc]="'Kingfishers brightly colored birds. Most species found in the tropical regions of Africa, Asia, and Oceania but also can be seen in Europe'"
-                        >
-                        </app-social-card>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-sm-6">
-                        <app-social-card 
-                                [socialCardImage]="'assets/bird/birds-351a.jpg'"
-                                [socialCardTitle]="'Hyacinth Macaw'"
-                                [socialCardSubTitle]="'I am bold and childish'"
-                                [socialCardSubDesc]="'The hyacinth macaw, or hyacinthine macaw, is a parrot native to central and eastern South America. It is the largest macaw and the largest flying parrot species'"
-                        >
-                        </app-social-card>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-sm-6">
-                        <app-social-card 
-                                [socialCardImage]="'assets/bird/birds-356a.jpg'"
-                                [socialCardTitle]="'Blue and Yellow Macaw'"
-                                [socialCardSubTitle]="'Your eye can\'t ignore me'"
-                                [socialCardSubDesc]="'The blue-and-yellow macaw, also known as the blue-and-gold macaw, is a large South American parrot with mostly blue top parts and light orange underparts, with gradient hues of green on top of its head'"
-                        >
-                        </app-social-card>
-                    </div>             
-                </div>
-            </div>
-        </div>
 
+    <div fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="10px">
+
+        <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutGap="10px">
+            <app-social-card 
+                [socialCardImage]="'assets/bird/birds-291a.jpg'"
+                [socialCardTitle]="'Scarlet Macaw'"
+                [socialCardSubTitle]="'My life is full of color'"
+                [socialCardSubDesc]="'The scarlet macaw is a large red, yellow, and blue Central and South American parrot. Its range extends from south-eastern Mexico to Peru, Ecuador, Colombia, Bolivia, Venezuela and Brazil'"
+            >
+            </app-social-card>
+
+            <app-social-card 
+                [socialCardImage]="'assets/bird/birds-361a.jpg'"
+                [socialCardTitle]="'Kingfisher'"
+                [socialCardSubTitle]="'I hunt with beauty and skill'"
+                [socialCardSubDesc]="'Kingfishers brightly colored birds. Most species found in the tropical regions of Africa, Asia, and Oceania but also can be seen in Europe'"
+             >
+            </app-social-card>
+        </div>
+    
+        <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutGap="10px">
+            <app-social-card 
+                [socialCardImage]="'assets/bird/birds-351a.jpg'"
+                [socialCardTitle]="'Hyacinth Macaw'"
+                [socialCardSubTitle]="'I am bold and childish'"
+                [socialCardSubDesc]="'The hyacinth macaw, or hyacinthine macaw, is a parrot native to central and eastern South America. It is the largest macaw and the largest flying parrot species'"
+            >
+            </app-social-card>
+    
+            <app-social-card 
+                [socialCardImage]="'assets/bird/birds-356a.jpg'"
+                [socialCardTitle]="'Blue and Yellow Macaw'"
+                [socialCardSubTitle]="'Your eye can\'t ignore me'"
+                [socialCardSubDesc]="'The blue-and-yellow macaw, also known as the blue-and-gold macaw, is a large South American parrot with mostly blue top parts and light orange underparts, with gradient hues of green on top of its head'"
+            >
+            </app-social-card>
+        </div>
     </div>
 </div>
+

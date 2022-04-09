@@ -10,6 +10,7 @@ import { FilteredTableComponent } from "./feature/table-layout/filtered-table/fi
 import { SelectionTableComponent } from "./feature/table-layout/selection-table/selection-table.component";
 import { StickyTableComponent } from "./feature/table-layout/sticky-table/sticky-table.component";
 import { FormLayoutComponent } from "./feature/form-layout/form-layout.component";
+import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatButtonModule } from "@angular/material/button";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from "@angular/material/icon";
@@ -142,6 +143,7 @@ FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
   ],
   imports: [
     CommonModule,
+    FlexLayoutModule,
     MatButtonModule,
     MatCheckboxModule,
     MatToolbarModule,
