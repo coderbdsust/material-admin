@@ -158,7 +158,4 @@ export class AdminLayoutComponent implements OnInit {
       options: {}
     });
   }
-
-
-
 }
