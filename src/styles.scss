@@ -190,3 +190,8 @@ body {
   background: rgba(231, 147, 21, 0.1);
 }
 
+
+::ng-deep .mat-card {
+  border: 0px !important;
+  border-radius: 0px !important;
+}
