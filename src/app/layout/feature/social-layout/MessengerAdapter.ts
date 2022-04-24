@@ -1,6 +1,6 @@
 import {
-    ChatAdapter, IChatGroupAdapter, User, Group, Message,
-    ChatParticipantStatus, ParticipantResponse, ParticipantMetadata,
+    ChatAdapter, Group, Message,
+    ChatParticipantStatus, ParticipantResponse,
     ChatParticipantType, IChatParticipant
 } from 'ng-chat';
 import { Observable, of } from 'rxjs';
@@ -12,35 +12,35 @@ export class MessengerAdapter extends ChatAdapter {
             participantType: ChatParticipantType.User,
             id: 1,
             displayName: "Hayacinth",
-            avatar: "assets/bird/birds-351a.jpg",
+            avatar: "https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-351a.jpg?v=1648999634526",
             status: ChatParticipantStatus.Online
         },
         {
             participantType: ChatParticipantType.User,
             id: 2,
             displayName: "Scarlet",
-            avatar: "assets/bird/birds-291a.jpg",
+            avatar: "https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-291a.jpg?v=1648999635005",
             status: ChatParticipantStatus.Online
         },
         {
             participantType: ChatParticipantType.User,
             id: 3,
-            displayName: "Blue & Gold",
-            avatar: "assets/bird/birds-327a.jpg",
+            displayName: "Blue and Yellow",
+            avatar: "https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-327a.jpg?v=1648999634449",
             status: ChatParticipantStatus.Busy
         },
         {
             participantType: ChatParticipantType.User,
             id: 4,
             displayName: "King fisher",
-            avatar: "assets/bird/birds-361a.jpg",
+            avatar: "https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-361a.jpg?v=1648999634539",
             status: ChatParticipantStatus.Offline
         },
         {
             participantType: ChatParticipantType.User,
             id: 5,
             displayName: "Peacock",
-            avatar: "assets/bird/birds-353a.jpg",
+            avatar: "https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-353a.jpg?v=1648999634154",
             status: ChatParticipantStatus.Offline
         }];
 

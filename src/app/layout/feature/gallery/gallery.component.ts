@@ -40,48 +40,48 @@ export class GalleryComponent implements OnInit {
 
     this.galleryImages = [
       {
-        small: 'assets/bird/birds-291a.jpg',
-        medium: 'assets/bird/birds-291a.jpg',
-        big: 'assets/bird/birds-291a.jpg'
+        small: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-291a.jpg?v=1648999635005',
+        medium: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-291a.jpg?v=1648999635005',
+        big: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-291a.jpg?v=1648999635005'
       },
       {
-        small: 'assets/bird/birds-327a.jpg',
-        medium: 'assets/bird/birds-327a.jpg',
-        big: 'assets/bird/birds-327a.jpg'
+        small: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-327a.jpg?v=1648999634449',
+        medium: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-327a.jpg?v=1648999634449',
+        big: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-327a.jpg?v=1648999634449'
       },
       {
-        small: 'assets/bird/birds-351a.jpg',
-        medium: 'assets/bird/birds-351a.jpg',
-        big: 'assets/bird/birds-351a.jpg'
+        small: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-351a.jpg?v=1648999634526',
+        medium: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-351a.jpg?v=1648999634526',
+        big: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-351a.jpg?v=1648999634526'
       },
       {
-        small: 'assets/bird/birds-352a.jpg',
-        medium: 'assets/bird/birds-352a.jpg',
-        big: 'assets/bird/birds-352a.jpg'
+        small: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-352a.jpg?v=1648999632541',
+        medium: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-352a.jpg?v=1648999632541',
+        big: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-352a.jpg?v=1648999632541'
       },
       {
-        small: 'assets/bird/birds-353a.jpg',
-        medium: 'assets/bird/birds-353a.jpg',
-        big: 'assets/bird/birds-353a.jpg'
+        small: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-353a.jpg?v=1648999634154',
+        medium: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-353a.jpg?v=1648999634154',
+        big: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-353a.jpg?v=1648999634154'
       },
       {
-        small: 'assets/bird/birds-356a.jpg',
-        medium: 'assets/bird/birds-356a.jpg',
-        big: 'assets/bird/birds-356a.jpg'
+        small: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-356a.jpg?v=1648999633538',
+        medium: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-356a.jpg?v=1648999633538',
+        big: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-356a.jpg?v=1648999633538'
       },
       {
-        small: 'assets/bird/birds-361a.jpg',
-        medium: 'assets/bird/birds-361a.jpg',
-        big: 'assets/bird/birds-361a.jpg'
+        small: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-361a.jpg?v=1648999634539',
+        medium: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-361a.jpg?v=1648999634539',
+        big: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-361a.jpg?v=1648999634539'
       },
       {
-        small: 'assets/bird/birds-363a.jpg',
-        medium: 'assets/bird/birds-363a.jpg',
-        big: 'assets/bird/birds-363a.jpg'
+        small: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-363a.jpg?v=1648999633844',
+        medium: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-363a.jpg?v=1648999633844',
+        big: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/birds-363a.jpg?v=1648999633844'
       },      {
-        small: 'assets/bird/butterfly-49a.jpg',
-        medium: 'assets/bird/butterfly-49a.jpg',
-        big: 'assets/bird/butterfly-49a.jpg'
+        small: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/butterfly-49a.jpg?v=1648999634554',
+        medium: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/butterfly-49a.jpg?v=1648999634554',
+        big: 'https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/butterfly-49a.jpg?v=1648999634554'
       }
     ];
   }
