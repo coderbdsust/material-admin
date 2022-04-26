@@ -1,106 +1,95 @@
-<div class="container-fluid ">
-  <div class="row content-padding">
-    <div class="col-lg-4 ">
+<div fxLayout="row" fxLayoutGap="10px">
+    <div fxFlex="35">
       <mat-card class="mat-elevation-z4">
         <mat-card-header>
           <div mat-card-avatar class="card-header-image"></div>
           <div class="card-header-text">
             <mat-card-title>Biswajit Debnath</mat-card-title>
-            <mat-card-subtitle>Full Stack Developer</mat-card-subtitle>
+            <mat-card-subtitle>Software Engineer</mat-card-subtitle>
           </div>
         </mat-card-header>
         <mat-card-content>
           <div class="profile-text">
-            <div class="row-container">
-              <div class="col4">Location</div>
-              <div class="col7">Dhaka, Bangladesh</div>
-            </div>
-            <div class="row-container">
-              <div class="col4">Experience</div>
-              <div class="col7">4 Years</div>
-            </div>
-            <div class="row-container">
-              <div class="col4">Degree</div>
-              <div class="col7">B.Sc. (Engg)</div>
-            </div>
-            <div class="row-container">
-              <div class="col4">Contact</div>
-              <div class="col7">+88019XXXXXX21</div>
-            </div>
-            <div class="row-container">
-              <div class="col4">Email</div>
-              <div class="col7">biswajit.sust@gmail.com</div>
-            </div>
-          </div>
-          <div class="row-container">
-            <div class="col1">
-              <div class="row">
-                <div class="col-sm-9 col-sm-offset-3 login-btn-margin">
-                  <button mat-mini-fab color='Basic'>
-                    <img width="28" height="28" src="https://img.icons8.com/color/50/000000/facebook-circled.png">
-                  </button>
-                  <button mat-mini-fab color='Basic'>
-                    <img width="28" height="28" src="https://img.icons8.com/color/50/000000/linkedin-circled.png">
-                  </button>
-                  <button mat-mini-fab color='Basic'>
-                    <img width="28" height="28" src="https://img.icons8.com/nolan/64/000000/github.png">
-                  </button>
-                </div>
+            <div fxLayout="column" fxLayoutGap="10px">
+              <div fxLayout="row">
+                <div fxFlex="20" fxFlexOffset="10">Location</div>
+                <div fxFlex="70">Currently on Earth</div>
+              </div>
+              <div fxLayout="row">
+                <div fxFlex="20" fxFlexOffset="10">Experience</div>
+                <div fxFlex="70">4 Years</div>
+              </div>
+              <div fxLayout="row">
+                <div fxFlex="20" fxFlexOffset="10">Degree</div>
+                <div fxFlex="70">B.Sc. (Engg)</div>
+              </div>
+              <div fxLayout="row">
+                <div fxFlex="20" fxFlexOffset="10">Contact</div>
+                <div fxFlex="70">+88019XXXXXX21</div>
+              </div>
+              <div fxLayout="row">
+                <div fxFlex="20" fxFlexOffset="10">Email</div>
+                <div fxFlex="70">biswajit.sust@gmail.com</div>
               </div>
             </div>
+         </div>
+          <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px" [style.margin-top]="'15px'">
+            <button mat-mini-fab color='Basic'>
+              <img width="28" height="28" src="https://img.icons8.com/color/50/000000/facebook-circled.png">
+            </button>
+            <button mat-mini-fab color='Basic'>
+              <img width="28" height="28" src="https://img.icons8.com/color/50/000000/linkedin-circled.png">
+            </button>
+            <button mat-mini-fab color='Basic'>
+              <img width="28" height="28" src="https://img.icons8.com/nolan/64/000000/github.png">
+            </button>
           </div>
         </mat-card-content>
         <mat-card-actions>
         </mat-card-actions>
       </mat-card>
-
       <mat-card class="experience-content mat-elevation-z4">
         <mat-card-header class="card-header-section">
           <mat-card-title>About me</mat-card-title>
         </mat-card-header>
-
         <mat-card-content>
-          <p>Lorem Ipsum is simply dummy text of the printing
-            and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has
-            survived not only five centuries, but also the leap
-            into electronic typesetting, remaining essentially unchanged.
-            It was popularised in the 1960s with the release of Letraset
-            sheets containing Lorem Ipsum passages, and more recently
-            with desktop publishing software like Aldus PageMaker including
-            versions of Lorem Ipsum.</p>
+          <p>
+             Software Engineer with several years of professional working experience in several
+             software industries. Skilled in Java, Python, MySQL, Spring Boot, Javascript, Angular 2+,
+             HTML, CSS, Git, Tomcat, Weblogic. Also, have deep learning knowledge, a section of Machine
+             Learning. Strong engineering professional with a degree in Bachelor of Science focused in
+             Computer Science And Engineering from Shahjalal University of Science and Technology, Bangladesh.
+             Currently doing M.Sc. in Computational Modeling and Simulation in Technical University of Dresden, Germany.
+          </p>
         </mat-card-content>
       </mat-card>
     </div>
-    <div class="col-lg-8">
+    <div fxFlex="65">
       <mat-card class="mat-elevation-z4">
         <mat-card-header class="card-header-section">
           <mat-card-title>Experience</mat-card-title>
         </mat-card-header>
-
         <mat-card-content>
-          <div class="experience-section">
-            <div class="row-container">
-              <div class="col2"><span>2019 - 2021</span></div>
-              <div class="col7">
+          <div fxLayout="column" fxLayoutGap="10px">
+            <div fxLayout="row" [style.margin-top]="'15px'">
+              <div fxFlex="20" fxFlexOffset="10">2019 - 2021</div>
+              <div fxFlex="70">
                 <h4>Dutch Bangla Bank Limited</h4>
                 <h5>Senior Officer (IT Development Division)</h5>
                 <p>Dhaka, Bangladesh</p>
               </div>
             </div>
-            <div class="row-container">
-              <div class="col2">2018 - 2019</div>
-              <div class="col7">
+            <div fxLayout="row">
+              <div fxFlex="20" fxFlexOffset="10">2018 - 2019</div>
+              <div fxFlex="70">
                 <h4>Kinetik Care, USA</h4>
                 <h5>Junior Engineer (Remote)</h5>
                 <p>Dhaka, Bangladesh</p>
               </div>
             </div>
-            <div class="row-container">
-              <div class="col2">2016 - 2018</div>
-              <div class="col7">
+            <div fxLayout="row">
+              <div fxFlex="20" fxFlexOffset="10">2016 - 2018</div>
+              <div fxFlex="70">
                 <h4>IPvision Canada Inc</h4>
                 <h5>Junior Software Engineer </h5>
                 <p>Dhaka, Bangladesh</p>
@@ -108,40 +97,38 @@
             </div>
           </div>
         </mat-card-content>
-
         <mat-card-header class="card-header-section">
           <mat-card-title>Education</mat-card-title>
         </mat-card-header>
-
         <mat-card-content>
-          <div class="education-section">
-            <div class="row-container">
-              <div class="col2">2021 - Present</div>
-              <div class="col7">
+          <div fxLayout="column" fxLayoutGap="10px">
+            <div fxLayout="row" [style.margin-top]="'15px'">
+              <div fxFlex="20" fxFlexOffset="10">2021 - Present</div>
+              <div fxFlex="70">
                 <h4>Technical University of Dresden, Germany</h4>
                 <h5>M.Sc (Visual Computing)</h5>
                 <p>Computational Modeling and Simulation</p>
               </div>
             </div>
-            <div class="row-container">
-              <div class="col2">2011 - 2016</div>
-              <div class="col7">
+            <div fxLayout="row">
+              <div fxFlex="20" fxFlexOffset="10">2011 - 2016</div>
+              <div fxFlex="70">
                 <h4>Shahjalal University of Science and Technology, Bangladesh</h4>
                 <h5>B.Sc (Engg)</h5>
                 <p>Computer Science and Engineering</p>
               </div>
             </div>
-            <div class="row-container">
-              <div class="col2">2009 - 2011</div>
-              <div class="col7">
+            <div fxLayout="row">
+              <div fxFlex="20" fxFlexOffset="10">2009 - 2011</div>
+              <div fxFlex="70">
                 <h4>Dhaka City College</h4>
                 <h5>H.S.C (Science)</h5>
                 <p>Dhaka, Bangladesh</p>
               </div>
             </div>
-            <div class="row-container">
-              <div class="col2">2004 - 2009</div>
-              <div class="col7">
+            <div fxLayout="row">
+              <div fxFlex="20" fxFlexOffset="10">2004 - 2009</div>
+              <div fxFlex="70">
                 <h4>Rampura Ekramunnessa High School</h4>
                 <h5>S.S.C (Science)</h5>
                 <p>Dhaka, Bangladesh</p>
@@ -149,8 +136,6 @@
             </div>
           </div>
         </mat-card-content>
-
       </mat-card>
     </div>
-  </div>
 </div>
