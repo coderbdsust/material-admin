@@ -7,13 +7,14 @@
         'sidenav-gradient-black': colorPicker.getColor()==='black',
         'sidenav-gradient-blue': colorPicker.getColor()==='blue',
         'sidenav-gradient-green': colorPicker.getColor()==='green',
-        'sidenav-gradient-orange': colorPicker.getColor()==='orange',
+        'sidenav-gradient-teal': colorPicker.getColor()==='teal',
+        'sidenav-gradient-indigo': colorPicker.getColor()==='indigo',
         'sidenav-gradient-white': colorPicker.getColor()==='white'
       }" mode="side">
 
     <div class="sidebar-site-title">
       <div class="site-logo"></div>
-      <h2 class="site-title" *ngIf="sidenavService.isOpen()"> nxt2Solve </h2>
+      <h2 class="site-title" *ngIf="sidenavService.isOpen()"> NXT2SOLVE </h2>
     </div>
 
     <div class="sidebar-user-profile">
@@ -215,31 +216,22 @@
       <div class="wrapper-body">
         <router-outlet></router-outlet>
       </div>
-      <footer class="footer">
-        <div class="container-fluid">
+      <footer class="footer" fxLayout="row" fxLayoutAlign="center center">
+        <div>
           <nav>
             <ul>
               <li>
-                <a href="http://www.theme-lands.com">
-                  Theme Lands
-                </a>
-              </li>
-              <li>
-                <a href="http://www.theme-lands.com">
+                <a href="#"  target="_blank">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="https://opensource.org/licenses/MIT">
-                  Licenses
+                <a href="https://github.com/coderbdsust/material-admin/blob/master/LICENSE.md" target="_blank">
+                  MIT License
                 </a>
               </li>
             </ul>
           </nav>
-          <div>
-            made by
-            <a href="http://www.theme-lands.com" target="_blank">Theme Lands</a> for a better web.
-          </div>
         </div>
       </footer>
     </perfect-scrollbar>

@@ -74,10 +74,19 @@
   background-position: top;
 }
 
-.sidenav-gradient-orange {
+.sidenav-gradient-teal {
   background-image: linear-gradient(to right bottom,
-      $color-orange-alpha,
-      $color-orange-beta),
+      $color-teal-alpha,
+      $color-teal-beta),
+    url('https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/sidebar-1.jpg?v=1648999665203');
+  background-size: cover;
+  background-position: top;
+}
+
+.sidenav-gradient-indigo {
+  background-image: linear-gradient(to right bottom,
+      $color-indigo-alpha,
+      $color-indigo-beta),
     url('https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/sidebar-1.jpg?v=1648999665203');
   background-size: cover;
   background-position: top;
@@ -149,8 +158,6 @@
 .footer {
   padding: 0.94rem 0;
   text-align: center;
-  display: -webkit-flex;
-  display: flex;
   color: rgba(0, 0, 0, 0.6);
 
   ul {
@@ -171,12 +178,11 @@
         text-decoration: none;
         position: relative;
         display: block;
-
         &:hover {
           text-decoration: none;
         }
       }
-
+      
       .btn {
         margin: 0;
       }
@@ -197,7 +203,6 @@
         display: block;
         margin-left: -5px;
         margin-right: -5px;
-
         a {
           padding: 5px;
         }
@@ -205,10 +210,6 @@
     }
   }
 
-  .pull-center {
-    display: inline-block;
-    float: none;
-  }
 }
 
 .sidebar-user-profile{

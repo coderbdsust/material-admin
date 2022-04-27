@@ -10,7 +10,8 @@
         'color-black': colorPicker.getColor()==='black',
         'color-blue': colorPicker.getColor()==='blue',
         'color-green': colorPicker.getColor()==='green',
-        'color-orange': colorPicker.getColor()==='orange',
+        'color-teal': colorPicker.getColor()==='teal',
+        'color-indigo': colorPicker.getColor()==='indigo',
         'color-white': colorPicker.getColor()==='white'
       }">
         <mat-icon class="sidemenu-icon" mat-button>settings</mat-icon>
@@ -25,8 +26,10 @@
           [ngClass]="{'selection-border': getColor()==='black'}"></button>
         <button mat-mini-fab class="color-green" (click)="onChooseColor('green')"
           [ngClass]="{'selection-border': getColor()==='green'}"></button>
-        <button mat-mini-fab class="color-orange" (click)="onChooseColor('orange')"
-          [ngClass]="{'selection-border': getColor()==='orange'}"></button>
+        <button mat-mini-fab class="color-teal" (click)="onChooseColor('teal')"
+          [ngClass]="{'selection-border': getColor()==='teal'}"></button>
+        <button mat-mini-fab class="color-indigo" (click)="onChooseColor('indigo')"
+          [ngClass]="{'selection-border': getColor()==='indigo'}"></button>
         <button mat-mini-fab class="color-white" (click)="onChooseColor('white')"
           [ngClass]="{'selection-border': getColor()==='white'}"></button>
       </div>

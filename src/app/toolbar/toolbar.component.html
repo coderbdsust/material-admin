@@ -3,7 +3,8 @@
   'color-gradient-black': colorPicker.getColor()==='black',
   'color-gradient-blue': colorPicker.getColor()==='blue',
   'color-gradient-green': colorPicker.getColor()==='green',
-  'color-gradient-orange': colorPicker.getColor()==='orange',
+  'color-gradient-teal': colorPicker.getColor()==='teal',
+  'color-gradient-indigo': colorPicker.getColor()==='indigo',
   'color-gradient-white': colorPicker.getColor()==='white',
   'toolbar-black' : colorPicker.getColor() === 'white',
   'toolbar-white' : colorPicker.getColor() !== 'white'
@@ -17,11 +18,6 @@
     </mat-form-field>
     <span class='col4'>
       <div class="nav-items">
-        <div class="nav-item-icon">
-          <a href="http://docs.theme-lands.com" target="_blank">
-            <mat-icon>feedback</mat-icon>
-          </a>
-        </div>
         <div class="nav-item-icon">
           <mat-icon matBadge="15" matBadgeColor="warn" [matMenuTriggerFor]="menu">notifications</mat-icon>
           <mat-menu #menu="matMenu">

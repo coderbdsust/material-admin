@@ -1,6 +1,4 @@
 import { Injectable } from '@angular/core';
-import { defaultComparator } from '@angular/common/src/pipes/keyvalue_pipe';
-
 
 @Injectable({
   providedIn: 'root'
@@ -35,7 +33,7 @@ export class ColorPickerService {
       case 'green':
         this.progressBarColor = 'primary';
         break;
-      case 'orange':
+      case 'teal':
         this.progressBarColor = 'accent';
         break;
       case 'white':

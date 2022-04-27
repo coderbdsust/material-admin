@@ -81,11 +81,21 @@
    background-position: top;
 }
 
-.color-gradient-orange{
+.color-gradient-teal{
   background-image: linear-gradient(
     to left bottom,
-    $color-orange-alpha,
-    $color-orange-beta
+    $color-teal-alpha,
+    $color-teal-beta
+   ), url('https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/toolbar-1.jpg?v=1648999665113');
+   background-size: cover;
+   background-position: top;
+}
+
+.color-gradient-indigo{
+  background-image: linear-gradient(
+    to left bottom,
+    $color-indigo-alpha,
+    $color-indigo-beta
    ), url('https://cdn.glitch.global/ffed6655-f0c8-43de-b7fc-94a19528fcaf/toolbar-1.jpg?v=1648999665113');
    background-size: cover;
    background-position: top;
