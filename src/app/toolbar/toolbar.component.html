@@ -9,14 +9,14 @@
   'toolbar-black' : colorPicker.getColor() === 'white',
   'toolbar-white' : colorPicker.getColor() !== 'white'
 }">
-  <mat-toolbar-row class='row-container'>
+  <mat-toolbar-row fxLayout='row' fxLayoutAlign="space-between center">
     <mat-icon class="toggle-menu" mat-button (click)="toggleRightSidenav()">menu</mat-icon>
-    <span class='col1'></span>
-    <mat-form-field class='col5'>
+    <span fxFlex='10'></span>
+    <mat-form-field fxFlex='80'>
       <mat-icon class="search-icon" mat-button>search</mat-icon>
       <input matInput />
     </mat-form-field>
-    <span class='col4'>
+    <span fxFlex='10'>
       <div class="nav-items">
         <div class="nav-item-icon">
           <mat-icon matBadge="15" matBadgeColor="warn" [matMenuTriggerFor]="menu">notifications</mat-icon>
