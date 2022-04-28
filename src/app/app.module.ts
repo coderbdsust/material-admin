@@ -24,6 +24,7 @@ import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 import { HttpClientModule } from '@angular/common/http';
 import { BillingComponent } from './layout/pages/billing/billing.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -55,6 +56,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     MatSnackBarModule,
     PerfectScrollbarModule,
     HttpClientModule,
+    FlexLayoutModule
   ],
   providers: [
     HttpClientModule,

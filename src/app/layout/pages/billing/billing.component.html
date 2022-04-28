@@ -1,73 +1,60 @@
-<div class="section">
-  <div class="text-section">
-    <h1 class="text-primary">
-      <span class="text-header">Pick the best plan for you</span>
-      <span class="text-title">You have Free Unlimited Updates and Premium Support on each package.</span>
-    </h1>
+<div fxLayout="column" fxLayoutAlign="center center" class="section" fxLayoutGap="50px">
+  <div fxLayout="column" fxLayoutAlign="center center" class="text-primary">
+    <span class="text-header">Pick the best plan for you</span>
+    <span class="text-title">You have Free Unlimited Updates and Premium Support on each package.</span>
   </div>
-
-  <div class="container-fluid">
-    <div class="billing-section">
-      <div class="row">
-        <div class="col-md-12 col-lg-12">
-          <div class="row-container">
-            <div class="row center-item">
-              <div class="col-md-3 col-lg-3 col-sm-10">
-                <mat-card>
-                  <h6 class="card-title">Freelancer</h6>
-                  <i class="card-circle">
-                    <mat-icon>
-                      backup
-                    </mat-icon>
-                  </i>
-                  <h3 class="card-plan-value">Free</h3>
-                  <p class="card-sub-title">This is good if your company size is between 4 and 29 Persons.</p>
-                  <button mat-raised-button class="card-choose-button">Choose Plan</button>
-                </mat-card>
-              </div>
-              <div class="col-md-3  col-lg-3 col-sm-10">
-                <mat-card>
-                  <h6 class="card-title">Small Company</h6>
-                  <i class="card-circle">
-                    <mat-icon>
-                      home
-                    </mat-icon>
-                  </i>
-                  <h3 class="card-plan-value">20$</h3>
-                  <p class="card-sub-title">This is good if your company size is between 5 and 50 Persons.</p>
-                  <button mat-raised-button class="card-choose-button">Choose Plan</button>
-                </mat-card>
-              </div>
-              <div class="col-md-3  col-lg-3 col-sm-10">
-                <mat-card>
-                  <h6 class="card-title">Medium Company</h6>
-                  <i class="card-circle">
-                    <mat-icon>
-                      event
-                    </mat-icon>
-                  </i>
-                  <h3 class="card-plan-value">60$</h3>
-                  <p class="card-sub-title">This is good if your company size is between 11 and 99 Persons.</p>
-                  <button mat-raised-button class="card-choose-button">Choose Plan</button>
-                </mat-card>
-              </div>
-              <div class="col-md-3  col-lg-3 col-sm-10">
-                <mat-card>
-                  <h6 class="card-title">Extra Pack</h6>
-                  <i class="card-circle">
-                    <mat-icon>
-                      account_balance
-                    </mat-icon>
-                  </i>
-                  <h3 class="card-plan-value">100$</h3>
-                  <p class="card-sub-title">This is good if your company size is 99+ Persons.</p>
-                  <button mat-raised-button class="card-choose-button">Choose Plan</button>
-                </mat-card>
-              </div>
-            </div>
-          </div>
+  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+      <mat-card fxFlex="15">
+        <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+          <h6 class="card-title">Freelancer</h6>
+          <button mat-fab>
+            <mat-icon>
+              backup
+            </mat-icon>
+          </button>
+          <h3 class="card-plan-value">Free</h3>
+          <p class="card-sub-title">This is good if your company size is less than 30 Persons.</p>
+          <button mat-raised-button>Choose Plan</button>
         </div>
-      </div>
-    </div>
+      </mat-card>
+      <mat-card fxFlex="15">
+        <div fxLayout="column" fxLayoutAlign="center center"  fxLayoutGap="20px">
+          <h6 class="card-title">Small Company</h6>
+          <button mat-fab>
+            <mat-icon>
+              home
+            </mat-icon>
+          </button>
+          <h3 class="card-plan-value">20$</h3>
+          <p class="card-sub-title">This is good if your company size is between 30 and 59 Persons.</p>
+          <button mat-raised-button>Choose Plan</button>
+        </div>
+      </mat-card>
+      <mat-card fxFlex="15">
+        <div fxLayout="column" fxLayoutAlign="center center"  fxLayoutGap="20px">
+          <h6 class="card-title">Medium Company</h6>
+          <button mat-fab>
+            <mat-icon>
+              event
+            </mat-icon>
+          </button>
+          <h3 class="card-plan-value">60$</h3>
+          <p class="card-sub-title">This is good if your company size is between 60 and 99 Persons.</p>
+          <button mat-raised-button>Choose Plan</button>
+        </div>
+      </mat-card>
+      <mat-card fxFlex="15">
+        <div fxLayout="column" fxLayoutAlign="center center"  fxLayoutGap="20px">
+          <h6 class="card-title">Extra Pack</h6>
+          <button mat-fab>
+            <mat-icon>
+              account_balance
+            </mat-icon>
+          </button>
+          <h3 class="card-plan-value">100$</h3>
+          <p class="card-sub-title">This is good if your company size is above 99+ Persons.</p>
+          <button mat-raised-button>Choose Plan</button>
+        </div>
+      </mat-card>
   </div>
 </div>

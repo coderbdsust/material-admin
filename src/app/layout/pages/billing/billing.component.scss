@@ -5,17 +5,6 @@
   background-size: cover;
   background-position: top;
   height: 100vh;
-
-}
-
-.text-section {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding-bottom: 40px;
-
 }
 
 .text-primary {
@@ -24,46 +13,16 @@
 }
 
 .text-header {
-  display: block;
   font-size: 28px;
-  font-weight: 100;
+  font-weight: 500;
   letter-spacing: 2px;
 }
 
 .text-title {
-  display: block;
   padding-top: 10px;
   font-size: 18px;
   font-weight: 50;
   letter-spacing: 2px;
-}
-
-.billing-section{
-  top: 40%;
-  display: inline-block;
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-}
-
-.center-item{
-  margin: 0 auto !important;
-}
-
-.row-container > *{
-  margin:4px;
-}
-
-.mat-card {
-  width: 280px;
-  height: 380px;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  display: block;
-  text-align: center;
-  font-family:  "Helvetica","Roboto", "Arial", "sans-serif";
-  margin-bottom:15px;
 }
 
 .card-title{
@@ -71,22 +30,6 @@
   font-weight: 100;
   color: rgba(255, 4, 4, 0.856);
   text-transform: uppercase;
-}
-
-.card-circle{
-  font-size: 60px;
-  height: 120px;
-  width: 120px;
-  background-color: rgba(0, 0, 0, 0.9);
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.card-circle > *{
-  font-size: 55px;
-  color: red;
-  padding-top:30px;
-  padding-right:50px;
 }
 
 .card-plan-value{
@@ -104,8 +47,19 @@
   margin-top:5px;
 }
 
+.mat-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  font-family:  "Helvetica","Roboto", "Arial", "sans-serif";
+}
+
 .mat-card:hover{
   background-color: white;
   color: black;
 }
 
+::ng-deep .mat-card {
+  border: 0px !important;
+  border-radius: 0px !important;
+}
