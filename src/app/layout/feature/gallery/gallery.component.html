@@ -1,5 +1,17 @@
-<div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px" class="gallery-body">
-  <mat-card fxFlex="50">
-    <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+<div 
+  fxLayout="row"
+  fxLayoutAlign="center center" 
+  fxLayoutGap="10px" 
+  class="gallery-body"
+  [style.background]="backgroundStyle"
+>
+  <mat-card fxFlex="35">
+    <ngx-gallery
+        #gallery 
+        [options]="galleryOptions" 
+        [images]="galleryImages"
+        (click)="currentImage()"
+    >
+    </ngx-gallery>
   </mat-card>
 </div>
