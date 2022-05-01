@@ -6,41 +6,50 @@ This project is done for making easier and faster web application UI development
 ## Features Summary with UI - [Live Demo](https://material-admin-y2022.glitch.me/#/social)
 
 * Home Page - Admin
-![Admin Page - Red](/demo-img/03-theme-admin-page-red-v2.png)
-![Admin Page - Black](/demo-img/04-theme-admin-page-black-v2.png)
-![Admin Page - White](/demo-img/02-theme-admin-page-white-v2.png)
+![Admin Page - Red](/demo-img/01-theme-admin-page-red-v3.png)
+![Admin Page - Teal](/demo-img/02-theme-admin-page-teal-v1.png)
+![Admin Page - Black](/demo-img/03-theme-admin-page-black-v3.png)
+![Admin Page - Indigo](/demo-img/04-theme-admin-page-indigo-v1.png)
+![Admin Page - White](/demo-img/05-theme-admin-page-white-v3.png)
+![Admin Page - Green](/demo-img/06-theme-admin-page-green-v1.png)
 
 * Home Page - Social
-![Social Page](/demo-img/18-theme-social-v5.png)
+![Social Page](/demo-img/08-theme-social-v1.png)
 
 * Graph Page
-![Graph Page - Line](/demo-img/05-theme-graph-line-v2.png)
-![Graph Page - Bar](/demo-img/14-theme-graph-bar-v2.png)
-![Graph Page - Dognut](/demo-img/07-theme-graph-dognut-v2.png)
-![Graph Page - Polar](/demo-img/08-theme-graph-polar-v2.png)
-![Graph Page - Radar](/demo-img/06-theme-graph-radar-v2.png)
+![Graph Page - Line](/demo-img/09-theme-graph-line-v1.png)
+![Graph Page - Bar](/demo-img/10-theme-graph-bar-v1.png)
+![Graph Page - Radar](/demo-img/11-theme-graph-radar-v1.png)
+![Graph Page - Polar](/demo-img/12-theme-graph-polar-v1.png)
+![Graph Page - Dognut](/demo-img/13-theme-graph-dognut-v1.png)
 
 * Form
-![Form Page - 1](/demo-img/10-theme-form-component-v2.png)
-![Form Page - 2](/demo-img/11-theme-form-v2.png)
+![Form Page - 1](/demo-img/14-theme-form-component-v1.png)
+![Form Page - 2](/demo-img/15-theme-form-v2.png)
 
 * Components
-![Components](/demo-img/16-theme-components-card-v2.png)
+![Components](/demo-img/16-theme-components-card-v3.png)
 
 * Table
-![Table](/demo-img/17-theme-table-v2.png)
+![Table](/demo-img/17-theme-table-v3.png)
+
+* Gallery
+![Gallery](/demo-img/18-theme-gallery-v4.png)
 
 * Editor
-![Editor - 1](/demo-img/12-theme-editor-v2.png)
+![Editor - 1](/demo-img/19-theme-editor-v1.png)
 
 * Calendar
-![Calendar - 2](/demo-img/13-theme-calendar-v2.png)
+![Calendar - 1](/demo-img/20-theme-calendar-v1.png)
 
 * Profile
-![Profile](/demo-img/14-theme-profile-v2.png)
+![Profile-1](/demo-img/21-theme-profile-v1.png)
 
 * Page - Billing
-![Calendar - 2](/demo-img/15-theme-billing.png)
+![Billing - 1](/demo-img/22-theme-billing-v1.png)
+
+* Theme in Seven Color - Red, Black, White, Purple, Indigo, Teal, Green
+![Theme - 1](/demo-img/23-theme-supported-colors-v1.png)
 
 * Pages - Sign In, Sign Out, Forgot Password, Page - 404, Page - 500 
 
@@ -89,7 +98,7 @@ We use `@Git` for versioning
 
 ## Used Packages
 
-![Library](/demo-img/18-theme-library.png)
+![Library](/demo-img/24-theme-library.png)
 
 ## Developers
 
