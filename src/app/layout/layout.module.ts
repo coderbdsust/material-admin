@@ -85,14 +85,12 @@ import { NgxGalleryModule } from 'ngx-gallery';
 import { NgChatModule } from 'ng-chat';
 import { AngularEditorModule } from '@kolkov/angular-editor';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
-import { DataTablesModule } from 'angular-datatables';
 import { FusionChartsModule } from 'angular-fusioncharts';
 import * as FusionCharts from 'fusioncharts';
 import * as FusionMaps from 'fusioncharts/fusioncharts.maps';
 import * as World from 'fusionmaps/maps/fusioncharts.world';
 import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 import { EditorComponent } from './feature/editor/editor.component';
-import { BoostrapTableComponent } from './feature/table-layout/boostrap-table/boostrap-table.component';
 FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
 
 @NgModule({
@@ -138,8 +136,7 @@ FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
     CalendarComponent,
     MapsComponent,
     GalleryComponent,
-    EditorComponent,
-    BoostrapTableComponent
+    EditorComponent
   ],
   imports: [
     CommonModule,
@@ -190,7 +187,6 @@ FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
     FusionChartsModule,
     AngularEditorModule,
     CKEditorModule,
-    DataTablesModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyD43YSgOPyRtnMm9NJjIKvHT8iXDThJQyg'
     })
