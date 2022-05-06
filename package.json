@@ -33,7 +33,6 @@
     "@fullcalendar/resource-timeline": "^4.0.2",
     "@fullcalendar/timegrid": "^4.0.1",
     "@kolkov/angular-editor": "^0.14.5",
-    "@ng-bootstrap/ng-bootstrap": "^4.1.0",
     "angular-font-awesome": "^3.1.2",
     "angular-fusioncharts": "^3.0.1",
     "angular-material-fileupload": "^2.0.0",

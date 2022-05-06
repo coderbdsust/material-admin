@@ -1,11 +1,7 @@
 import { Component, OnInit, NgModule } from "@angular/core";
-import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { MatSnackBar } from "@angular/material";
 import { AlertService } from "src/app/service/alert.service";
 
-@NgModule({
-  imports: [NgbModule]
-})
 @Component({
   selector: "app-alert",
   templateUrl: "./alert.component.html",

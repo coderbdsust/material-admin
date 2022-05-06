@@ -1,46 +1,22 @@
-<div fxLayout="column" fxLayoutGap="10px">
-  <div fxLayout="row" fxLayoutGap="10px">
-    <mat-card fxFlex="50">
-       <div fxLayout="column" fxLayoutGap="10px">
-          <app-bd-alert alert='Success' message='This is a success alert' cancelBtn='True'></app-bd-alert>
-          <app-bd-alert alert='Info' message='This is a info alert' cancelBtn='True'></app-bd-alert>
-          <app-bd-alert alert='Warning' message='This is a warning alert' cancelBtn='True'></app-bd-alert>
-          <app-bd-alert alert='Danger' message='This is a danger alert' cancelBtn='True'></app-bd-alert>
-          <app-bd-alert alert='Primary' message='This is a primary alert' cancelBtn='True'></app-bd-alert>
-          <app-bd-alert alert='Light' message='This is a light alert' cancelBtn='True'></app-bd-alert>
-          <app-bd-alert alert='Dark' message='This is a dark alert' cancelBtn='True'></app-bd-alert>
-       </div>
-    </mat-card>
-    <mat-card fxFlex="50">
-      <div fxLayout="column" fxLayoutGap="10px">
-          <app-bd-alert alert='Success' message='This is a success alert' cancelBtn='False'></app-bd-alert>
-          <app-bd-alert alert='Info' message='This is a info alert' cancelBtn='False'></app-bd-alert>
-          <app-bd-alert alert='Warning' message='This is a warning alert' cancelBtn='False'></app-bd-alert>
-          <app-bd-alert alert='Danger' message='This is a danger alert' cancelBtn='False'></app-bd-alert>
-          <app-bd-alert alert='Primary' message='This is a primary alert' cancelBtn='False'></app-bd-alert>
-          <app-bd-alert alert='Light' message='This is a light alert' cancelBtn='False'></app-bd-alert>
-          <app-bd-alert alert='Dark' message='This is a dark alert' cancelBtn='False'></app-bd-alert>
+<div fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="10px">
+    <mat-card row="50">
+      <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+        <mat-form-field fxLayoutAlign>
+          <input matInput value="2000" placeholder="Duration in ms" #duration>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Alert Type</mat-label>
+          <select matNativeControl required #action>
+            <option value="success">Success</option>
+            <option value="info">Info</option>
+            <option value="warning">Warning</option>
+            <option value="danger">Danger</option>
+            <option value="error">Error</option>
+            <option value="dark">Dark</option>
+            <option value="primary">Primary</option>
+          </select>
+        </mat-form-field>
+        <button mat-button mat-raised-button (click)="openSnackBar(action.value, duration.value)">Show alert message</button>
       </div>
     </mat-card>
-  </div>
-  <div fxLayout="row" fxLayoutAlign="center center">
-    <mat-card>
-      <mat-form-field fxLayoutAlign>
-        <input matInput value="2000" placeholder="Duration in ms" #duration>
-      </mat-form-field>
-      <mat-form-field>
-        <mat-label>Alert Type</mat-label>
-        <select matNativeControl required #action>
-          <option value="success">Success</option>
-          <option value="info">Info</option>
-          <option value="warning">Warning</option>
-          <option value="danger">Danger</option>
-          <option value="error">Error</option>
-          <option value="dark">Dark</option>
-          <option value="primary">Primary</option>
-        </select>
-      </mat-form-field>
-      <button mat-button (click)="openSnackBar(action.value, duration.value)">Show alert message</button>
-    </mat-card>
-  </div>
 </div>

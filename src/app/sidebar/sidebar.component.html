@@ -1,7 +1,6 @@
 <mat-drawer-container class="sidenav-container " [ngClass]="{
   'sidenav-black' : colorPicker.getColor() === 'white',
   'sidenav-white' : colorPicker.getColor() !== 'white'}" autosize>
-
   <mat-drawer #sideNav mode="side" opened="true" class="sidenav sidebar-shadow" [ngClass]="{
         'sidenav-gradient-red': colorPicker.getColor()==='red',
         'sidenav-gradient-black': colorPicker.getColor()==='black',
@@ -11,18 +10,15 @@
         'sidenav-gradient-indigo': colorPicker.getColor()==='indigo',
         'sidenav-gradient-white': colorPicker.getColor()==='white'
       }" mode="side">
-
     <div class="sidebar-site-title">
       <div class="site-logo"></div>
       <h2 class="site-title" *ngIf="sidenavService.isOpen()"> NXT2SOLVE </h2>
     </div>
-
     <div class="sidebar-user-profile">
       <div mat-card-avatar class="user-image"></div>
       <h1 class="user-title" *ngIf="sidenavService.isOpen()"><strong>Biswajit Debnath</strong></h1>
       <p class="user-email" *ngIf="sidenavService.isOpen()">bis-----------t@gmail.com</p>
     </div>
-
     <mat-accordion (click)="sidenavService.open()">
       <mat-expansion-panel>
         <mat-expansion-panel-header class="indicator-arrow">
@@ -39,14 +35,12 @@
     </mat-accordion>
     <mat-accordion (click)="sidenavService.open()">
       <mat-expansion-panel>
-          
         <mat-expansion-panel-header class="indicator-arrow">
             <mat-panel-title>
               <mat-icon class="sidemenu-icon" mat-button>format_shapes</mat-icon>
               <span *ngIf="sidenavService.isOpen()">Componants</span>
             </mat-panel-title>
           </mat-expansion-panel-header>
-
           <perfect-scrollbar style="overflow: hidden; height: 180px;">
             <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/alerts']"
               routerLinkActive="active">Alerts</button>
@@ -95,8 +89,6 @@
             routerLinkActive="active">Sorted Table</button>
           <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/table/sticky']"
             routerLinkActive="active">Sticky Table</button>
-          <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width'
-            [routerLink]="['/table/boostrap-data-table']" routerLinkActive="active">Bootstrap Datatable</button>
         </perfect-scrollbar>
       </mat-expansion-panel>
     </mat-accordion>
@@ -108,7 +100,6 @@
             <span *ngIf="sidenavService.isOpen()">Graph</span>
           </mat-panel-title>
         </mat-expansion-panel-header>
-
         <perfect-scrollbar style="overflow: hidden; height: 180px;">
           <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/charts/line']"
             routerLinkActive="active">Line</button>
@@ -127,7 +118,6 @@
           <button *ngIf="sidenavService.isOpen()" mat-button class='btn-full-width' [routerLink]="['/charts/mixed']"
             routerLinkActive="active">Mixed</button>
         </perfect-scrollbar>
-
       </mat-expansion-panel>
     </mat-accordion>
     <mat-accordion (click)="sidenavService.open()">
@@ -209,7 +199,6 @@
       </mat-expansion-panel>
     </mat-accordion>
   </mat-drawer>
-
   <mat-drawer-content class="mat-drawer-content">
     <perfect-scrollbar style="overflow: hidden;">
       <app-toolbar></app-toolbar>
