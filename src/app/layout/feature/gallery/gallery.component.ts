@@ -11,7 +11,7 @@ export class GalleryComponent implements OnInit {
 
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
-  @ViewChild(NgxGalleryComponent) ngxGallery;
+  @ViewChild(NgxGalleryComponent, { static: true }) ngxGallery;
   public backgroundStyle;
 
   constructor(private sanitizer:DomSanitizer) { }

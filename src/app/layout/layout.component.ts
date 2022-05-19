@@ -15,7 +15,7 @@ import {
 export class LayoutComponent implements OnInit {
   
   public closeSetting: boolean = true;
-  @ViewChild('queryToggle') ref: MatSlideToggle;
+  @ViewChild('queryToggle', { static: true }) ref: MatSlideToggle;
   constructor(public sidenavService: SideNavService, public colorPicker: ColorPickerService) { }
   
 
