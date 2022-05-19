@@ -1,8 +1,9 @@
 import { Component, OnInit, ViewChild , Inject} from '@angular/core';
-import { MatPaginator, MatTableDataSource } from '@angular/material';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatTableDataSource } from '@angular/material/table';
 import { PeriodicElement, ELEMENT_DATA, PElement } from '../table-data';
 import { SelectionModel } from '@angular/cdk/collections';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from "@angular/material";
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from "@angular/material/dialog";
 
 
 @Component({

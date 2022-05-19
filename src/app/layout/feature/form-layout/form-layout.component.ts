@@ -11,7 +11,7 @@ import {
 } from "@angular/forms";
 import { ErrorStateMatcher } from "@angular/material/core";
 import {COMMA, ENTER} from '@angular/cdk/keycodes';
-import {MatChipInputEvent} from '@angular/material';
+import { MatChipInputEvent } from '@angular/material/chips';
 
 export interface Fruit {
   name: string;

@@ -1,5 +1,5 @@
 import { Component, OnInit, NgModule } from "@angular/core";
-import { MatSnackBar } from "@angular/material";
+import { MatSnackBar } from "@angular/material/snack-bar";
 import { AlertService } from "src/app/service/alert.service";
 
 @Component({

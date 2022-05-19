@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild} from '@angular/core';
-import {MatPaginator, MatTableDataSource} from '@angular/material';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatTableDataSource } from '@angular/material/table';
 import {PeriodicElement, ELEMENT_DATA } from '../table-data';
 @Component({
   selector: 'app-paginated-table',

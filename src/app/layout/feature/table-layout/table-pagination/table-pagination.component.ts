@@ -1,5 +1,5 @@
 import { Component, OnInit, NgModule } from '@angular/core';
-import {PageEvent} from '@angular/material';
+import { PageEvent } from '@angular/material/paginator';
 @Component({
   selector: 'app-table-pagination',
   templateUrl: './table-pagination.component.html',

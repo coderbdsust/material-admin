@@ -1,5 +1,6 @@
 import {Component, OnInit, ViewChild, NgModule} from '@angular/core';
-import {MatSort, MatTableDataSource} from '@angular/material';
+import { MatSort } from '@angular/material/sort';
+import { MatTableDataSource } from '@angular/material/table';
 import { ELEMENT_DATA } from '../table-data';
 
 @Component({

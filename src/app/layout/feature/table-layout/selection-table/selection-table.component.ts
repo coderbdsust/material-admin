@@ -1,5 +1,5 @@
 import {SelectionModel} from '@angular/cdk/collections';
-import {MatTableDataSource} from '@angular/material';
+import { MatTableDataSource } from '@angular/material/table';
 import { Component, OnInit, NgModule} from '@angular/core';
 import {PeriodicElement, ELEMENT_DATA } from '../table-data';
 

@@ -11,7 +11,7 @@ import { SidebarComponent } from "./sidebar/sidebar.component";
 import { ToolbarComponent } from "./toolbar/toolbar.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { DynamicDatabase } from "../app/layout/feature/componants/tree/tree.component";
-import { MatDatepickerModule } from "@angular/material";
+import { MatDatepickerModule } from "@angular/material/datepicker";
 import { AlertService } from "./service/alert.service";
 import { LoginComponent } from "./layout/pages/login/login.component";
 import { SignupComponent } from "./layout/pages/signup/signup.component";

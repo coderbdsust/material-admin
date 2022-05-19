@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from "@angular/core";
-import { MatBottomSheet, MatBottomSheetRef } from "@angular/material";
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from "@angular/material";
+import { MatBottomSheet, MatBottomSheetRef } from "@angular/material/bottom-sheet";
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from "@angular/material/dialog";
 
 export interface DialogData {
   animal: string;

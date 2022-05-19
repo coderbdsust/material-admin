@@ -1,5 +1,5 @@
 import { Component, OnInit, NgModule, ViewChild} from '@angular/core';
-import { MatSlideToggle } from "@angular/material";
+import { MatSlideToggle } from "@angular/material/slide-toggle";
 
 import { SideNavService } from '../service/side-nav.service';
 import { ColorPickerService } from 'src/app/service/color-picker.service';

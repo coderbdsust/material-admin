@@ -1,5 +1,5 @@
 import { Component, OnInit, NgModule } from "@angular/core";
-import { MatTableDataSource } from "@angular/material";
+import { MatTableDataSource } from "@angular/material/table";
 import { ELEMENT_DATA } from "../table-data";
 import {MyMaterialModule} from '../../../../my-material.module';
 
