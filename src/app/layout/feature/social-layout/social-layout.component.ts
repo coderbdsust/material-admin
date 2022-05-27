@@ -13,7 +13,7 @@ export class SocialLayoutComponent implements OnInit {
   userId = 999;
   public adapter: ChatAdapter = new MessengerAdapter();
  
-  @ViewChild('ngChatInstance', { static: false })
+  @ViewChild('ngChatInstance')
   protected ngChatInstance: IChatController;
 
   constructor() { }

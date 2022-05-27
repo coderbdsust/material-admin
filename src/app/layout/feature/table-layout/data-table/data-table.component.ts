@@ -28,7 +28,7 @@ export class DataTableItemAddModal {
 })
 export class DataTableComponent implements OnInit {
 
-  @ViewChild(MatPaginator, { static: false }) paginator: MatPaginator;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
   displayedColumns: string[] = ['select', 'position', 'name', 'weight', 'symbol', 'edit', 'remove'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
   selection = new SelectionModel<PeriodicElement>(true, []);

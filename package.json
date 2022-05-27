@@ -12,18 +12,18 @@
   "private": true,
   "dependencies": {
     "@agm/core": "^1.0.0-beta.5",
-    "@angular/animations": "~8.2.14",
-    "@angular/cdk": "^8.2.3",
-    "@angular/common": "~8.2.14",
-    "@angular/compiler": "~8.2.14",
-    "@angular/core": "~8.2.14",
+    "@angular/animations": "~10.2.5",
+    "@angular/cdk": "^9.2.4",
+    "@angular/common": "~10.2.5",
+    "@angular/compiler": "~10.2.5",
+    "@angular/core": "~9.1.13",
     "@angular/flex-layout": "^8.0.0-beta.27",
-    "@angular/forms": "^8.2.14",
-    "@angular/material": "^8.2.3",
-    "@angular/material-moment-adapter": "^8.2.3",
-    "@angular/platform-browser": "~8.2.14",
-    "@angular/platform-browser-dynamic": "~8.2.14",
-    "@angular/router": "~8.2.14",
+    "@angular/forms": "^10.2.5",
+    "@angular/material": "^9.2.4",
+    "@angular/material-moment-adapter": "^9.2.4",
+    "@angular/platform-browser": "~10.2.5",
+    "@angular/platform-browser-dynamic": "~10.2.5",
+    "@angular/router": "~10.2.5",
     "@ckeditor/ckeditor5-angular": "^1.1.0",
     "@ckeditor/ckeditor5-build-classic": "^12.1.0",
     "@fullcalendar/angular": "^4.0.2-beta",
@@ -51,13 +51,13 @@
     "ngx-perfect-scrollbar": "^7.2.1",
     "rxjs": "~6.6.7",
     "tslib": "^1.9.0",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.10.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.29",
     "@angular/cli": "~8.3.29",
-    "@angular/compiler-cli": "~8.2.14",
-    "@angular/language-service": "~8.2.14",
+    "@angular/compiler-cli": "~10.2.5",
+    "@angular/language-service": "~10.2.5",
     "@types/chart.js": "^2.7.49",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
@@ -76,6 +76,6 @@
     "sass": "^1.49.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": "~3.5.3"
+    "typescript": "~4.0.8"
   }
 }

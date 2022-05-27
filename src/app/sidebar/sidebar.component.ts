@@ -10,7 +10,7 @@ import { ColorPickerService } from '../service/color-picker.service';
 })
 export class SidebarComponent implements OnInit {
   showFiller = false;
-  @ViewChild('sideNav', { static: false }) public sideNav: MatDrawer;
+  @ViewChild('sideNav') public sideNav: MatDrawer;
   
   constructor(public sidenavService: SideNavService, public colorPicker: ColorPickerService) {
   }
