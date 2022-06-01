@@ -77,12 +77,11 @@ import { UserProfileComponent } from "./feature/user-profile/user-profile.compon
 import { StepperComponent } from "./feature/componants/stepper/stepper.component";
 import { MatStepperModule } from "@angular/material/stepper";
 import { RegularFormComponent } from "./feature/form-layout/regular-form/regular-form.component";
-import { FullCalendarModule } from '@fullcalendar/angular';
 import { CalendarComponent } from './feature/calendar/calendar.component';
 import { MapsComponent } from './feature/maps/maps.component';
-import { AgmCoreModule } from '@agm/core';
+// import { AgmCoreModule } from '@agm/core';
 import { GalleryComponent } from './feature/gallery/gallery.component';
-import { NgxGalleryModule } from 'ngx-gallery';
+import { NgxGalleryModule } from 'ngx-gallery-9';
 import { NgChatModule } from 'ng-chat';
 import { AngularEditorModule } from '@kolkov/angular-editor';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
@@ -92,7 +91,16 @@ import * as FusionMaps from 'fusioncharts/fusioncharts.maps';
 import * as World from 'fusionmaps/maps/fusioncharts.world';
 import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 import { EditorComponent } from './feature/editor/editor.component';
+import { FullCalendarModule } from '@fullcalendar/angular';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import interactionPlugin from '@fullcalendar/interaction';
+
 FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
+
+FullCalendarModule.registerPlugins([
+  dayGridPlugin,
+  interactionPlugin
+]);
 
 @NgModule({
   declarations: [
@@ -187,10 +195,7 @@ FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
     NgChatModule,
     FusionChartsModule,
     AngularEditorModule,
-    CKEditorModule,
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyD43YSgOPyRtnMm9NJjIKvHT8iXDThJQyg'
-    })
+    CKEditorModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   entryComponents: [BottomSheet, DialogModal, DataTableItemAddModal]

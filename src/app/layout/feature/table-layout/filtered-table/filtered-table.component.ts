@@ -1,11 +1,6 @@
 import { Component, OnInit, NgModule } from "@angular/core";
 import { MatTableDataSource } from "@angular/material/table";
 import { ELEMENT_DATA } from "../table-data";
-import {MyMaterialModule} from '../../../../my-material.module';
-
-@NgModule({
-  imports: [ MyMaterialModule ]
-})
 @Component({
   selector: "app-filtered-table",
   templateUrl: "./filtered-table.component.html",
