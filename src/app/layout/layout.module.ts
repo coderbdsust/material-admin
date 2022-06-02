@@ -79,13 +79,13 @@ import { MatStepperModule } from "@angular/material/stepper";
 import { RegularFormComponent } from "./feature/form-layout/regular-form/regular-form.component";
 import { CalendarComponent } from './feature/calendar/calendar.component';
 import { MapsComponent } from './feature/maps/maps.component';
-// import { AgmCoreModule } from '@agm/core';
 import { GalleryComponent } from './feature/gallery/gallery.component';
 import { NgxGalleryModule } from 'ngx-gallery-9';
 import { NgChatModule } from 'ng-chat';
 import { AngularEditorModule } from '@kolkov/angular-editor';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { FusionChartsModule } from 'angular-fusioncharts';
+import { GoogleMapsModule } from '@angular/google-maps';
 import * as FusionCharts from 'fusioncharts';
 import * as FusionMaps from 'fusioncharts/fusioncharts.maps';
 import * as World from 'fusionmaps/maps/fusioncharts.world';
@@ -94,6 +94,8 @@ import { EditorComponent } from './feature/editor/editor.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import interactionPlugin from '@fullcalendar/interaction';
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
+
 
 FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
 
@@ -195,7 +197,10 @@ FullCalendarModule.registerPlugins([
         NgChatModule,
         FusionChartsModule,
         AngularEditorModule,
-        CKEditorModule
+        CKEditorModule,
+        GoogleMapsModule,
+        HttpClientModule,
+        HttpClientJsonpModule
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

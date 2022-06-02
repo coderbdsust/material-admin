@@ -1,15 +1,13 @@
 <div fxLayout="column" fxLayoutGap="10px">
   <div fxLayout="row" fxLayoutGap="10px">
-    <mat-card class="mat-elevation-z4" fxFlex="50">
-      <!-- <agm-map [latitude]="lat1" [longitude]="lng1"></agm-map> -->
+    <mat-card class="mat-elevation-z4" fxFlex="50" *ngIf="apiLoaded | async">
+        <google-map [options]="options1"> </google-map>
     </mat-card>
-    <mat-card class="mat-elevation-z4"  fxFlex="50">
-      <!-- <agm-map [latitude]="lat2" [longitude]="lng2"></agm-map> -->
+    <mat-card class="mat-elevation-z4"  fxFlex="50" *ngIf="apiLoaded | async">
+        <google-map [options]="options2"></google-map>
     </mat-card>
   </div>
-  <mat-card class="mat-elevation-z4">
-    <!-- <agm-map [latitude]="curLat" [longitude]="curLng">
-      <agm-marker [latitude]="curLat" [longitude]="curLng"></agm-marker>
-    </agm-map> -->
+  <mat-card class="mat-elevation-z4" *ngIf="apiLoaded | async">
+      <google-map [options]="optionsEarth" width="100%"></google-map>
   </mat-card>
 </div>
