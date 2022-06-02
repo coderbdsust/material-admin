@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { SocialLayoutComponent } from './social-layout.component';
 
@@ -6,7 +6,7 @@ describe('SocialLayoutComponent', () => {
   let component: SocialLayoutComponent;
   let fixture: ComponentFixture<SocialLayoutComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ SocialLayoutComponent ]
     })
